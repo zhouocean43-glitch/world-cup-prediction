@@ -48,10 +48,11 @@ class PredictionHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Methods", "GET, HEAD, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.end_headers()
-        self.wfile.write(body)
+        if self.command != "HEAD":
+            self.wfile.write(body)
 
     def _send_error_json(self, status: int, message: str) -> None:
         self._send_json(status, {"error": message})
@@ -68,7 +69,8 @@ class PredictionHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-store, max-age=0")
         self.end_headers()
-        self.wfile.write(body)
+        if self.command != "HEAD":
+            self.wfile.write(body)
 
     def _send_scoped_file(self, root_dir: Path, relative_path: str) -> None:
         root = root_dir.resolve()
@@ -100,7 +102,7 @@ class PredictionHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self) -> None:
         self._send_json(204, {})
 
-    def do_GET(self) -> None:
+    def _handle_get_like(self) -> None:
         parsed = urlparse(self.path)
         query = parse_qs(parsed.query)
 
@@ -136,6 +138,12 @@ class PredictionHandler(BaseHTTPRequestHandler):
                 self._send_error_json(404, f"Unknown endpoint: {parsed.path}")
         except Exception as exc:
             self._send_error_json(400, str(exc))
+
+    def do_GET(self) -> None:
+        self._handle_get_like()
+
+    def do_HEAD(self) -> None:
+        self._handle_get_like()
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
