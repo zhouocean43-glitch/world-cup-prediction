@@ -1,0 +1,5772 @@
+{
+  "updated_at": "2026-06-11T14:21:02.307968+00:00",
+  "source": "local_fallback_provider",
+  "fixtures": {
+    "GA-M1-001": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.41,
+        "draw": 4.55,
+        "team_b": 8.38
+      },
+      "previous_market_odds": {
+        "team_a": 1.41,
+        "draw": 4.55,
+        "team_b": 8.38
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.72,
+        "team_b_motivation": 0.62,
+        "headlines": [
+          "Mexico open the tournament at home in Mexico City.",
+          "Market has Mexico as a heavy favourite; draw and South Africa prices are long.",
+          "Weather risk: afternoon thunderstorm chance around Mexico City."
+        ]
+      },
+      "american_odds": {
+        "team_a": -260,
+        "draw": 350,
+        "team_b": 800
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.4,
+          "draw": 4.5,
+          "team_b": 8.0
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.38,
+          "draw": 4.6,
+          "team_b": 8.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.43,
+          "draw": 4.7,
+          "team_b": 9.0
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.43,
+          "draw": 4.4,
+          "team_b": 8.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.06,
+        "under": 1.83,
+        "total_goals": 2.555,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GA-M1-002": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.66,
+        "draw": 3.03,
+        "team_b": 2.95
+      },
+      "previous_market_odds": {
+        "team_a": 2.66,
+        "draw": 3.03,
+        "team_b": 2.93
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.02
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Korea Republic recent form index: 0.62.",
+          "Czechia recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "BetMGM",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.65,
+          "draw": 3.0,
+          "team_b": 2.95
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 2.6,
+          "draw": 2.95,
+          "team_b": 2.88
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.7,
+          "draw": 3.13,
+          "team_b": 3.01
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.7,
+          "draw": 3.05,
+          "team_b": 2.95
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.21,
+        "under": 1.74,
+        "total_goals": 2.441,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GB-M1-003": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "local_fallback_provider",
+      "market_weight": 0.28,
+      "market_type": "model_placeholder",
+      "market_odds": {
+        "team_a": 2.37,
+        "draw": 3.52,
+        "team_b": 2.79
+      },
+      "previous_market_odds": {
+        "team_a": 2.37,
+        "draw": 3.52,
+        "team_b": 2.79
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Canada recent form index: 0.58.",
+          "Bosnia and Herzegovina recent form index: 0.56.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      }
+    },
+    "GB-M1-004": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 13.21,
+        "draw": 6.52,
+        "team_b": 1.22
+      },
+      "previous_market_odds": {
+        "team_a": 13.21,
+        "draw": 6.52,
+        "team_b": 1.22
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.57,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Qatar recent form index: 0.52.",
+          "Switzerland recent form index: 0.61.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "Pinnacle",
+        "FanDuel",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 13.0,
+          "draw": 6.25,
+          "team_b": 1.22
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 12.85,
+          "draw": 6.83,
+          "team_b": 1.23
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 14.0,
+          "draw": 6.5,
+          "team_b": 1.2
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 13.0,
+          "draw": 6.5,
+          "team_b": 1.24
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.62,
+        "over": 1.8,
+        "under": 2.1,
+        "total_goals": 2.829,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GC-M1-005": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.67,
+        "draw": 3.75,
+        "team_b": 5.46
+      },
+      "previous_market_odds": {
+        "team_a": 1.67,
+        "draw": 3.75,
+        "team_b": 5.46
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Brazil recent form index: 0.70.",
+          "Morocco recent form index: 0.73.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.62,
+          "draw": 3.8,
+          "team_b": 5.25
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.67,
+          "draw": 3.7,
+          "team_b": 5.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.69,
+          "draw": 3.77,
+          "team_b": 5.57
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.69,
+          "draw": 3.75,
+          "team_b": 5.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 1.94,
+        "under": 1.95,
+        "total_goals": 2.681,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GC-M1-006": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 5.87,
+        "draw": 4.23,
+        "team_b": 1.56
+      },
+      "previous_market_odds": {
+        "team_a": 5.94,
+        "draw": 4.25,
+        "team_b": 1.56
+      },
+      "odds_movement": {
+        "team_a": -0.07,
+        "draw": -0.02,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.57,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Haiti recent form index: 0.49.",
+          "Scotland recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 5.5,
+          "draw": 4.1,
+          "team_b": 1.57
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 6.0,
+          "draw": 4.2,
+          "team_b": 1.56
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 5.99,
+          "draw": 4.3,
+          "team_b": 1.57
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 6.0,
+          "draw": 4.3,
+          "team_b": 1.56
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.92,
+        "under": 1.96,
+        "total_goals": 2.698,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GD-M1-007": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.94,
+        "draw": 3.43,
+        "team_b": 4.16
+      },
+      "previous_market_odds": {
+        "team_a": 1.94,
+        "draw": 3.43,
+        "team_b": 4.16
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "United States recent form index: 0.64.",
+          "Paraguay recent form index: 0.56.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.91,
+          "draw": 3.4,
+          "team_b": 4.2
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.95,
+          "draw": 3.4,
+          "team_b": 4.1
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.94,
+          "draw": 3.52,
+          "team_b": 4.24
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.95,
+          "draw": 3.4,
+          "team_b": 4.1
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.2,
+        "under": 1.74,
+        "total_goals": 2.446,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GD-M1-008": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 5.12,
+        "draw": 3.76,
+        "team_b": 1.7
+      },
+      "previous_market_odds": {
+        "team_a": 5.12,
+        "draw": 3.76,
+        "team_b": 1.7
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Australia recent form index: 0.57.",
+          "Türkiye recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 5.2,
+          "draw": 3.7,
+          "team_b": 1.69
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 5.22,
+          "draw": 3.88,
+          "team_b": 1.7
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 5.25,
+          "draw": 3.85,
+          "team_b": 1.69
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 4.8,
+          "draw": 3.6,
+          "team_b": 1.71
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 2.04,
+        "under": 1.83,
+        "total_goals": 2.563,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GE-M1-009": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.04,
+        "draw": 17.0,
+        "team_b": 38.0
+      },
+      "previous_market_odds": {
+        "team_a": 1.04,
+        "draw": 17.0,
+        "team_b": 38.0
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Germany recent form index: 0.68.",
+          "Curaçao recent form index: 0.54.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.05,
+          "draw": 15.0,
+          "team_b": 41.0
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.05,
+          "draw": 18.0,
+          "team_b": 41.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.04,
+          "draw": 19.0,
+          "team_b": 41.0
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.03,
+          "draw": 16.0,
+          "team_b": 29.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 4.38,
+        "over": 2.03,
+        "under": 1.83,
+        "total_goals": 4.539,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GE-M1-010": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 3.57,
+        "draw": 2.82,
+        "team_b": 2.43
+      },
+      "previous_market_odds": {
+        "team_a": 3.57,
+        "draw": 2.82,
+        "team_b": 2.43
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Ivory Coast recent form index: 0.61.",
+          "Ecuador recent form index: 0.63.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "BetMGM",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 3.6,
+          "draw": 2.75,
+          "team_b": 2.45
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 3.4,
+          "draw": 2.85,
+          "team_b": 2.35
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 3.69,
+          "draw": 2.82,
+          "team_b": 2.45
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 3.6,
+          "draw": 2.85,
+          "team_b": 2.45
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 1.62,
+        "over": 1.72,
+        "under": 2.23,
+        "total_goals": 1.9,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GF-M1-011": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.02,
+        "draw": 3.52,
+        "team_b": 3.63
+      },
+      "previous_market_odds": {
+        "team_a": 2.02,
+        "draw": 3.52,
+        "team_b": 3.63
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Netherlands recent form index: 0.72.",
+          "Japan recent form index: 0.72.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 2.0,
+          "draw": 3.5,
+          "team_b": 3.5
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.05,
+          "draw": 3.5,
+          "team_b": 3.7
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.05,
+          "draw": 3.62,
+          "team_b": 3.72
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.0,
+          "draw": 3.45,
+          "team_b": 3.6
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.96,
+        "under": 1.92,
+        "total_goals": 2.651,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GF-M1-012": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.92,
+        "draw": 3.38,
+        "team_b": 4.25
+      },
+      "previous_market_odds": {
+        "team_a": 1.92,
+        "draw": 3.38,
+        "team_b": 4.25
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Sweden recent form index: 0.58.",
+          "Tunisia recent form index: 0.55.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "BetMGM",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.95,
+          "draw": 3.3,
+          "team_b": 4.2
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.87,
+          "draw": 3.3,
+          "team_b": 4.2
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.94,
+          "draw": 3.47,
+          "team_b": 4.32
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.91,
+          "draw": 3.45,
+          "team_b": 4.3
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.17,
+        "under": 1.75,
+        "total_goals": 2.469,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GG-M1-013": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.65,
+        "draw": 3.85,
+        "team_b": 5.39
+      },
+      "previous_market_odds": {
+        "team_a": 1.65,
+        "draw": 3.85,
+        "team_b": 5.39
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Belgium recent form index: 0.63.",
+          "Egypt recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.67,
+          "draw": 3.75,
+          "team_b": 5.0
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.62,
+          "draw": 3.8,
+          "team_b": 5.7
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.65,
+          "draw": 4.0,
+          "team_b": 5.6
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.65,
+          "draw": 3.85,
+          "team_b": 5.25
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 2.01,
+        "under": 1.86,
+        "total_goals": 2.594,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GG-M1-014": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.83,
+        "draw": 3.47,
+        "team_b": 4.67
+      },
+      "previous_market_odds": {
+        "team_a": 1.83,
+        "draw": 3.47,
+        "team_b": 4.67
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Iran recent form index: 0.60.",
+          "New Zealand recent form index: 0.51.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "Pinnacle",
+        "BetMGM",
+        "FanDuel",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.84,
+          "draw": 3.57,
+          "team_b": 4.73
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.85,
+          "draw": 3.4,
+          "team_b": 4.33
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.8,
+          "draw": 3.4,
+          "team_b": 4.9
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.83,
+          "draw": 3.5,
+          "team_b": 4.7
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.21,
+        "under": 1.73,
+        "total_goals": 2.433,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GH-M1-015": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.08,
+        "draw": 11.7,
+        "team_b": 25.95
+      },
+      "previous_market_odds": {
+        "team_a": 1.08,
+        "draw": 11.7,
+        "team_b": 25.95
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Spain recent form index: 0.80.",
+          "Cape Verde recent form index: 0.59.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.1,
+          "draw": 10.0,
+          "team_b": 26.0
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.08,
+          "draw": 13.0,
+          "team_b": 23.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.08,
+          "draw": 11.78,
+          "team_b": 28.81
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.08,
+          "draw": 12.0,
+          "team_b": 26.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 3.5,
+        "over": 1.92,
+        "under": 1.92,
+        "total_goals": 3.672,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GH-M1-016": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 7.5,
+        "draw": 4.42,
+        "team_b": 1.44
+      },
+      "previous_market_odds": {
+        "team_a": 7.5,
+        "draw": 4.42,
+        "team_b": 1.44
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.57,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Saudi Arabia recent form index: 0.51.",
+          "Uruguay recent form index: 0.71.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 7.25,
+          "draw": 4.33,
+          "team_b": 1.44
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 7.5,
+          "draw": 4.4,
+          "team_b": 1.42
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 7.75,
+          "draw": 4.46,
+          "team_b": 1.46
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 7.5,
+          "draw": 4.5,
+          "team_b": 1.45
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 2.01,
+        "under": 1.85,
+        "total_goals": 2.591,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GI-M1-017": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.47,
+        "draw": 4.38,
+        "team_b": 7.02
+      },
+      "previous_market_odds": {
+        "team_a": 1.47,
+        "draw": 4.38,
+        "team_b": 7.02
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "France recent form index: 0.78.",
+          "Senegal recent form index: 0.67.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.45,
+          "draw": 4.33,
+          "team_b": 7.0
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.45,
+          "draw": 4.4,
+          "team_b": 7.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.49,
+          "draw": 4.4,
+          "team_b": 7.09
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.48,
+          "draw": 4.4,
+          "team_b": 7.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.98,
+        "under": 1.89,
+        "total_goals": 2.625,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GI-M1-018": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 13.72,
+        "draw": 7.08,
+        "team_b": 1.2
+      },
+      "previous_market_odds": {
+        "team_a": 13.72,
+        "draw": 7.08,
+        "team_b": 1.2
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "Iraq recent form index: 0.58.",
+          "Norway recent form index: 0.66.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "Pinnacle",
+        "FanDuel",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 12.5,
+          "draw": 7.0,
+          "team_b": 1.21
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 14.39,
+          "draw": 7.3,
+          "team_b": 1.2
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 14.0,
+          "draw": 7.0,
+          "team_b": 1.18
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 14.0,
+          "draw": 7.0,
+          "team_b": 1.21
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.75,
+        "over": 1.79,
+        "under": 2.17,
+        "total_goals": 3.376,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GJ-M1-019": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.4,
+        "draw": 4.56,
+        "team_b": 8.7
+      },
+      "previous_market_odds": {
+        "team_a": 1.4,
+        "draw": 4.56,
+        "team_b": 8.7
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.63,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Argentina recent form index: 0.82.",
+          "Algeria recent form index: 0.56.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.4,
+          "draw": 4.5,
+          "team_b": 7.75
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.38,
+          "draw": 4.6,
+          "team_b": 9.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.41,
+          "draw": 4.55,
+          "team_b": 9.05
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.41,
+          "draw": 4.6,
+          "team_b": 9.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.96,
+        "under": 1.91,
+        "total_goals": 2.648,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GJ-M1-020": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.32,
+        "draw": 5.47,
+        "team_b": 9.19
+      },
+      "previous_market_odds": {
+        "team_a": 1.32,
+        "draw": 5.47,
+        "team_b": 9.19
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Austria recent form index: 0.69.",
+          "Jordan recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "Pinnacle",
+        "BetMGM",
+        "FanDuel",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.33,
+          "draw": 5.52,
+          "team_b": 9.25
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.33,
+          "draw": 5.25,
+          "team_b": 8.5
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.31,
+          "draw": 5.6,
+          "team_b": 9.5
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.32,
+          "draw": 5.5,
+          "team_b": 9.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.62,
+        "over": 1.75,
+        "under": 2.17,
+        "total_goals": 2.894,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GK-M1-021": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.29,
+        "draw": 5.73,
+        "team_b": 10.86
+      },
+      "previous_market_odds": {
+        "team_a": 1.29,
+        "draw": 5.73,
+        "team_b": 10.86
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Portugal recent form index: 0.76.",
+          "Congo DR recent form index: 0.58.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "BetMGM",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.29,
+          "draw": 5.6,
+          "team_b": 11.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.29,
+          "draw": 5.75,
+          "team_b": 9.75
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.28,
+          "draw": 5.82,
+          "team_b": 11.7
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.29,
+          "draw": 5.75,
+          "team_b": 11.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.62,
+        "over": 1.81,
+        "under": 2.08,
+        "total_goals": 2.82,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GK-M1-022": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 8.73,
+        "draw": 4.69,
+        "team_b": 1.39
+      },
+      "previous_market_odds": {
+        "team_a": 8.73,
+        "draw": 4.69,
+        "team_b": 1.39
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Uzbekistan recent form index: 0.56.",
+          "Colombia recent form index: 0.70.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "BetMGM",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 9.5,
+          "draw": 4.7,
+          "team_b": 1.37
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 7.75,
+          "draw": 4.6,
+          "team_b": 1.4
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 9.17,
+          "draw": 4.74,
+          "team_b": 1.39
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 8.5,
+          "draw": 4.7,
+          "team_b": 1.4
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.98,
+        "under": 1.9,
+        "total_goals": 2.632,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GL-M1-023": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.72,
+        "draw": 3.79,
+        "team_b": 4.88
+      },
+      "previous_market_odds": {
+        "team_a": 1.72,
+        "draw": 3.79,
+        "team_b": 4.88
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "England recent form index: 0.75.",
+          "Croatia recent form index: 0.66.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.71,
+          "draw": 3.7,
+          "team_b": 4.8
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.71,
+          "draw": 3.7,
+          "team_b": 5.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.74,
+          "draw": 3.9,
+          "team_b": 4.91
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.71,
+          "draw": 3.85,
+          "team_b": 4.8
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 1.98,
+        "under": 1.89,
+        "total_goals": 2.628,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GL-M1-024": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.12,
+        "draw": 3.42,
+        "team_b": 3.54
+      },
+      "previous_market_odds": {
+        "team_a": 2.12,
+        "draw": 3.42,
+        "team_b": 3.54
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 1,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.57,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Ghana recent form index: 0.49.",
+          "Panama recent form index: 0.53.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "BetMGM",
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 2.05,
+          "draw": 3.3,
+          "team_b": 3.6
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.15,
+          "draw": 3.4,
+          "team_b": 3.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.18,
+          "draw": 3.51,
+          "team_b": 3.45
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.1,
+          "draw": 3.45,
+          "team_b": 3.6
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.17,
+        "under": 1.76,
+        "total_goals": 2.47,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GA-M2-025": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 4.07,
+        "draw": 3.35,
+        "team_b": 1.94
+      },
+      "previous_market_odds": {
+        "team_a": 4.07,
+        "draw": 3.35,
+        "team_b": 1.94
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.57,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "South Africa recent form index: 0.52.",
+          "Czechia recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 4.1,
+          "draw": 3.4,
+          "team_b": 1.91
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 4.08,
+          "draw": 3.31,
+          "team_b": 1.92
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 4.2,
+          "draw": 3.4,
+          "team_b": 1.95
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 3.9,
+          "draw": 3.3,
+          "team_b": 1.98
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.09,
+        "under": 1.69,
+        "total_goals": 2.466,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GA-M2-026": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.79,
+        "draw": 3.49,
+        "team_b": 4.5
+      },
+      "previous_market_odds": {
+        "team_a": 1.79,
+        "draw": 3.49,
+        "team_b": 4.5
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Mexico recent form index: 0.58.",
+          "Korea Republic recent form index: 0.62.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.83,
+          "draw": 3.5,
+          "team_b": 4.7
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.75,
+          "draw": 3.61,
+          "team_b": 4.5
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.8,
+          "draw": 3.65,
+          "team_b": 4.7
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.77,
+          "draw": 3.2,
+          "team_b": 4.1
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.06,
+        "under": 1.74,
+        "total_goals": 2.504,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GB-M2-027": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "local_fallback_provider",
+      "market_weight": 0.28,
+      "market_type": "model_placeholder",
+      "market_odds": {
+        "team_a": 3.43,
+        "draw": 3.71,
+        "team_b": 1.99
+      },
+      "previous_market_odds": {
+        "team_a": 3.43,
+        "draw": 3.71,
+        "team_b": 1.99
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Bosnia and Herzegovina recent form index: 0.56.",
+          "Switzerland recent form index: 0.61.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      }
+    },
+    "GB-M2-028": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.29,
+        "draw": 5.11,
+        "team_b": 10.09
+      },
+      "previous_market_odds": {
+        "team_a": 1.29,
+        "draw": 5.11,
+        "team_b": 10.09
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Canada recent form index: 0.58.",
+          "Qatar recent form index: 0.52.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.29,
+          "draw": 5.4,
+          "team_b": 11.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.29,
+          "draw": 5.03,
+          "team_b": 9.6
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.31,
+          "draw": 5.25,
+          "team_b": 11.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.29,
+          "draw": 4.75,
+          "team_b": 8.75
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.92,
+        "under": 1.83,
+        "total_goals": 2.62,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GC-M2-029": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.94,
+        "draw": 3.25,
+        "team_b": 4.03
+      },
+      "previous_market_odds": {
+        "team_a": 1.94,
+        "draw": 3.25,
+        "team_b": 4.03
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Morocco recent form index: 0.73.",
+          "Scotland recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.91,
+          "draw": 3.4,
+          "team_b": 4.2
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.95,
+          "draw": 3.2,
+          "team_b": 4.1
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.0,
+          "draw": 3.3,
+          "team_b": 4.2
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.91,
+          "draw": 3.1,
+          "team_b": 3.6
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.12,
+        "under": 1.69,
+        "total_goals": 2.453,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GC-M2-030": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.08,
+        "draw": 11.33,
+        "team_b": 25.5
+      },
+      "previous_market_odds": {
+        "team_a": 1.08,
+        "draw": 11.33,
+        "team_b": 25.5
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Brazil recent form index: 0.70.",
+          "Haiti recent form index: 0.49.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.08,
+          "draw": 11.0,
+          "team_b": 31.0
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.08,
+          "draw": 13.0,
+          "team_b": 26.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.07,
+          "draw": 10.0,
+          "team_b": 19.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 3.62,
+        "over": 1.82,
+        "under": 1.93,
+        "total_goals": 3.739,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:50Z"
+    },
+    "GD-M2-031": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 3.34,
+        "draw": 3.13,
+        "team_b": 2.2
+      },
+      "previous_market_odds": {
+        "team_a": 3.34,
+        "draw": 3.13,
+        "team_b": 2.2
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Paraguay recent form index: 0.56.",
+          "Türkiye recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 3.4,
+          "draw": 3.2,
+          "team_b": 2.25
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 3.42,
+          "draw": 3.13,
+          "team_b": 2.2
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 3.45,
+          "draw": 3.2,
+          "team_b": 2.25
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 3.1,
+          "draw": 3.0,
+          "team_b": 2.1
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.12,
+        "under": 1.69,
+        "total_goals": 2.448,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GD-M2-032": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.72,
+        "draw": 3.75,
+        "team_b": 4.47
+      },
+      "previous_market_odds": {
+        "team_a": 1.72,
+        "draw": 3.75,
+        "team_b": 4.47
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "United States recent form index: 0.64.",
+          "Australia recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.71,
+          "draw": 3.8,
+          "team_b": 4.9
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.71,
+          "draw": 3.95,
+          "team_b": 4.3
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.77,
+          "draw": 3.95,
+          "team_b": 4.5
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.69,
+          "draw": 3.3,
+          "team_b": 4.2
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 2.0,
+        "under": 1.75,
+        "total_goals": 2.538,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GE-M2-033": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 12.64,
+        "draw": 6.71,
+        "team_b": 1.19
+      },
+      "previous_market_odds": {
+        "team_a": 12.64,
+        "draw": 6.71,
+        "team_b": 1.19
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Curaçao recent form index: 0.54.",
+          "Ecuador recent form index: 0.63.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 15.0,
+          "draw": 6.5,
+          "team_b": 1.18
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 11.55,
+          "draw": 7.08,
+          "team_b": 1.18
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 13.0,
+          "draw": 7.5,
+          "team_b": 1.2
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 11.0,
+          "draw": 5.75,
+          "team_b": 1.19
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.62,
+        "over": 1.75,
+        "under": 2.02,
+        "total_goals": 2.826,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GE-M2-034": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.54,
+        "draw": 4.19,
+        "team_b": 5.51
+      },
+      "previous_market_odds": {
+        "team_a": 1.54,
+        "draw": 4.19,
+        "team_b": 5.51
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Germany recent form index: 0.68.",
+          "Ivory Coast recent form index: 0.61.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.54,
+          "draw": 4.2,
+          "team_b": 6.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.54,
+          "draw": 4.27,
+          "team_b": 5.29
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.56,
+          "draw": 4.4,
+          "team_b": 5.75
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.5,
+          "draw": 3.9,
+          "team_b": 5.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.62,
+        "over": 1.85,
+        "under": 1.91,
+        "total_goals": 2.704,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GF-M2-035": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.69,
+        "draw": 3.52,
+        "team_b": 5.1
+      },
+      "previous_market_odds": {
+        "team_a": 1.69,
+        "draw": 3.52,
+        "team_b": 5.1
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Japan recent form index: 0.72.",
+          "Tunisia recent form index: 0.55.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.71,
+          "draw": 3.5,
+          "team_b": 5.4
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.66,
+          "draw": 3.57,
+          "team_b": 5.25
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.71,
+          "draw": 3.7,
+          "team_b": 5.25
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.69,
+          "draw": 3.3,
+          "team_b": 4.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.06,
+        "under": 1.75,
+        "total_goals": 2.514,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GF-M2-036": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.63,
+        "draw": 3.95,
+        "team_b": 4.95
+      },
+      "previous_market_odds": {
+        "team_a": 1.63,
+        "draw": 3.95,
+        "team_b": 4.95
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Netherlands recent form index: 0.72.",
+          "Sweden recent form index: 0.58.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.65,
+          "draw": 4.0,
+          "team_b": 5.1
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.61,
+          "draw": 4.02,
+          "team_b": 4.95
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.65,
+          "draw": 4.2,
+          "team_b": 5.25
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.61,
+          "draw": 3.6,
+          "team_b": 4.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.88,
+        "under": 1.86,
+        "total_goals": 2.669,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GG-M2-037": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.73,
+        "draw": 3.64,
+        "team_b": 4.66
+      },
+      "previous_market_odds": {
+        "team_a": 1.73,
+        "draw": 3.64,
+        "team_b": 4.66
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Egypt recent form index: 0.57.",
+          "New Zealand recent form index: 0.51.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.74,
+          "draw": 3.6,
+          "team_b": 5.2
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.73,
+          "draw": 3.81,
+          "team_b": 4.33
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.77,
+          "draw": 3.85,
+          "team_b": 4.7
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.69,
+          "draw": 3.3,
+          "team_b": 4.4
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.05,
+        "under": 1.73,
+        "total_goals": 2.504,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GG-M2-038": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.39,
+        "draw": 4.53,
+        "team_b": 7.62
+      },
+      "previous_market_odds": {
+        "team_a": 1.39,
+        "draw": 4.53,
+        "team_b": 7.62
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Belgium recent form index: 0.63.",
+          "Iran recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM",
+        "FanDuel"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.37,
+          "draw": 4.62,
+          "team_b": 7.75
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.41,
+          "draw": 4.8,
+          "team_b": 8.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.36,
+          "draw": 4.1,
+          "team_b": 6.75
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.4,
+          "draw": 4.6,
+          "team_b": 8.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.83,
+        "under": 1.92,
+        "total_goals": 2.72,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GH-M2-039": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 7.19,
+        "draw": 4.43,
+        "team_b": 1.41
+      },
+      "previous_market_odds": {
+        "team_a": 7.19,
+        "draw": 4.43,
+        "team_b": 1.41
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Cape Verde recent form index: 0.59.",
+          "Uruguay recent form index: 0.71.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 7.5,
+          "draw": 4.5,
+          "team_b": 1.42
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 7.49,
+          "draw": 4.53,
+          "team_b": 1.39
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 7.5,
+          "draw": 4.6,
+          "team_b": 1.44
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 6.25,
+          "draw": 4.1,
+          "team_b": 1.4
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.85,
+        "under": 1.89,
+        "total_goals": 2.696,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GH-M2-040": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.1,
+        "draw": 9.62,
+        "team_b": 22.01
+      },
+      "previous_market_odds": {
+        "team_a": 1.1,
+        "draw": 9.62,
+        "team_b": 22.01
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Spain recent form index: 0.80.",
+          "Saudi Arabia recent form index: 0.51.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.11,
+          "draw": 9.0,
+          "team_b": 28.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.09,
+          "draw": 10.21,
+          "team_b": 21.54
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.1,
+          "draw": 11.0,
+          "team_b": 23.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.1,
+          "draw": 8.25,
+          "team_b": 15.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 3.38,
+        "over": 2.08,
+        "under": 1.73,
+        "total_goals": 3.458,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GI-M2-041": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 3.29,
+        "draw": 3.43,
+        "team_b": 2.11
+      },
+      "previous_market_odds": {
+        "team_a": 3.29,
+        "draw": 3.43,
+        "team_b": 2.11
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "Senegal recent form index: 0.67.",
+          "Norway recent form index: 0.66.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 3.3,
+          "draw": 3.4,
+          "team_b": 2.2
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 3.28,
+          "draw": 3.51,
+          "team_b": 2.09
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 3.4,
+          "draw": 3.6,
+          "team_b": 2.15
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 3.2,
+          "draw": 3.2,
+          "team_b": 2.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.92,
+        "under": 1.81,
+        "total_goals": 2.612,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GI-M2-042": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.11,
+        "draw": 8.27,
+        "team_b": 22.39
+      },
+      "previous_market_odds": {
+        "team_a": 1.11,
+        "draw": 8.27,
+        "team_b": 22.39
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "France recent form index: 0.78.",
+          "Iraq recent form index: 0.58.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM",
+        "FanDuel"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.11,
+          "draw": 8.06,
+          "team_b": 24.06
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.12,
+          "draw": 9.0,
+          "team_b": 26.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.1,
+          "draw": 8.0,
+          "team_b": 16.5
+        },
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.12,
+          "draw": 8.0,
+          "team_b": 23.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 3.38,
+        "over": 2.09,
+        "under": 1.71,
+        "total_goals": 3.44,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GJ-M2-043": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.5,
+        "draw": 4.09,
+        "team_b": 6.24
+      },
+      "previous_market_odds": {
+        "team_a": 1.5,
+        "draw": 4.09,
+        "team_b": 6.24
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Algeria recent form index: 0.56.",
+          "Jordan recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.53,
+          "draw": 4.1,
+          "team_b": 6.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.48,
+          "draw": 4.17,
+          "team_b": 6.2
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.53,
+          "draw": 4.3,
+          "team_b": 6.5
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.48,
+          "draw": 3.8,
+          "team_b": 5.75
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.88,
+        "under": 1.86,
+        "total_goals": 2.669,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GJ-M2-044": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.62,
+        "draw": 3.75,
+        "team_b": 5.41
+      },
+      "previous_market_odds": {
+        "team_a": 1.62,
+        "draw": 3.75,
+        "team_b": 5.41
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.63,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "Argentina recent form index: 0.82.",
+          "Austria recent form index: 0.69.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.65,
+          "draw": 3.9,
+          "team_b": 5.6
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.61,
+          "draw": 3.71,
+          "team_b": 5.49
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.65,
+          "draw": 3.9,
+          "team_b": 5.75
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.57,
+          "draw": 3.5,
+          "team_b": 4.8
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.92,
+        "under": 1.81,
+        "total_goals": 2.615,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GK-M2-045": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 7.12,
+        "draw": 4.12,
+        "team_b": 1.46
+      },
+      "previous_market_odds": {
+        "team_a": 7.12,
+        "draw": 4.12,
+        "team_b": 1.46
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Congo DR recent form index: 0.58.",
+          "Colombia recent form index: 0.70.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 7.0,
+          "draw": 4.1,
+          "team_b": 1.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 7.22,
+          "draw": 4.23,
+          "team_b": 1.43
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 8.0,
+          "draw": 4.4,
+          "team_b": 1.45
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 6.25,
+          "draw": 3.75,
+          "team_b": 1.44
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 2.01,
+        "under": 1.76,
+        "total_goals": 2.541,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GK-M2-046": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.23,
+        "draw": 6.08,
+        "team_b": 10.64
+      },
+      "previous_market_odds": {
+        "team_a": 1.23,
+        "draw": 6.08,
+        "team_b": 10.64
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Portugal recent form index: 0.76.",
+          "Uzbekistan recent form index: 0.56.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.26,
+          "draw": 6.0,
+          "team_b": 11.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.21,
+          "draw": 6.31,
+          "team_b": 10.82
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.24,
+          "draw": 6.5,
+          "team_b": 12.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.22,
+          "draw": 5.5,
+          "team_b": 8.75
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 3.25,
+        "over": 2.08,
+        "under": 1.73,
+        "total_goals": 3.463,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GL-M2-047": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.54,
+        "draw": 3.84,
+        "team_b": 6.32
+      },
+      "previous_market_odds": {
+        "team_a": 1.54,
+        "draw": 3.84,
+        "team_b": 6.32
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Croatia recent form index: 0.66.",
+          "Panama recent form index: 0.53.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.53,
+          "draw": 4.1,
+          "team_b": 6.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.55,
+          "draw": 3.68,
+          "team_b": 6.29
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.56,
+          "draw": 4.0,
+          "team_b": 6.5
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.5,
+          "draw": 3.6,
+          "team_b": 6.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 1.88,
+        "under": 1.87,
+        "total_goals": 2.671,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GL-M2-048": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.3,
+        "draw": 5.18,
+        "team_b": 9.36
+      },
+      "previous_market_odds": {
+        "team_a": 1.3,
+        "draw": 5.18,
+        "team_b": 9.36
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "England recent form index: 0.75.",
+          "Ghana recent form index: 0.49.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.3,
+          "draw": 5.1,
+          "team_b": 10.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.29,
+          "draw": 5.32,
+          "team_b": 8.93
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.31,
+          "draw": 5.5,
+          "team_b": 10.0
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 1.29,
+          "draw": 4.8,
+          "team_b": 8.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.62,
+        "over": 1.77,
+        "under": 2.02,
+        "total_goals": 2.812,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GA-M3-049": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.78,
+        "draw": 3.57,
+        "team_b": 4.65
+      },
+      "previous_market_odds": {
+        "team_a": 1.78,
+        "draw": 3.57,
+        "team_b": 4.65
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Mexico recent form index: 0.58.",
+          "Czechia recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.8,
+          "draw": 3.5,
+          "team_b": 4.7
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.75,
+          "draw": 3.56,
+          "team_b": 4.54
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.8,
+          "draw": 3.65,
+          "team_b": 4.7
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.83,
+        "under": 1.97,
+        "total_goals": 2.749,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GA-M3-050": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 4.04,
+        "draw": 3.45,
+        "team_b": 1.93
+      },
+      "previous_market_odds": {
+        "team_a": 4.04,
+        "draw": 3.45,
+        "team_b": 1.93
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.57,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "South Africa recent form index: 0.52.",
+          "Korea Republic recent form index: 0.62.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 4.1,
+          "draw": 3.5,
+          "team_b": 1.91
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 4.03,
+          "draw": 3.35,
+          "team_b": 1.92
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 4.0,
+          "draw": 3.5,
+          "team_b": 1.95
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.88,
+        "under": 1.91,
+        "total_goals": 2.69,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GB-M3-051": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 3.45,
+        "draw": 3.32,
+        "team_b": 2.09
+      },
+      "previous_market_odds": {
+        "team_a": 3.45,
+        "draw": 3.32,
+        "team_b": 2.09
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Canada recent form index: 0.58.",
+          "Switzerland recent form index: 0.61.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 4,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings",
+        "BetMGM"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 3.6,
+          "draw": 3.4,
+          "team_b": 2.1
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 3.44,
+          "draw": 3.33,
+          "team_b": 2.1
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 3.5,
+          "draw": 3.45,
+          "team_b": 2.15
+        },
+        {
+          "bookmaker": "BetMGM",
+          "updated_at": "2026-06-11T14:20:03Z",
+          "team_a": 3.25,
+          "draw": 3.1,
+          "team_b": 2.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 2,
+        "bookmakers": [
+          "BetMGM",
+          "Pinnacle"
+        ],
+        "line": 2.38,
+        "over": 1.94,
+        "under": 1.82,
+        "total_goals": 2.611,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GB-M3-052": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "local_fallback_provider",
+      "market_weight": 0.28,
+      "market_type": "model_placeholder",
+      "market_odds": {
+        "team_a": 2.22,
+        "draw": 3.56,
+        "team_b": 2.99
+      },
+      "previous_market_odds": {
+        "team_a": 2.22,
+        "draw": 3.56,
+        "team_b": 2.99
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Bosnia and Herzegovina recent form index: 0.56.",
+          "Qatar recent form index: 0.52.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      }
+    },
+    "GC-M3-053": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.46,
+        "draw": 4.77,
+        "team_b": 6.12
+      },
+      "previous_market_odds": {
+        "team_a": 1.46,
+        "draw": 4.77,
+        "team_b": 6.12
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Brazil recent form index: 0.70.",
+          "Scotland recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.42,
+          "draw": 4.6,
+          "team_b": 7.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.47,
+          "draw": 4.82,
+          "team_b": 5.37
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.49,
+          "draw": 4.9,
+          "team_b": 6.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.83,
+        "under": 1.96,
+        "total_goals": 2.744,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GC-M3-054": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.33,
+        "draw": 5.14,
+        "team_b": 9.55
+      },
+      "previous_market_odds": {
+        "team_a": 1.33,
+        "draw": 5.14,
+        "team_b": 9.55
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Morocco recent form index: 0.73.",
+          "Haiti recent form index: 0.49.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.33,
+          "draw": 5.1,
+          "team_b": 10.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.3,
+          "draw": 5.06,
+          "team_b": 9.14
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.35,
+          "draw": 5.25,
+          "team_b": 9.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.75,
+        "over": 1.89,
+        "under": 1.89,
+        "total_goals": 2.674,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GD-M3-055": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.54,
+        "draw": 3.52,
+        "team_b": 2.65
+      },
+      "previous_market_odds": {
+        "team_a": 2.54,
+        "draw": 3.52,
+        "team_b": 2.65
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "United States recent form index: 0.64.",
+          "Türkiye recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.5,
+          "draw": 3.5,
+          "team_b": 2.7
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.56,
+          "draw": 3.52,
+          "team_b": 2.56
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.55,
+          "draw": 3.55,
+          "team_b": 2.7
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.87,
+        "under": 1.92,
+        "total_goals": 2.701,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GD-M3-056": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.12,
+        "draw": 3.26,
+        "team_b": 3.59
+      },
+      "previous_market_odds": {
+        "team_a": 2.12,
+        "draw": 3.26,
+        "team_b": 3.59
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Paraguay recent form index: 0.56.",
+          "Australia recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.1,
+          "draw": 3.3,
+          "team_b": 3.6
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.12,
+          "draw": 3.17,
+          "team_b": 3.57
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.15,
+          "draw": 3.3,
+          "team_b": 3.6
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.99,
+        "under": 1.81,
+        "total_goals": 2.579,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GE-M3-057": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.72,
+        "draw": 3.83,
+        "team_b": 4.8
+      },
+      "previous_market_odds": {
+        "team_a": 1.72,
+        "draw": 3.83,
+        "team_b": 4.8
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Germany recent form index: 0.68.",
+          "Ecuador recent form index: 0.63.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.69,
+          "draw": 3.9,
+          "team_b": 5.1
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.73,
+          "draw": 3.7,
+          "team_b": 4.5
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.74,
+          "draw": 3.9,
+          "team_b": 4.8
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.9,
+        "under": 1.88,
+        "total_goals": 2.663,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GE-M3-058": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 12.81,
+        "draw": 6.47,
+        "team_b": 1.22
+      },
+      "previous_market_odds": {
+        "team_a": 12.81,
+        "draw": 6.47,
+        "team_b": 1.22
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 1,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Curaçao recent form index: 0.54.",
+          "Ivory Coast recent form index: 0.61.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 14.0,
+          "draw": 6.0,
+          "team_b": 1.24
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 11.44,
+          "draw": 6.41,
+          "team_b": 1.2
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 13.0,
+          "draw": 7.0,
+          "team_b": 1.22
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.75,
+        "over": 1.81,
+        "under": 1.99,
+        "total_goals": 2.771,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GF-M3-059": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.49,
+        "draw": 4.27,
+        "team_b": 6.43
+      },
+      "previous_market_odds": {
+        "team_a": 1.49,
+        "draw": 4.27,
+        "team_b": 6.43
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Netherlands recent form index: 0.72.",
+          "Tunisia recent form index: 0.55.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.5,
+          "draw": 4.2,
+          "team_b": 6.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.47,
+          "draw": 4.22,
+          "team_b": 6.28
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.5,
+          "draw": 4.4,
+          "team_b": 6.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.83,
+        "under": 1.95,
+        "total_goals": 2.739,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GF-M3-060": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.08,
+        "draw": 3.44,
+        "team_b": 3.54
+      },
+      "previous_market_odds": {
+        "team_a": 2.08,
+        "draw": 3.44,
+        "team_b": 3.54
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Japan recent form index: 0.72.",
+          "Sweden recent form index: 0.58.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.05,
+          "draw": 3.5,
+          "team_b": 3.6
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.08,
+          "draw": 3.37,
+          "team_b": 3.47
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.1,
+          "draw": 3.45,
+          "team_b": 3.55
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.81,
+        "under": 1.99,
+        "total_goals": 2.771,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GG-M3-061": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.27,
+        "draw": 5.78,
+        "team_b": 10.22
+      },
+      "previous_market_odds": {
+        "team_a": 1.27,
+        "draw": 5.78,
+        "team_b": 10.22
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Belgium recent form index: 0.63.",
+          "New Zealand recent form index: 0.51.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.28,
+          "draw": 5.6,
+          "team_b": 11.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.25,
+          "draw": 5.73,
+          "team_b": 9.66
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.29,
+          "draw": 6.0,
+          "team_b": 10.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.75,
+        "over": 1.81,
+        "under": 1.99,
+        "total_goals": 2.771,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GG-M3-062": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.26,
+        "draw": 3.05,
+        "team_b": 3.57
+      },
+      "previous_market_odds": {
+        "team_a": 2.26,
+        "draw": 3.05,
+        "team_b": 3.57
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.59,
+        "headlines": [
+          "Egypt recent form index: 0.57.",
+          "Iran recent form index: 0.60.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.25,
+          "draw": 3.1,
+          "team_b": 3.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.22,
+          "draw": 2.99,
+          "team_b": 3.55
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.3,
+          "draw": 3.05,
+          "team_b": 3.65
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.0,
+        "over": 1.92,
+        "under": 1.87,
+        "total_goals": 2.647,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GH-M3-063": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.64,
+        "draw": 3.95,
+        "team_b": 5.35
+      },
+      "previous_market_odds": {
+        "team_a": 1.64,
+        "draw": 3.95,
+        "team_b": 5.35
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Spain recent form index: 0.80.",
+          "Uruguay recent form index: 0.71.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.65,
+          "draw": 4.0,
+          "team_b": 5.4
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.61,
+          "draw": 3.86,
+          "team_b": 5.15
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.65,
+          "draw": 4.0,
+          "team_b": 5.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.88,
+        "under": 1.91,
+        "total_goals": 2.69,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GH-M3-064": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.52,
+        "draw": 3.31,
+        "team_b": 2.8
+      },
+      "previous_market_odds": {
+        "team_a": 2.52,
+        "draw": 3.31,
+        "team_b": 2.8
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.59,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Cape Verde recent form index: 0.59.",
+          "Saudi Arabia recent form index: 0.51.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.45,
+          "draw": 3.4,
+          "team_b": 2.8
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.52,
+          "draw": 3.27,
+          "team_b": 2.75
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.6,
+          "draw": 3.25,
+          "team_b": 2.85
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.88,
+        "under": 1.9,
+        "total_goals": 2.685,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GI-M3-065": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.83,
+        "draw": 3.63,
+        "team_b": 4.32
+      },
+      "previous_market_odds": {
+        "team_a": 1.83,
+        "draw": 3.63,
+        "team_b": 4.32
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "France recent form index: 0.78.",
+          "Norway recent form index: 0.66.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.8,
+          "draw": 3.7,
+          "team_b": 4.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.83,
+          "draw": 3.54,
+          "team_b": 4.16
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.87,
+          "draw": 3.65,
+          "team_b": 4.3
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.97,
+        "under": 1.82,
+        "total_goals": 2.595,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GI-M3-066": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.41,
+        "draw": 4.59,
+        "team_b": 7.72
+      },
+      "previous_market_odds": {
+        "team_a": 1.41,
+        "draw": 4.59,
+        "team_b": 7.72
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Senegal recent form index: 0.67.",
+          "Iraq recent form index: 0.58.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.42,
+          "draw": 4.5,
+          "team_b": 7.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.38,
+          "draw": 4.58,
+          "team_b": 7.65
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.43,
+          "draw": 4.7,
+          "team_b": 8.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.5,
+        "over": 1.86,
+        "under": 1.93,
+        "total_goals": 2.712,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GJ-M3-067": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.18,
+        "draw": 7.04,
+        "team_b": 14.45
+      },
+      "previous_market_odds": {
+        "team_a": 1.18,
+        "draw": 7.04,
+        "team_b": 14.45
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.63,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Argentina recent form index: 0.82.",
+          "Jordan recent form index: 0.57.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.18,
+          "draw": 6.5,
+          "team_b": 15.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.16,
+          "draw": 7.13,
+          "team_b": 13.34
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.19,
+          "draw": 7.5,
+          "team_b": 15.0
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 3.0,
+        "over": 1.9,
+        "under": 1.87,
+        "total_goals": 3.653,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GJ-M3-068": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 3.63,
+        "draw": 3.18,
+        "team_b": 2.16
+      },
+      "previous_market_odds": {
+        "team_a": 3.63,
+        "draw": 3.18,
+        "team_b": 2.16
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 4,
+        "team_b_rest_days": 5,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.6,
+        "headlines": [
+          "Algeria recent form index: 0.56.",
+          "Austria recent form index: 0.69.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 3.4,
+          "draw": 3.3,
+          "team_b": 2.2
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 3.74,
+          "draw": 3.03,
+          "team_b": 2.13
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 3.75,
+          "draw": 3.2,
+          "team_b": 2.15
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.81,
+        "under": 1.98,
+        "total_goals": 2.766,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GK-M3-069": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.14,
+        "draw": 3.34,
+        "team_b": 3.49
+      },
+      "previous_market_odds": {
+        "team_a": 2.14,
+        "draw": 3.34,
+        "team_b": 3.49
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.62,
+        "team_b_motivation": 0.61,
+        "headlines": [
+          "Portugal recent form index: 0.76.",
+          "Colombia recent form index: 0.70.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.1,
+          "draw": 3.4,
+          "team_b": 3.5
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.12,
+          "draw": 3.27,
+          "team_b": 3.46
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.2,
+          "draw": 3.35,
+          "team_b": 3.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.83,
+        "under": 1.95,
+        "total_goals": 2.739,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GK-M3-070": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 2.33,
+        "draw": 3.29,
+        "team_b": 3.13
+      },
+      "previous_market_odds": {
+        "team_a": 2.33,
+        "draw": 3.29,
+        "team_b": 3.13
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 0,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.58,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "Congo DR recent form index: 0.58.",
+          "Uzbekistan recent form index: 0.56.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 2.35,
+          "draw": 3.2,
+          "team_b": 3.2
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 2.29,
+          "draw": 3.32,
+          "team_b": 3.05
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 2.35,
+          "draw": 3.35,
+          "team_b": 3.15
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.95,
+        "under": 1.84,
+        "total_goals": 2.616,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GL-M3-071": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.27,
+        "draw": 6.3,
+        "team_b": 9.02
+      },
+      "previous_market_odds": {
+        "team_a": 1.27,
+        "draw": 6.3,
+        "team_b": 9.02
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.61,
+        "team_b_motivation": 0.58,
+        "headlines": [
+          "England recent form index: 0.75.",
+          "Panama recent form index: 0.53.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.26,
+          "draw": 6.0,
+          "team_b": 11.0
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.27,
+          "draw": 6.39,
+          "team_b": 7.57
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.29,
+          "draw": 6.5,
+          "team_b": 8.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.75,
+        "over": 1.78,
+        "under": 2.02,
+        "total_goals": 2.804,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    },
+    "GL-M3-072": {
+      "updated_at": "2026-06-11T14:21:02.307968+00:00",
+      "source": "The Odds API aggregate",
+      "market_weight": 0.7,
+      "market_type": "bookmaker_aggregate",
+      "market_odds": {
+        "team_a": 1.63,
+        "draw": 3.84,
+        "team_b": 5.6
+      },
+      "previous_market_odds": {
+        "team_a": 1.63,
+        "draw": 3.84,
+        "team_b": 5.6
+      },
+      "odds_movement": {
+        "team_a": 0.0,
+        "draw": 0.0,
+        "team_b": 0.0
+      },
+      "news": {
+        "team_a_absences": 0,
+        "team_b_absences": 1,
+        "team_a_rest_days": 5,
+        "team_b_rest_days": 4,
+        "team_a_motivation": 0.6,
+        "team_b_motivation": 0.57,
+        "headlines": [
+          "Croatia recent form index: 0.66.",
+          "Ghana recent form index: 0.49.",
+          "No verified live injury feed connected yet; using local signal cache."
+        ]
+      },
+      "bookmaker_count": 3,
+      "bookmakers": [
+        "FanDuel",
+        "Pinnacle",
+        "DraftKings"
+      ],
+      "bookmaker_prices": [
+        {
+          "bookmaker": "FanDuel",
+          "updated_at": "2026-06-11T14:20:50Z",
+          "team_a": 1.62,
+          "draw": 3.9,
+          "team_b": 5.8
+        },
+        {
+          "bookmaker": "Pinnacle",
+          "updated_at": "2026-06-11T14:20:51Z",
+          "team_a": 1.6,
+          "draw": 3.78,
+          "team_b": 5.51
+        },
+        {
+          "bookmaker": "DraftKings",
+          "updated_at": "2026-06-11T14:20:49Z",
+          "team_a": 1.67,
+          "draw": 3.85,
+          "team_b": 5.5
+        }
+      ],
+      "goal_market": {
+        "source": "The Odds API totals aggregate",
+        "bookmaker_count": 1,
+        "bookmakers": [
+          "Pinnacle"
+        ],
+        "line": 2.25,
+        "over": 1.79,
+        "under": 2.01,
+        "total_goals": 2.793,
+        "updated_at": "2026-06-11T14:20:51Z"
+      },
+      "last_bookmaker_update": "2026-06-11T14:20:51Z"
+    }
+  }
+}

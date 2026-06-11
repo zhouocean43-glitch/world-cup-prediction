@@ -1,0 +1,5470 @@
+{
+  "version": "champion-futures-v1",
+  "items": {
+    "runs=12:seed=123": {
+      "runs": 12,
+      "seed": 123,
+      "format": "demo_48_team_world_cup_top2_plus_8_thirds",
+      "note": "Demo bracket mapping. Replace with official fixture/bracket provider for production.",
+      "probabilities": [
+        {
+          "team": "Argentina",
+          "code": "ARG",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.8333,
+          "quarterfinal": 0.6667,
+          "semifinal": 0.5833,
+          "final": 0.5,
+          "champion": 0.3333
+        },
+        {
+          "team": "France",
+          "code": "FRA",
+          "round_of_32": 0.9167,
+          "round_of_16": 0.5833,
+          "quarterfinal": 0.4167,
+          "semifinal": 0.4167,
+          "final": 0.25,
+          "champion": 0.1667
+        },
+        {
+          "team": "Brazil",
+          "code": "BRA",
+          "round_of_32": 1.0,
+          "round_of_16": 0.6667,
+          "quarterfinal": 0.3333,
+          "semifinal": 0.1667,
+          "final": 0.1667,
+          "champion": 0.0833
+        },
+        {
+          "team": "Morocco",
+          "code": "MAR",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.5,
+          "quarterfinal": 0.25,
+          "semifinal": 0.1667,
+          "final": 0.0833,
+          "champion": 0.0833
+        },
+        {
+          "team": "Germany",
+          "code": "GER",
+          "round_of_32": 1.0,
+          "round_of_16": 0.6667,
+          "quarterfinal": 0.4167,
+          "semifinal": 0.25,
+          "final": 0.1667,
+          "champion": 0.0833
+        },
+        {
+          "team": "Spain",
+          "code": "ESP",
+          "round_of_32": 0.9167,
+          "round_of_16": 0.75,
+          "quarterfinal": 0.5,
+          "semifinal": 0.25,
+          "final": 0.0833,
+          "champion": 0.0833
+        },
+        {
+          "team": "Uruguay",
+          "code": "URU",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.4167,
+          "quarterfinal": 0.25,
+          "semifinal": 0.1667,
+          "final": 0.0833,
+          "champion": 0.0833
+        },
+        {
+          "team": "Portugal",
+          "code": "POR",
+          "round_of_32": 1.0,
+          "round_of_16": 0.5833,
+          "quarterfinal": 0.4167,
+          "semifinal": 0.25,
+          "final": 0.1667,
+          "champion": 0.0833
+        },
+        {
+          "team": "Mexico",
+          "code": "MEX",
+          "round_of_32": 0.75,
+          "round_of_16": 0.4167,
+          "quarterfinal": 0.25,
+          "semifinal": 0.1667,
+          "final": 0.0833,
+          "champion": 0.0
+        },
+        {
+          "team": "South Africa",
+          "code": "RSA",
+          "round_of_32": 0.4167,
+          "round_of_16": 0.0,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Korea Republic",
+          "code": "KOR",
+          "round_of_32": 0.6667,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0833,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Czechia",
+          "code": "CZE",
+          "round_of_32": 0.9167,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Canada",
+          "code": "CAN",
+          "round_of_32": 0.5,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "code": "BIH",
+          "round_of_32": 0.6667,
+          "round_of_16": 0.0,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Qatar",
+          "code": "QAT",
+          "round_of_32": 0.3333,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Switzerland",
+          "code": "SUI",
+          "round_of_32": 1.0,
+          "round_of_16": 0.5,
+          "quarterfinal": 0.25,
+          "semifinal": 0.1667,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Haiti",
+          "code": "HTI",
+          "round_of_32": 0.25,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Scotland",
+          "code": "SCO",
+          "round_of_32": 0.6667,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "United States",
+          "code": "USA",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.5,
+          "quarterfinal": 0.1667,
+          "semifinal": 0.1667,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Paraguay",
+          "code": "PAR",
+          "round_of_32": 0.75,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.1667,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Australia",
+          "code": "AUS",
+          "round_of_32": 0.5833,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0833,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Türkiye",
+          "code": "TUR",
+          "round_of_32": 0.4167,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Curaçao",
+          "code": "CUR",
+          "round_of_32": 0.4167,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Ivory Coast",
+          "code": "CIV",
+          "round_of_32": 0.75,
+          "round_of_16": 0.4167,
+          "quarterfinal": 0.25,
+          "semifinal": 0.0833,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Ecuador",
+          "code": "ECU",
+          "round_of_32": 0.3333,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Netherlands",
+          "code": "NED",
+          "round_of_32": 1.0,
+          "round_of_16": 0.75,
+          "quarterfinal": 0.5,
+          "semifinal": 0.1667,
+          "final": 0.0833,
+          "champion": 0.0
+        },
+        {
+          "team": "Japan",
+          "code": "JPN",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.4167,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Sweden",
+          "code": "SWE",
+          "round_of_32": 0.4167,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Tunisia",
+          "code": "TUN",
+          "round_of_32": 0.75,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Belgium",
+          "code": "BEL",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.75,
+          "quarterfinal": 0.4167,
+          "semifinal": 0.1667,
+          "final": 0.1667,
+          "champion": 0.0
+        },
+        {
+          "team": "Egypt",
+          "code": "EGY",
+          "round_of_32": 0.75,
+          "round_of_16": 0.5,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0833,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Iran",
+          "code": "IRN",
+          "round_of_32": 0.75,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.1667,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "New Zealand",
+          "code": "NZL",
+          "round_of_32": 0.5,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.1667,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Cape Verde",
+          "code": "CPV",
+          "round_of_32": 0.3333,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Saudi Arabia",
+          "code": "KSA",
+          "round_of_32": 0.4167,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.25,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Senegal",
+          "code": "SEN",
+          "round_of_32": 0.8333,
+          "round_of_16": 0.3333,
+          "quarterfinal": 0.1667,
+          "semifinal": 0.0833,
+          "final": 0.0833,
+          "champion": 0.0
+        },
+        {
+          "team": "Iraq",
+          "code": "IRQ",
+          "round_of_32": 0.5,
+          "round_of_16": 0.3333,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0833,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Norway",
+          "code": "NOR",
+          "round_of_32": 0.3333,
+          "round_of_16": 0.3333,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0833,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Algeria",
+          "code": "ALG",
+          "round_of_32": 0.5833,
+          "round_of_16": 0.3333,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Austria",
+          "code": "AUT",
+          "round_of_32": 0.5833,
+          "round_of_16": 0.25,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Jordan",
+          "code": "JOR",
+          "round_of_32": 0.5,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Congo DR",
+          "code": "COD",
+          "round_of_32": 0.5833,
+          "round_of_16": 0.1667,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Uzbekistan",
+          "code": "UZB",
+          "round_of_32": 0.25,
+          "round_of_16": 0.0,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Colombia",
+          "code": "COL",
+          "round_of_32": 0.9167,
+          "round_of_16": 0.5833,
+          "quarterfinal": 0.3333,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "England",
+          "code": "ENG",
+          "round_of_32": 1.0,
+          "round_of_16": 0.75,
+          "quarterfinal": 0.3333,
+          "semifinal": 0.25,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Croatia",
+          "code": "CRO",
+          "round_of_32": 0.9167,
+          "round_of_16": 0.4167,
+          "quarterfinal": 0.25,
+          "semifinal": 0.0833,
+          "final": 0.0833,
+          "champion": 0.0
+        },
+        {
+          "team": "Ghana",
+          "code": "GHA",
+          "round_of_32": 0.3333,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0833,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Panama",
+          "code": "PAN",
+          "round_of_32": 0.5,
+          "round_of_16": 0.0833,
+          "quarterfinal": 0.0,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        }
+      ],
+      "sample_group_tables": {
+        "A": [
+          {
+            "team": "KOR",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Korea Republic"
+          },
+          {
+            "team": "CZE",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 5,
+            "goal_difference": 2,
+            "team_name": "Czechia"
+          },
+          {
+            "team": "MEX",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 2,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Mexico"
+          },
+          {
+            "team": "RSA",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "South Africa"
+          }
+        ],
+        "B": [
+          {
+            "team": "SUI",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 9,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 7,
+            "team_name": "Switzerland"
+          },
+          {
+            "team": "CAN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Canada"
+          },
+          {
+            "team": "QAT",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 4,
+            "points": 3,
+            "goal_difference": -3,
+            "team_name": "Qatar"
+          },
+          {
+            "team": "BIH",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 3,
+            "goal_difference": -4,
+            "team_name": "Bosnia and Herzegovina"
+          }
+        ],
+        "C": [
+          {
+            "team": "BRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 3,
+            "team_name": "Brazil"
+          },
+          {
+            "team": "HTI",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 1,
+            "goals_against": 0,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Haiti"
+          },
+          {
+            "team": "MAR",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 3,
+            "goal_difference": 0,
+            "team_name": "Morocco"
+          },
+          {
+            "team": "SCO",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 0,
+            "goals_against": 4,
+            "points": 1,
+            "goal_difference": -4,
+            "team_name": "Scotland"
+          }
+        ],
+        "D": [
+          {
+            "team": "USA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "United States"
+          },
+          {
+            "team": "AUS",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Australia"
+          },
+          {
+            "team": "TUR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 5,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Türkiye"
+          },
+          {
+            "team": "PAR",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 0,
+            "goals_against": 3,
+            "points": 0,
+            "goal_difference": -3,
+            "team_name": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "team": "GER",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 6,
+            "team_name": "Germany"
+          },
+          {
+            "team": "CIV",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 5,
+            "points": 6,
+            "goal_difference": -1,
+            "team_name": "Ivory Coast"
+          },
+          {
+            "team": "CUR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Curaçao"
+          },
+          {
+            "team": "ECU",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 0,
+            "goal_difference": -4,
+            "team_name": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "team": "NED",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 1,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Netherlands"
+          },
+          {
+            "team": "JPN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Japan"
+          },
+          {
+            "team": "TUN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Tunisia"
+          },
+          {
+            "team": "SWE",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 7,
+            "points": 1,
+            "goal_difference": -5,
+            "team_name": "Sweden"
+          }
+        ],
+        "G": [
+          {
+            "team": "BEL",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 5,
+            "goal_difference": 2,
+            "team_name": "Belgium"
+          },
+          {
+            "team": "IRN",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 5,
+            "goal_difference": 2,
+            "team_name": "Iran"
+          },
+          {
+            "team": "EGY",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Egypt"
+          },
+          {
+            "team": "NZL",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 7,
+            "points": 0,
+            "goal_difference": -5,
+            "team_name": "New Zealand"
+          }
+        ],
+        "H": [
+          {
+            "team": "URU",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 1,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Uruguay"
+          },
+          {
+            "team": "ESP",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 5,
+            "team_name": "Spain"
+          },
+          {
+            "team": "CPV",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 3,
+            "goal_difference": -4,
+            "team_name": "Cape Verde"
+          },
+          {
+            "team": "KSA",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -5,
+            "team_name": "Saudi Arabia"
+          }
+        ],
+        "I": [
+          {
+            "team": "FRA",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 1,
+            "points": 9,
+            "goal_difference": 6,
+            "team_name": "France"
+          },
+          {
+            "team": "SEN",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 5,
+            "points": 6,
+            "goal_difference": 0,
+            "team_name": "Senegal"
+          },
+          {
+            "team": "NOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": -3,
+            "team_name": "Norway"
+          },
+          {
+            "team": "IRQ",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 0,
+            "goal_difference": -3,
+            "team_name": "Iraq"
+          }
+        ],
+        "J": [
+          {
+            "team": "JOR",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 8,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 6,
+            "team_name": "Jordan"
+          },
+          {
+            "team": "AUT",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Austria"
+          },
+          {
+            "team": "ALG",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 7,
+            "points": 4,
+            "goal_difference": -3,
+            "team_name": "Algeria"
+          },
+          {
+            "team": "ARG",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 0,
+            "goal_difference": -4,
+            "team_name": "Argentina"
+          }
+        ],
+        "K": [
+          {
+            "team": "COL",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 5,
+            "team_name": "Colombia"
+          },
+          {
+            "team": "POR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Portugal"
+          },
+          {
+            "team": "UZB",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Uzbekistan"
+          },
+          {
+            "team": "COD",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 0,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -5,
+            "team_name": "Congo DR"
+          }
+        ],
+        "L": [
+          {
+            "team": "CRO",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 10,
+            "goals_against": 2,
+            "points": 9,
+            "goal_difference": 8,
+            "team_name": "Croatia"
+          },
+          {
+            "team": "ENG",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 4,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "England"
+          },
+          {
+            "team": "GHA",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 6,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": 1,
+            "team_name": "Ghana"
+          },
+          {
+            "team": "PAN",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 1,
+            "goals_against": 14,
+            "points": 0,
+            "goal_difference": -13,
+            "team_name": "Panama"
+          }
+        ]
+      },
+      "cache_key": "runs=12:seed=123",
+      "cached": false,
+      "generated_at": "2026-06-11T14:43:44Z"
+    },
+    "runs=1200:seed=42": {
+      "runs": 1200,
+      "seed": 42,
+      "format": "demo_48_team_world_cup_top2_plus_8_thirds",
+      "note": "Demo bracket mapping. Replace with official fixture/bracket provider for production.",
+      "probabilities": [
+        {
+          "team": "Argentina",
+          "code": "ARG",
+          "round_of_32": 0.9692,
+          "round_of_16": 0.7783,
+          "quarterfinal": 0.5317,
+          "semifinal": 0.3483,
+          "final": 0.2358,
+          "champion": 0.1517
+        },
+        {
+          "team": "Spain",
+          "code": "ESP",
+          "round_of_32": 0.9492,
+          "round_of_16": 0.7392,
+          "quarterfinal": 0.5283,
+          "semifinal": 0.36,
+          "final": 0.2283,
+          "champion": 0.135
+        },
+        {
+          "team": "France",
+          "code": "FRA",
+          "round_of_32": 0.9483,
+          "round_of_16": 0.7275,
+          "quarterfinal": 0.4567,
+          "semifinal": 0.2975,
+          "final": 0.1925,
+          "champion": 0.1267
+        },
+        {
+          "team": "England",
+          "code": "ENG",
+          "round_of_32": 0.9508,
+          "round_of_16": 0.6808,
+          "quarterfinal": 0.4283,
+          "semifinal": 0.255,
+          "final": 0.1442,
+          "champion": 0.0917
+        },
+        {
+          "team": "Brazil",
+          "code": "BRA",
+          "round_of_32": 0.9492,
+          "round_of_16": 0.6692,
+          "quarterfinal": 0.4475,
+          "semifinal": 0.285,
+          "final": 0.1642,
+          "champion": 0.09
+        },
+        {
+          "team": "Netherlands",
+          "code": "NED",
+          "round_of_32": 0.8942,
+          "round_of_16": 0.6283,
+          "quarterfinal": 0.41,
+          "semifinal": 0.2375,
+          "final": 0.1417,
+          "champion": 0.0675
+        },
+        {
+          "team": "Portugal",
+          "code": "POR",
+          "round_of_32": 0.9392,
+          "round_of_16": 0.6217,
+          "quarterfinal": 0.385,
+          "semifinal": 0.2167,
+          "final": 0.1167,
+          "champion": 0.065
+        },
+        {
+          "team": "Germany",
+          "code": "GER",
+          "round_of_32": 0.9092,
+          "round_of_16": 0.5833,
+          "quarterfinal": 0.3217,
+          "semifinal": 0.1675,
+          "final": 0.0883,
+          "champion": 0.0408
+        },
+        {
+          "team": "Uruguay",
+          "code": "URU",
+          "round_of_32": 0.8508,
+          "round_of_16": 0.5533,
+          "quarterfinal": 0.3275,
+          "semifinal": 0.1525,
+          "final": 0.0775,
+          "champion": 0.0408
+        },
+        {
+          "team": "Belgium",
+          "code": "BEL",
+          "round_of_32": 0.8967,
+          "round_of_16": 0.5742,
+          "quarterfinal": 0.2925,
+          "semifinal": 0.1717,
+          "final": 0.09,
+          "champion": 0.0383
+        },
+        {
+          "team": "Croatia",
+          "code": "CRO",
+          "round_of_32": 0.835,
+          "round_of_16": 0.455,
+          "quarterfinal": 0.2217,
+          "semifinal": 0.0975,
+          "final": 0.0442,
+          "champion": 0.0158
+        },
+        {
+          "team": "Colombia",
+          "code": "COL",
+          "round_of_32": 0.8425,
+          "round_of_16": 0.4533,
+          "quarterfinal": 0.2375,
+          "semifinal": 0.1133,
+          "final": 0.045,
+          "champion": 0.015
+        },
+        {
+          "team": "Morocco",
+          "code": "MAR",
+          "round_of_32": 0.8275,
+          "round_of_16": 0.4375,
+          "quarterfinal": 0.23,
+          "semifinal": 0.105,
+          "final": 0.0508,
+          "champion": 0.0142
+        },
+        {
+          "team": "Mexico",
+          "code": "MEX",
+          "round_of_32": 0.8225,
+          "round_of_16": 0.415,
+          "quarterfinal": 0.2025,
+          "semifinal": 0.0983,
+          "final": 0.0333,
+          "champion": 0.0133
+        },
+        {
+          "team": "United States",
+          "code": "USA",
+          "round_of_32": 0.8367,
+          "round_of_16": 0.4408,
+          "quarterfinal": 0.2175,
+          "semifinal": 0.1058,
+          "final": 0.0383,
+          "champion": 0.0117
+        },
+        {
+          "team": "Japan",
+          "code": "JPN",
+          "round_of_32": 0.7225,
+          "round_of_16": 0.39,
+          "quarterfinal": 0.1958,
+          "semifinal": 0.0875,
+          "final": 0.0333,
+          "champion": 0.0117
+        },
+        {
+          "team": "Switzerland",
+          "code": "SUI",
+          "round_of_32": 0.82,
+          "round_of_16": 0.3908,
+          "quarterfinal": 0.1925,
+          "semifinal": 0.0892,
+          "final": 0.0308,
+          "champion": 0.01
+        },
+        {
+          "team": "Senegal",
+          "code": "SEN",
+          "round_of_32": 0.6967,
+          "round_of_16": 0.3542,
+          "quarterfinal": 0.155,
+          "semifinal": 0.0583,
+          "final": 0.0208,
+          "champion": 0.0067
+        },
+        {
+          "team": "Korea Republic",
+          "code": "KOR",
+          "round_of_32": 0.72,
+          "round_of_16": 0.295,
+          "quarterfinal": 0.1142,
+          "semifinal": 0.0458,
+          "final": 0.0192,
+          "champion": 0.0058
+        },
+        {
+          "team": "Ecuador",
+          "code": "ECU",
+          "round_of_32": 0.7483,
+          "round_of_16": 0.3608,
+          "quarterfinal": 0.165,
+          "semifinal": 0.0725,
+          "final": 0.0192,
+          "champion": 0.005
+        },
+        {
+          "team": "Norway",
+          "code": "NOR",
+          "round_of_32": 0.6775,
+          "round_of_16": 0.335,
+          "quarterfinal": 0.1517,
+          "semifinal": 0.0633,
+          "final": 0.025,
+          "champion": 0.005
+        },
+        {
+          "team": "Czechia",
+          "code": "CZE",
+          "round_of_32": 0.7058,
+          "round_of_16": 0.2883,
+          "quarterfinal": 0.1175,
+          "semifinal": 0.0442,
+          "final": 0.015,
+          "champion": 0.0042
+        },
+        {
+          "team": "Canada",
+          "code": "CAN",
+          "round_of_32": 0.7233,
+          "round_of_16": 0.285,
+          "quarterfinal": 0.115,
+          "semifinal": 0.0408,
+          "final": 0.0133,
+          "champion": 0.0042
+        },
+        {
+          "team": "Scotland",
+          "code": "SCO",
+          "round_of_32": 0.5975,
+          "round_of_16": 0.2267,
+          "quarterfinal": 0.0917,
+          "semifinal": 0.0358,
+          "final": 0.0108,
+          "champion": 0.0042
+        },
+        {
+          "team": "Sweden",
+          "code": "SWE",
+          "round_of_32": 0.585,
+          "round_of_16": 0.2558,
+          "quarterfinal": 0.1242,
+          "semifinal": 0.0433,
+          "final": 0.0158,
+          "champion": 0.0042
+        },
+        {
+          "team": "Türkiye",
+          "code": "TUR",
+          "round_of_32": 0.6292,
+          "round_of_16": 0.24,
+          "quarterfinal": 0.0958,
+          "semifinal": 0.0283,
+          "final": 0.0092,
+          "champion": 0.0025
+        },
+        {
+          "team": "Ivory Coast",
+          "code": "CIV",
+          "round_of_32": 0.6808,
+          "round_of_16": 0.3042,
+          "quarterfinal": 0.1267,
+          "semifinal": 0.0508,
+          "final": 0.0083,
+          "champion": 0.0025
+        },
+        {
+          "team": "Iran",
+          "code": "IRN",
+          "round_of_32": 0.7033,
+          "round_of_16": 0.2867,
+          "quarterfinal": 0.0967,
+          "semifinal": 0.0375,
+          "final": 0.0092,
+          "champion": 0.0025
+        },
+        {
+          "team": "Austria",
+          "code": "AUT",
+          "round_of_32": 0.6942,
+          "round_of_16": 0.3233,
+          "quarterfinal": 0.1358,
+          "semifinal": 0.0533,
+          "final": 0.0142,
+          "champion": 0.0025
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "code": "BIH",
+          "round_of_32": 0.6517,
+          "round_of_16": 0.2258,
+          "quarterfinal": 0.0817,
+          "semifinal": 0.0333,
+          "final": 0.0092,
+          "champion": 0.0017
+        },
+        {
+          "team": "Australia",
+          "code": "AUS",
+          "round_of_32": 0.6692,
+          "round_of_16": 0.2808,
+          "quarterfinal": 0.0975,
+          "semifinal": 0.0283,
+          "final": 0.0075,
+          "champion": 0.0017
+        },
+        {
+          "team": "Tunisia",
+          "code": "TUN",
+          "round_of_32": 0.5125,
+          "round_of_16": 0.1975,
+          "quarterfinal": 0.0792,
+          "semifinal": 0.0208,
+          "final": 0.0067,
+          "champion": 0.0017
+        },
+        {
+          "team": "Egypt",
+          "code": "EGY",
+          "round_of_32": 0.6317,
+          "round_of_16": 0.2442,
+          "quarterfinal": 0.0867,
+          "semifinal": 0.0225,
+          "final": 0.0067,
+          "champion": 0.0017
+        },
+        {
+          "team": "Saudi Arabia",
+          "code": "KSA",
+          "round_of_32": 0.3975,
+          "round_of_16": 0.1392,
+          "quarterfinal": 0.0408,
+          "semifinal": 0.0108,
+          "final": 0.0025,
+          "champion": 0.0017
+        },
+        {
+          "team": "Qatar",
+          "code": "QAT",
+          "round_of_32": 0.52,
+          "round_of_16": 0.1342,
+          "quarterfinal": 0.0442,
+          "semifinal": 0.0125,
+          "final": 0.0042,
+          "champion": 0.0008
+        },
+        {
+          "team": "Paraguay",
+          "code": "PAR",
+          "round_of_32": 0.5767,
+          "round_of_16": 0.1983,
+          "quarterfinal": 0.0617,
+          "semifinal": 0.0217,
+          "final": 0.0058,
+          "champion": 0.0008
+        },
+        {
+          "team": "Congo DR",
+          "code": "COD",
+          "round_of_32": 0.4708,
+          "round_of_16": 0.1533,
+          "quarterfinal": 0.0333,
+          "semifinal": 0.01,
+          "final": 0.0025,
+          "champion": 0.0008
+        },
+        {
+          "team": "Panama",
+          "code": "PAN",
+          "round_of_32": 0.4208,
+          "round_of_16": 0.1492,
+          "quarterfinal": 0.0358,
+          "semifinal": 0.0083,
+          "final": 0.0033,
+          "champion": 0.0008
+        },
+        {
+          "team": "South Africa",
+          "code": "RSA",
+          "round_of_32": 0.4617,
+          "round_of_16": 0.105,
+          "quarterfinal": 0.02,
+          "semifinal": 0.0058,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Haiti",
+          "code": "HTI",
+          "round_of_32": 0.2767,
+          "round_of_16": 0.0508,
+          "quarterfinal": 0.0108,
+          "semifinal": 0.0042,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Curaçao",
+          "code": "CUR",
+          "round_of_32": 0.3508,
+          "round_of_16": 0.0842,
+          "quarterfinal": 0.015,
+          "semifinal": 0.0008,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "New Zealand",
+          "code": "NZL",
+          "round_of_32": 0.4542,
+          "round_of_16": 0.13,
+          "quarterfinal": 0.045,
+          "semifinal": 0.0058,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Cape Verde",
+          "code": "CPV",
+          "round_of_32": 0.4058,
+          "round_of_16": 0.1433,
+          "quarterfinal": 0.0417,
+          "semifinal": 0.0075,
+          "final": 0.0033,
+          "champion": 0.0
+        },
+        {
+          "team": "Iraq",
+          "code": "IRQ",
+          "round_of_32": 0.3533,
+          "round_of_16": 0.1067,
+          "quarterfinal": 0.0283,
+          "semifinal": 0.0117,
+          "final": 0.005,
+          "champion": 0.0
+        },
+        {
+          "team": "Algeria",
+          "code": "ALG",
+          "round_of_32": 0.5583,
+          "round_of_16": 0.2267,
+          "quarterfinal": 0.0792,
+          "semifinal": 0.0167,
+          "final": 0.0025,
+          "champion": 0.0
+        },
+        {
+          "team": "Jordan",
+          "code": "JOR",
+          "round_of_32": 0.3625,
+          "round_of_16": 0.1108,
+          "quarterfinal": 0.03,
+          "semifinal": 0.0092,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Uzbekistan",
+          "code": "UZB",
+          "round_of_32": 0.3783,
+          "round_of_16": 0.1058,
+          "quarterfinal": 0.0258,
+          "semifinal": 0.0025,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Ghana",
+          "code": "GHA",
+          "round_of_32": 0.4225,
+          "round_of_16": 0.1208,
+          "quarterfinal": 0.0275,
+          "semifinal": 0.005,
+          "final": 0.0025,
+          "champion": 0.0
+        }
+      ],
+      "sample_group_tables": {
+        "A": [
+          {
+            "team": "KOR",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Korea Republic"
+          },
+          {
+            "team": "MEX",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 1,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Mexico"
+          },
+          {
+            "team": "RSA",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 3,
+            "goal_difference": -1,
+            "team_name": "South Africa"
+          },
+          {
+            "team": "CZE",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 0,
+            "goals_against": 5,
+            "points": 0,
+            "goal_difference": -5,
+            "team_name": "Czechia"
+          }
+        ],
+        "B": [
+          {
+            "team": "SUI",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 5,
+            "goal_difference": 2,
+            "team_name": "Switzerland"
+          },
+          {
+            "team": "QAT",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Qatar"
+          },
+          {
+            "team": "CAN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Canada"
+          },
+          {
+            "team": "BIH",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -4,
+            "team_name": "Bosnia and Herzegovina"
+          }
+        ],
+        "C": [
+          {
+            "team": "SCO",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Scotland"
+          },
+          {
+            "team": "MAR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Morocco"
+          },
+          {
+            "team": "BRA",
+            "played": 3,
+            "wins": 0,
+            "draws": 3,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 3,
+            "goal_difference": 0,
+            "team_name": "Brazil"
+          },
+          {
+            "team": "HTI",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Haiti"
+          }
+        ],
+        "D": [
+          {
+            "team": "PAR",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 9,
+            "goals_against": 2,
+            "points": 9,
+            "goal_difference": 7,
+            "team_name": "Paraguay"
+          },
+          {
+            "team": "TUR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "Türkiye"
+          },
+          {
+            "team": "AUS",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 0,
+            "goals_against": 3,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Australia"
+          },
+          {
+            "team": "USA",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 12,
+            "points": 1,
+            "goal_difference": -8,
+            "team_name": "United States"
+          }
+        ],
+        "E": [
+          {
+            "team": "ECU",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Ecuador"
+          },
+          {
+            "team": "GER",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 3,
+            "team_name": "Germany"
+          },
+          {
+            "team": "CIV",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Ivory Coast"
+          },
+          {
+            "team": "CUR",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 7,
+            "points": 3,
+            "goal_difference": -4,
+            "team_name": "Curaçao"
+          }
+        ],
+        "F": [
+          {
+            "team": "NED",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 5,
+            "team_name": "Netherlands"
+          },
+          {
+            "team": "JPN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 6,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Japan"
+          },
+          {
+            "team": "TUN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Tunisia"
+          },
+          {
+            "team": "SWE",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 5,
+            "goals_against": 8,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Sweden"
+          }
+        ],
+        "G": [
+          {
+            "team": "BEL",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 8,
+            "goals_against": 4,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Belgium"
+          },
+          {
+            "team": "IRN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Iran"
+          },
+          {
+            "team": "EGY",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 6,
+            "points": 3,
+            "goal_difference": -2,
+            "team_name": "Egypt"
+          },
+          {
+            "team": "NZL",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 5,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "New Zealand"
+          }
+        ],
+        "H": [
+          {
+            "team": "URU",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 0,
+            "points": 9,
+            "goal_difference": 4,
+            "team_name": "Uruguay"
+          },
+          {
+            "team": "KSA",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Saudi Arabia"
+          },
+          {
+            "team": "ESP",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Spain"
+          },
+          {
+            "team": "CPV",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 4,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Cape Verde"
+          }
+        ],
+        "I": [
+          {
+            "team": "FRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 3,
+            "team_name": "France"
+          },
+          {
+            "team": "IRQ",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 3,
+            "team_name": "Iraq"
+          },
+          {
+            "team": "NOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": 2,
+            "team_name": "Norway"
+          },
+          {
+            "team": "SEN",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 1,
+            "goals_against": 9,
+            "points": 0,
+            "goal_difference": -8,
+            "team_name": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "team": "ARG",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 1,
+            "points": 9,
+            "goal_difference": 5,
+            "team_name": "Argentina"
+          },
+          {
+            "team": "JOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Jordan"
+          },
+          {
+            "team": "ALG",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": -3,
+            "team_name": "Algeria"
+          },
+          {
+            "team": "AUT",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Austria"
+          }
+        ],
+        "K": [
+          {
+            "team": "POR",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 11,
+            "goals_against": 1,
+            "points": 9,
+            "goal_difference": 10,
+            "team_name": "Portugal"
+          },
+          {
+            "team": "COL",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 5,
+            "points": 4,
+            "goal_difference": 3,
+            "team_name": "Colombia"
+          },
+          {
+            "team": "COD",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 9,
+            "points": 4,
+            "goal_difference": -4,
+            "team_name": "Congo DR"
+          },
+          {
+            "team": "UZB",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 11,
+            "points": 0,
+            "goal_difference": -9,
+            "team_name": "Uzbekistan"
+          }
+        ],
+        "L": [
+          {
+            "team": "CRO",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Croatia"
+          },
+          {
+            "team": "ENG",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "England"
+          },
+          {
+            "team": "GHA",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Ghana"
+          },
+          {
+            "team": "PAN",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -2,
+            "team_name": "Panama"
+          }
+        ]
+      },
+      "cache_key": "runs=1200:seed=42",
+      "cached": false,
+      "generated_at": "2026-06-11T13:20:39Z"
+    },
+    "runs=1200:seed=84065": {
+      "runs": 1200,
+      "seed": 84065,
+      "format": "demo_48_team_world_cup_top2_plus_8_thirds",
+      "note": "Demo bracket mapping. Replace with official fixture/bracket provider for production.",
+      "probabilities": [
+        {
+          "team": "Argentina",
+          "code": "ARG",
+          "round_of_32": 0.9742,
+          "round_of_16": 0.79,
+          "quarterfinal": 0.5475,
+          "semifinal": 0.3733,
+          "final": 0.2458,
+          "champion": 0.1808
+        },
+        {
+          "team": "Spain",
+          "code": "ESP",
+          "round_of_32": 0.9542,
+          "round_of_16": 0.7558,
+          "quarterfinal": 0.5783,
+          "semifinal": 0.3817,
+          "final": 0.2325,
+          "champion": 0.1275
+        },
+        {
+          "team": "France",
+          "code": "FRA",
+          "round_of_32": 0.9383,
+          "round_of_16": 0.6958,
+          "quarterfinal": 0.44,
+          "semifinal": 0.29,
+          "final": 0.185,
+          "champion": 0.1117
+        },
+        {
+          "team": "Brazil",
+          "code": "BRA",
+          "round_of_32": 0.9425,
+          "round_of_16": 0.6592,
+          "quarterfinal": 0.47,
+          "semifinal": 0.3142,
+          "final": 0.185,
+          "champion": 0.095
+        },
+        {
+          "team": "England",
+          "code": "ENG",
+          "round_of_32": 0.9425,
+          "round_of_16": 0.6917,
+          "quarterfinal": 0.4425,
+          "semifinal": 0.2633,
+          "final": 0.1583,
+          "champion": 0.0842
+        },
+        {
+          "team": "Netherlands",
+          "code": "NED",
+          "round_of_32": 0.895,
+          "round_of_16": 0.6192,
+          "quarterfinal": 0.3942,
+          "semifinal": 0.2283,
+          "final": 0.1267,
+          "champion": 0.065
+        },
+        {
+          "team": "Portugal",
+          "code": "POR",
+          "round_of_32": 0.9425,
+          "round_of_16": 0.6233,
+          "quarterfinal": 0.3642,
+          "semifinal": 0.2092,
+          "final": 0.1108,
+          "champion": 0.0583
+        },
+        {
+          "team": "Uruguay",
+          "code": "URU",
+          "round_of_32": 0.8642,
+          "round_of_16": 0.5508,
+          "quarterfinal": 0.3242,
+          "semifinal": 0.1608,
+          "final": 0.08,
+          "champion": 0.0367
+        },
+        {
+          "team": "Germany",
+          "code": "GER",
+          "round_of_32": 0.8983,
+          "round_of_16": 0.5783,
+          "quarterfinal": 0.3292,
+          "semifinal": 0.1733,
+          "final": 0.0908,
+          "champion": 0.0358
+        },
+        {
+          "team": "Belgium",
+          "code": "BEL",
+          "round_of_32": 0.8992,
+          "round_of_16": 0.5708,
+          "quarterfinal": 0.2992,
+          "semifinal": 0.1625,
+          "final": 0.0758,
+          "champion": 0.0317
+        },
+        {
+          "team": "Colombia",
+          "code": "COL",
+          "round_of_32": 0.835,
+          "round_of_16": 0.4583,
+          "quarterfinal": 0.2392,
+          "semifinal": 0.1175,
+          "final": 0.0475,
+          "champion": 0.025
+        },
+        {
+          "team": "Morocco",
+          "code": "MAR",
+          "round_of_32": 0.8058,
+          "round_of_16": 0.4258,
+          "quarterfinal": 0.225,
+          "semifinal": 0.11,
+          "final": 0.0467,
+          "champion": 0.0175
+        },
+        {
+          "team": "Croatia",
+          "code": "CRO",
+          "round_of_32": 0.8508,
+          "round_of_16": 0.4867,
+          "quarterfinal": 0.2458,
+          "semifinal": 0.1158,
+          "final": 0.0475,
+          "champion": 0.0175
+        },
+        {
+          "team": "United States",
+          "code": "USA",
+          "round_of_32": 0.8217,
+          "round_of_16": 0.4075,
+          "quarterfinal": 0.1817,
+          "semifinal": 0.07,
+          "final": 0.0292,
+          "champion": 0.0117
+        },
+        {
+          "team": "Japan",
+          "code": "JPN",
+          "round_of_32": 0.715,
+          "round_of_16": 0.3925,
+          "quarterfinal": 0.1975,
+          "semifinal": 0.0808,
+          "final": 0.0267,
+          "champion": 0.0117
+        },
+        {
+          "team": "Senegal",
+          "code": "SEN",
+          "round_of_32": 0.7117,
+          "round_of_16": 0.3767,
+          "quarterfinal": 0.1642,
+          "semifinal": 0.0608,
+          "final": 0.0208,
+          "champion": 0.0117
+        },
+        {
+          "team": "Mexico",
+          "code": "MEX",
+          "round_of_32": 0.8175,
+          "round_of_16": 0.4167,
+          "quarterfinal": 0.215,
+          "semifinal": 0.1017,
+          "final": 0.0367,
+          "champion": 0.0108
+        },
+        {
+          "team": "Ecuador",
+          "code": "ECU",
+          "round_of_32": 0.7367,
+          "round_of_16": 0.3825,
+          "quarterfinal": 0.1683,
+          "semifinal": 0.0667,
+          "final": 0.0283,
+          "champion": 0.0092
+        },
+        {
+          "team": "Norway",
+          "code": "NOR",
+          "round_of_32": 0.655,
+          "round_of_16": 0.355,
+          "quarterfinal": 0.1442,
+          "semifinal": 0.0617,
+          "final": 0.025,
+          "champion": 0.0092
+        },
+        {
+          "team": "Canada",
+          "code": "CAN",
+          "round_of_32": 0.7075,
+          "round_of_16": 0.2633,
+          "quarterfinal": 0.0933,
+          "semifinal": 0.0325,
+          "final": 0.0167,
+          "champion": 0.0075
+        },
+        {
+          "team": "Switzerland",
+          "code": "SUI",
+          "round_of_32": 0.8217,
+          "round_of_16": 0.3783,
+          "quarterfinal": 0.2058,
+          "semifinal": 0.0892,
+          "final": 0.0392,
+          "champion": 0.0075
+        },
+        {
+          "team": "Korea Republic",
+          "code": "KOR",
+          "round_of_32": 0.7575,
+          "round_of_16": 0.3092,
+          "quarterfinal": 0.145,
+          "semifinal": 0.0617,
+          "final": 0.0192,
+          "champion": 0.0042
+        },
+        {
+          "team": "Czechia",
+          "code": "CZE",
+          "round_of_32": 0.6992,
+          "round_of_16": 0.2783,
+          "quarterfinal": 0.1067,
+          "semifinal": 0.0383,
+          "final": 0.0125,
+          "champion": 0.0033
+        },
+        {
+          "team": "Türkiye",
+          "code": "TUR",
+          "round_of_32": 0.6642,
+          "round_of_16": 0.2675,
+          "quarterfinal": 0.0967,
+          "semifinal": 0.0308,
+          "final": 0.0075,
+          "champion": 0.0033
+        },
+        {
+          "team": "Iran",
+          "code": "IRN",
+          "round_of_32": 0.7192,
+          "round_of_16": 0.31,
+          "quarterfinal": 0.0892,
+          "semifinal": 0.0283,
+          "final": 0.0092,
+          "champion": 0.0033
+        },
+        {
+          "team": "Austria",
+          "code": "AUT",
+          "round_of_32": 0.7375,
+          "round_of_16": 0.3442,
+          "quarterfinal": 0.1267,
+          "semifinal": 0.045,
+          "final": 0.015,
+          "champion": 0.0033
+        },
+        {
+          "team": "Scotland",
+          "code": "SCO",
+          "round_of_32": 0.6075,
+          "round_of_16": 0.1992,
+          "quarterfinal": 0.065,
+          "semifinal": 0.0183,
+          "final": 0.0033,
+          "champion": 0.0025
+        },
+        {
+          "team": "Australia",
+          "code": "AUS",
+          "round_of_32": 0.655,
+          "round_of_16": 0.2567,
+          "quarterfinal": 0.0933,
+          "semifinal": 0.0333,
+          "final": 0.0092,
+          "champion": 0.0025
+        },
+        {
+          "team": "Ivory Coast",
+          "code": "CIV",
+          "round_of_32": 0.675,
+          "round_of_16": 0.29,
+          "quarterfinal": 0.1133,
+          "semifinal": 0.0308,
+          "final": 0.0067,
+          "champion": 0.0025
+        },
+        {
+          "team": "Algeria",
+          "code": "ALG",
+          "round_of_32": 0.5508,
+          "round_of_16": 0.1967,
+          "quarterfinal": 0.0508,
+          "semifinal": 0.0217,
+          "final": 0.0042,
+          "champion": 0.0025
+        },
+        {
+          "team": "Saudi Arabia",
+          "code": "KSA",
+          "round_of_32": 0.3975,
+          "round_of_16": 0.1367,
+          "quarterfinal": 0.0517,
+          "semifinal": 0.0117,
+          "final": 0.0042,
+          "champion": 0.0017
+        },
+        {
+          "team": "Qatar",
+          "code": "QAT",
+          "round_of_32": 0.5233,
+          "round_of_16": 0.1408,
+          "quarterfinal": 0.0442,
+          "semifinal": 0.0142,
+          "final": 0.0058,
+          "champion": 0.0008
+        },
+        {
+          "team": "Paraguay",
+          "code": "PAR",
+          "round_of_32": 0.58,
+          "round_of_16": 0.2117,
+          "quarterfinal": 0.0742,
+          "semifinal": 0.0142,
+          "final": 0.0025,
+          "champion": 0.0008
+        },
+        {
+          "team": "Sweden",
+          "code": "SWE",
+          "round_of_32": 0.5708,
+          "round_of_16": 0.2758,
+          "quarterfinal": 0.1108,
+          "semifinal": 0.0375,
+          "final": 0.0092,
+          "champion": 0.0008
+        },
+        {
+          "team": "Tunisia",
+          "code": "TUN",
+          "round_of_32": 0.49,
+          "round_of_16": 0.2042,
+          "quarterfinal": 0.0742,
+          "semifinal": 0.02,
+          "final": 0.005,
+          "champion": 0.0008
+        },
+        {
+          "team": "Iraq",
+          "code": "IRQ",
+          "round_of_32": 0.3592,
+          "round_of_16": 0.1192,
+          "quarterfinal": 0.0342,
+          "semifinal": 0.0108,
+          "final": 0.0042,
+          "champion": 0.0008
+        },
+        {
+          "team": "Panama",
+          "code": "PAN",
+          "round_of_32": 0.4483,
+          "round_of_16": 0.1117,
+          "quarterfinal": 0.0342,
+          "semifinal": 0.0075,
+          "final": 0.0025,
+          "champion": 0.0008
+        },
+        {
+          "team": "South Africa",
+          "code": "RSA",
+          "round_of_32": 0.4425,
+          "round_of_16": 0.1292,
+          "quarterfinal": 0.0358,
+          "semifinal": 0.0075,
+          "final": 0.0017,
+          "champion": 0.0
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "code": "BIH",
+          "round_of_32": 0.6525,
+          "round_of_16": 0.22,
+          "quarterfinal": 0.0758,
+          "semifinal": 0.0267,
+          "final": 0.005,
+          "champion": 0.0
+        },
+        {
+          "team": "Haiti",
+          "code": "HTI",
+          "round_of_32": 0.2883,
+          "round_of_16": 0.055,
+          "quarterfinal": 0.0142,
+          "semifinal": 0.0008,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Curaçao",
+          "code": "CUR",
+          "round_of_32": 0.3692,
+          "round_of_16": 0.1083,
+          "quarterfinal": 0.025,
+          "semifinal": 0.0033,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Egypt",
+          "code": "EGY",
+          "round_of_32": 0.6225,
+          "round_of_16": 0.23,
+          "quarterfinal": 0.0675,
+          "semifinal": 0.0242,
+          "final": 0.0067,
+          "champion": 0.0
+        },
+        {
+          "team": "New Zealand",
+          "code": "NZL",
+          "round_of_32": 0.43,
+          "round_of_16": 0.13,
+          "quarterfinal": 0.035,
+          "semifinal": 0.0075,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Cape Verde",
+          "code": "CPV",
+          "round_of_32": 0.4217,
+          "round_of_16": 0.1183,
+          "quarterfinal": 0.035,
+          "semifinal": 0.0075,
+          "final": 0.0025,
+          "champion": 0.0
+        },
+        {
+          "team": "Jordan",
+          "code": "JOR",
+          "round_of_32": 0.3433,
+          "round_of_16": 0.0942,
+          "quarterfinal": 0.0208,
+          "semifinal": 0.005,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Congo DR",
+          "code": "COD",
+          "round_of_32": 0.4658,
+          "round_of_16": 0.14,
+          "quarterfinal": 0.0417,
+          "semifinal": 0.0125,
+          "final": 0.0042,
+          "champion": 0.0
+        },
+        {
+          "team": "Uzbekistan",
+          "code": "UZB",
+          "round_of_32": 0.385,
+          "round_of_16": 0.1133,
+          "quarterfinal": 0.0292,
+          "semifinal": 0.0083,
+          "final": 0.0017,
+          "champion": 0.0
+        },
+        {
+          "team": "Ghana",
+          "code": "GHA",
+          "round_of_32": 0.415,
+          "round_of_16": 0.1317,
+          "quarterfinal": 0.0408,
+          "semifinal": 0.0092,
+          "final": 0.0017,
+          "champion": 0.0
+        }
+      ],
+      "sample_group_tables": {
+        "A": [
+          {
+            "team": "MEX",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 9,
+            "goals_against": 5,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Mexico"
+          },
+          {
+            "team": "CZE",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 7,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Czechia"
+          },
+          {
+            "team": "RSA",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 6,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "South Africa"
+          },
+          {
+            "team": "KOR",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 8,
+            "points": 1,
+            "goal_difference": -4,
+            "team_name": "Korea Republic"
+          }
+        ],
+        "B": [
+          {
+            "team": "SUI",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Switzerland"
+          },
+          {
+            "team": "BIH",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Bosnia and Herzegovina"
+          },
+          {
+            "team": "QAT",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Qatar"
+          },
+          {
+            "team": "CAN",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 5,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Canada"
+          }
+        ],
+        "C": [
+          {
+            "team": "MAR",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Morocco"
+          },
+          {
+            "team": "BRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 0,
+            "team_name": "Brazil"
+          },
+          {
+            "team": "HTI",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 3,
+            "goal_difference": -2,
+            "team_name": "Haiti"
+          },
+          {
+            "team": "SCO",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 0,
+            "goals_against": 2,
+            "points": 1,
+            "goal_difference": -2,
+            "team_name": "Scotland"
+          }
+        ],
+        "D": [
+          {
+            "team": "TUR",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 2,
+            "points": 9,
+            "goal_difference": 3,
+            "team_name": "Türkiye"
+          },
+          {
+            "team": "AUS",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "Australia"
+          },
+          {
+            "team": "USA",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 6,
+            "points": 3,
+            "goal_difference": -2,
+            "team_name": "United States"
+          },
+          {
+            "team": "PAR",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 7,
+            "points": 0,
+            "goal_difference": -5,
+            "team_name": "Paraguay"
+          }
+        ],
+        "E": [
+          {
+            "team": "ECU",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Ecuador"
+          },
+          {
+            "team": "GER",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 1,
+            "points": 5,
+            "goal_difference": 4,
+            "team_name": "Germany"
+          },
+          {
+            "team": "CIV",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 0,
+            "goals_against": 1,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Ivory Coast"
+          },
+          {
+            "team": "CUR",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -5,
+            "team_name": "Curaçao"
+          }
+        ],
+        "F": [
+          {
+            "team": "NED",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 6,
+            "team_name": "Netherlands"
+          },
+          {
+            "team": "TUN",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Tunisia"
+          },
+          {
+            "team": "JPN",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 4,
+            "points": 2,
+            "goal_difference": -3,
+            "team_name": "Japan"
+          },
+          {
+            "team": "SWE",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 7,
+            "points": 2,
+            "goal_difference": -4,
+            "team_name": "Sweden"
+          }
+        ],
+        "G": [
+          {
+            "team": "NZL",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 3,
+            "points": 7,
+            "goal_difference": 3,
+            "team_name": "New Zealand"
+          },
+          {
+            "team": "BEL",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 1,
+            "points": 5,
+            "goal_difference": 2,
+            "team_name": "Belgium"
+          },
+          {
+            "team": "EGY",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Egypt"
+          },
+          {
+            "team": "IRN",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 0,
+            "goal_difference": -4,
+            "team_name": "Iran"
+          }
+        ],
+        "H": [
+          {
+            "team": "ESP",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 9,
+            "goals_against": 4,
+            "points": 9,
+            "goal_difference": 5,
+            "team_name": "Spain"
+          },
+          {
+            "team": "URU",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": -1,
+            "team_name": "Uruguay"
+          },
+          {
+            "team": "CPV",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 5,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": 0,
+            "team_name": "Cape Verde"
+          },
+          {
+            "team": "KSA",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 5,
+            "goals_against": 9,
+            "points": 0,
+            "goal_difference": -4,
+            "team_name": "Saudi Arabia"
+          }
+        ],
+        "I": [
+          {
+            "team": "FRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 5,
+            "team_name": "France"
+          },
+          {
+            "team": "SEN",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 2,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Senegal"
+          },
+          {
+            "team": "NOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 6,
+            "points": 4,
+            "goal_difference": -3,
+            "team_name": "Norway"
+          },
+          {
+            "team": "IRQ",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 0,
+            "goals_against": 3,
+            "points": 0,
+            "goal_difference": -3,
+            "team_name": "Iraq"
+          }
+        ],
+        "J": [
+          {
+            "team": "ALG",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 0,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "Algeria"
+          },
+          {
+            "team": "ARG",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Argentina"
+          },
+          {
+            "team": "AUT",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 4,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Austria"
+          },
+          {
+            "team": "JOR",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 4,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Jordan"
+          }
+        ],
+        "K": [
+          {
+            "team": "POR",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 0,
+            "points": 9,
+            "goal_difference": 5,
+            "team_name": "Portugal"
+          },
+          {
+            "team": "UZB",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Uzbekistan"
+          },
+          {
+            "team": "COL",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 3,
+            "goal_difference": 2,
+            "team_name": "Colombia"
+          },
+          {
+            "team": "COD",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 7,
+            "points": 1,
+            "goal_difference": -6,
+            "team_name": "Congo DR"
+          }
+        ],
+        "L": [
+          {
+            "team": "CRO",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 4,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "Croatia"
+          },
+          {
+            "team": "ENG",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "England"
+          },
+          {
+            "team": "GHA",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 7,
+            "points": 4,
+            "goal_difference": -2,
+            "team_name": "Ghana"
+          },
+          {
+            "team": "PAN",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 10,
+            "points": 1,
+            "goal_difference": -6,
+            "team_name": "Panama"
+          }
+        ]
+      },
+      "cache_key": "runs=1200:seed=84065",
+      "cached": false,
+      "generated_at": "2026-06-11T13:21:06Z"
+    },
+    "runs=1200:seed=84066": {
+      "runs": 1200,
+      "seed": 84066,
+      "format": "demo_48_team_world_cup_top2_plus_8_thirds",
+      "note": "Demo bracket mapping. Replace with official fixture/bracket provider for production.",
+      "probabilities": [
+        {
+          "team": "Argentina",
+          "code": "ARG",
+          "round_of_32": 0.9708,
+          "round_of_16": 0.7767,
+          "quarterfinal": 0.5333,
+          "semifinal": 0.3683,
+          "final": 0.255,
+          "champion": 0.1683
+        },
+        {
+          "team": "Spain",
+          "code": "ESP",
+          "round_of_32": 0.9392,
+          "round_of_16": 0.7242,
+          "quarterfinal": 0.5367,
+          "semifinal": 0.3525,
+          "final": 0.2325,
+          "champion": 0.1283
+        },
+        {
+          "team": "France",
+          "code": "FRA",
+          "round_of_32": 0.9483,
+          "round_of_16": 0.7308,
+          "quarterfinal": 0.4308,
+          "semifinal": 0.2833,
+          "final": 0.175,
+          "champion": 0.1142
+        },
+        {
+          "team": "Brazil",
+          "code": "BRA",
+          "round_of_32": 0.9417,
+          "round_of_16": 0.675,
+          "quarterfinal": 0.4758,
+          "semifinal": 0.3,
+          "final": 0.1692,
+          "champion": 0.09
+        },
+        {
+          "team": "England",
+          "code": "ENG",
+          "round_of_32": 0.94,
+          "round_of_16": 0.6867,
+          "quarterfinal": 0.4083,
+          "semifinal": 0.2292,
+          "final": 0.1183,
+          "champion": 0.075
+        },
+        {
+          "team": "Netherlands",
+          "code": "NED",
+          "round_of_32": 0.8925,
+          "round_of_16": 0.6308,
+          "quarterfinal": 0.3958,
+          "semifinal": 0.2392,
+          "final": 0.1417,
+          "champion": 0.0708
+        },
+        {
+          "team": "Portugal",
+          "code": "POR",
+          "round_of_32": 0.9375,
+          "round_of_16": 0.6117,
+          "quarterfinal": 0.39,
+          "semifinal": 0.2108,
+          "final": 0.1233,
+          "champion": 0.065
+        },
+        {
+          "team": "Germany",
+          "code": "GER",
+          "round_of_32": 0.8875,
+          "round_of_16": 0.5717,
+          "quarterfinal": 0.3433,
+          "semifinal": 0.1742,
+          "final": 0.105,
+          "champion": 0.0475
+        },
+        {
+          "team": "Belgium",
+          "code": "BEL",
+          "round_of_32": 0.905,
+          "round_of_16": 0.5792,
+          "quarterfinal": 0.3008,
+          "semifinal": 0.1725,
+          "final": 0.0833,
+          "champion": 0.045
+        },
+        {
+          "team": "Uruguay",
+          "code": "URU",
+          "round_of_32": 0.8642,
+          "round_of_16": 0.5592,
+          "quarterfinal": 0.3192,
+          "semifinal": 0.1542,
+          "final": 0.0858,
+          "champion": 0.0417
+        },
+        {
+          "team": "Croatia",
+          "code": "CRO",
+          "round_of_32": 0.845,
+          "round_of_16": 0.4983,
+          "quarterfinal": 0.2492,
+          "semifinal": 0.1242,
+          "final": 0.0558,
+          "champion": 0.0233
+        },
+        {
+          "team": "Morocco",
+          "code": "MAR",
+          "round_of_32": 0.8225,
+          "round_of_16": 0.415,
+          "quarterfinal": 0.2233,
+          "semifinal": 0.0942,
+          "final": 0.0425,
+          "champion": 0.0175
+        },
+        {
+          "team": "United States",
+          "code": "USA",
+          "round_of_32": 0.7875,
+          "round_of_16": 0.4025,
+          "quarterfinal": 0.1875,
+          "semifinal": 0.0967,
+          "final": 0.0392,
+          "champion": 0.0133
+        },
+        {
+          "team": "Colombia",
+          "code": "COL",
+          "round_of_32": 0.8458,
+          "round_of_16": 0.4592,
+          "quarterfinal": 0.2417,
+          "semifinal": 0.115,
+          "final": 0.0408,
+          "champion": 0.0133
+        },
+        {
+          "team": "Mexico",
+          "code": "MEX",
+          "round_of_32": 0.8192,
+          "round_of_16": 0.4025,
+          "quarterfinal": 0.1983,
+          "semifinal": 0.0875,
+          "final": 0.035,
+          "champion": 0.0125
+        },
+        {
+          "team": "Switzerland",
+          "code": "SUI",
+          "round_of_32": 0.8192,
+          "round_of_16": 0.3817,
+          "quarterfinal": 0.1942,
+          "semifinal": 0.0883,
+          "final": 0.035,
+          "champion": 0.0117
+        },
+        {
+          "team": "Japan",
+          "code": "JPN",
+          "round_of_32": 0.74,
+          "round_of_16": 0.4083,
+          "quarterfinal": 0.2025,
+          "semifinal": 0.0825,
+          "final": 0.0275,
+          "champion": 0.0117
+        },
+        {
+          "team": "Norway",
+          "code": "NOR",
+          "round_of_32": 0.6825,
+          "round_of_16": 0.3408,
+          "quarterfinal": 0.1467,
+          "semifinal": 0.0567,
+          "final": 0.0192,
+          "champion": 0.005
+        },
+        {
+          "team": "Korea Republic",
+          "code": "KOR",
+          "round_of_32": 0.745,
+          "round_of_16": 0.32,
+          "quarterfinal": 0.1508,
+          "semifinal": 0.0658,
+          "final": 0.0208,
+          "champion": 0.0042
+        },
+        {
+          "team": "Canada",
+          "code": "CAN",
+          "round_of_32": 0.7075,
+          "round_of_16": 0.2667,
+          "quarterfinal": 0.1,
+          "semifinal": 0.0375,
+          "final": 0.0108,
+          "champion": 0.0042
+        },
+        {
+          "team": "Ecuador",
+          "code": "ECU",
+          "round_of_32": 0.765,
+          "round_of_16": 0.3833,
+          "quarterfinal": 0.1775,
+          "semifinal": 0.065,
+          "final": 0.0208,
+          "champion": 0.0042
+        },
+        {
+          "team": "Iran",
+          "code": "IRN",
+          "round_of_32": 0.6933,
+          "round_of_16": 0.2883,
+          "quarterfinal": 0.09,
+          "semifinal": 0.0308,
+          "final": 0.0125,
+          "champion": 0.0042
+        },
+        {
+          "team": "Czechia",
+          "code": "CZE",
+          "round_of_32": 0.7142,
+          "round_of_16": 0.2817,
+          "quarterfinal": 0.1142,
+          "semifinal": 0.0425,
+          "final": 0.0125,
+          "champion": 0.0033
+        },
+        {
+          "team": "Australia",
+          "code": "AUS",
+          "round_of_32": 0.6658,
+          "round_of_16": 0.26,
+          "quarterfinal": 0.0858,
+          "semifinal": 0.0375,
+          "final": 0.0142,
+          "champion": 0.0033
+        },
+        {
+          "team": "Senegal",
+          "code": "SEN",
+          "round_of_32": 0.6758,
+          "round_of_16": 0.3408,
+          "quarterfinal": 0.1333,
+          "semifinal": 0.0542,
+          "final": 0.0133,
+          "champion": 0.0033
+        },
+        {
+          "team": "Algeria",
+          "code": "ALG",
+          "round_of_32": 0.5642,
+          "round_of_16": 0.2125,
+          "quarterfinal": 0.0717,
+          "semifinal": 0.0217,
+          "final": 0.0058,
+          "champion": 0.0033
+        },
+        {
+          "team": "Scotland",
+          "code": "SCO",
+          "round_of_32": 0.6133,
+          "round_of_16": 0.2225,
+          "quarterfinal": 0.0942,
+          "semifinal": 0.03,
+          "final": 0.0075,
+          "champion": 0.0025
+        },
+        {
+          "team": "Ivory Coast",
+          "code": "CIV",
+          "round_of_32": 0.69,
+          "round_of_16": 0.2958,
+          "quarterfinal": 0.1267,
+          "semifinal": 0.0417,
+          "final": 0.0133,
+          "champion": 0.0025
+        },
+        {
+          "team": "Paraguay",
+          "code": "PAR",
+          "round_of_32": 0.5908,
+          "round_of_16": 0.185,
+          "quarterfinal": 0.0533,
+          "semifinal": 0.0258,
+          "final": 0.0075,
+          "champion": 0.0017
+        },
+        {
+          "team": "Türkiye",
+          "code": "TUR",
+          "round_of_32": 0.65,
+          "round_of_16": 0.2625,
+          "quarterfinal": 0.0983,
+          "semifinal": 0.0358,
+          "final": 0.0083,
+          "champion": 0.0017
+        },
+        {
+          "team": "Sweden",
+          "code": "SWE",
+          "round_of_32": 0.5617,
+          "round_of_16": 0.2567,
+          "quarterfinal": 0.1075,
+          "semifinal": 0.04,
+          "final": 0.0108,
+          "champion": 0.0017
+        },
+        {
+          "team": "Austria",
+          "code": "AUT",
+          "round_of_32": 0.74,
+          "round_of_16": 0.3675,
+          "quarterfinal": 0.145,
+          "semifinal": 0.0575,
+          "final": 0.0175,
+          "champion": 0.0017
+        },
+        {
+          "team": "South Africa",
+          "code": "RSA",
+          "round_of_32": 0.4358,
+          "round_of_16": 0.11,
+          "quarterfinal": 0.0267,
+          "semifinal": 0.01,
+          "final": 0.0033,
+          "champion": 0.0008
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "code": "BIH",
+          "round_of_32": 0.6533,
+          "round_of_16": 0.2217,
+          "quarterfinal": 0.085,
+          "semifinal": 0.0317,
+          "final": 0.0067,
+          "champion": 0.0008
+        },
+        {
+          "team": "Tunisia",
+          "code": "TUN",
+          "round_of_32": 0.4983,
+          "round_of_16": 0.1983,
+          "quarterfinal": 0.0825,
+          "semifinal": 0.0258,
+          "final": 0.0067,
+          "champion": 0.0008
+        },
+        {
+          "team": "Egypt",
+          "code": "EGY",
+          "round_of_32": 0.6525,
+          "round_of_16": 0.2625,
+          "quarterfinal": 0.0867,
+          "semifinal": 0.0275,
+          "final": 0.0042,
+          "champion": 0.0008
+        },
+        {
+          "team": "Congo DR",
+          "code": "COD",
+          "round_of_32": 0.4975,
+          "round_of_16": 0.1433,
+          "quarterfinal": 0.0458,
+          "semifinal": 0.0117,
+          "final": 0.0017,
+          "champion": 0.0008
+        },
+        {
+          "team": "Qatar",
+          "code": "QAT",
+          "round_of_32": 0.5275,
+          "round_of_16": 0.1508,
+          "quarterfinal": 0.0467,
+          "semifinal": 0.0142,
+          "final": 0.0033,
+          "champion": 0.0
+        },
+        {
+          "team": "Haiti",
+          "code": "HTI",
+          "round_of_32": 0.2692,
+          "round_of_16": 0.0492,
+          "quarterfinal": 0.005,
+          "semifinal": 0.0,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Curaçao",
+          "code": "CUR",
+          "round_of_32": 0.355,
+          "round_of_16": 0.0858,
+          "quarterfinal": 0.0142,
+          "semifinal": 0.0025,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "New Zealand",
+          "code": "NZL",
+          "round_of_32": 0.4317,
+          "round_of_16": 0.1167,
+          "quarterfinal": 0.0325,
+          "semifinal": 0.0067,
+          "final": 0.0017,
+          "champion": 0.0
+        },
+        {
+          "team": "Cape Verde",
+          "code": "CPV",
+          "round_of_32": 0.4217,
+          "round_of_16": 0.1408,
+          "quarterfinal": 0.0525,
+          "semifinal": 0.0133,
+          "final": 0.0033,
+          "champion": 0.0
+        },
+        {
+          "team": "Saudi Arabia",
+          "code": "KSA",
+          "round_of_32": 0.3683,
+          "round_of_16": 0.1258,
+          "quarterfinal": 0.0392,
+          "semifinal": 0.0117,
+          "final": 0.0033,
+          "champion": 0.0
+        },
+        {
+          "team": "Iraq",
+          "code": "IRQ",
+          "round_of_32": 0.3767,
+          "round_of_16": 0.1283,
+          "quarterfinal": 0.0458,
+          "semifinal": 0.0092,
+          "final": 0.0033,
+          "champion": 0.0
+        },
+        {
+          "team": "Jordan",
+          "code": "JOR",
+          "round_of_32": 0.3367,
+          "round_of_16": 0.0983,
+          "quarterfinal": 0.0258,
+          "semifinal": 0.0067,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Uzbekistan",
+          "code": "UZB",
+          "round_of_32": 0.3675,
+          "round_of_16": 0.0942,
+          "quarterfinal": 0.0183,
+          "semifinal": 0.0025,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Ghana",
+          "code": "GHA",
+          "round_of_32": 0.435,
+          "round_of_16": 0.14,
+          "quarterfinal": 0.035,
+          "semifinal": 0.005,
+          "final": 0.0017,
+          "champion": 0.0
+        },
+        {
+          "team": "Panama",
+          "code": "PAN",
+          "round_of_32": 0.4083,
+          "round_of_16": 0.1367,
+          "quarterfinal": 0.0325,
+          "semifinal": 0.0067,
+          "final": 0.0008,
+          "champion": 0.0
+        }
+      ],
+      "sample_group_tables": {
+        "A": [
+          {
+            "team": "RSA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 1,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "South Africa"
+          },
+          {
+            "team": "KOR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 2,
+            "team_name": "Korea Republic"
+          },
+          {
+            "team": "MEX",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Mexico"
+          },
+          {
+            "team": "CZE",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 0,
+            "goal_difference": -4,
+            "team_name": "Czechia"
+          }
+        ],
+        "B": [
+          {
+            "team": "SUI",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Switzerland"
+          },
+          {
+            "team": "CAN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Canada"
+          },
+          {
+            "team": "QAT",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 3,
+            "goal_difference": 0,
+            "team_name": "Qatar"
+          },
+          {
+            "team": "BIH",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": -1,
+            "team_name": "Bosnia and Herzegovina"
+          }
+        ],
+        "C": [
+          {
+            "team": "BRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 4,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Brazil"
+          },
+          {
+            "team": "MAR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Morocco"
+          },
+          {
+            "team": "SCO",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 5,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Scotland"
+          },
+          {
+            "team": "HTI",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Haiti"
+          }
+        ],
+        "D": [
+          {
+            "team": "TUR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 2,
+            "team_name": "Türkiye"
+          },
+          {
+            "team": "PAR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Paraguay"
+          },
+          {
+            "team": "USA",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 6,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "United States"
+          },
+          {
+            "team": "AUS",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Australia"
+          }
+        ],
+        "E": [
+          {
+            "team": "GER",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 3,
+            "team_name": "Germany"
+          },
+          {
+            "team": "CUR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 5,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Curaçao"
+          },
+          {
+            "team": "ECU",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Ecuador"
+          },
+          {
+            "team": "CIV",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 1,
+            "goals_against": 6,
+            "points": 0,
+            "goal_difference": -5,
+            "team_name": "Ivory Coast"
+          }
+        ],
+        "F": [
+          {
+            "team": "NED",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 8,
+            "goals_against": 3,
+            "points": 9,
+            "goal_difference": 5,
+            "team_name": "Netherlands"
+          },
+          {
+            "team": "TUN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 1,
+            "points": 4,
+            "goal_difference": 2,
+            "team_name": "Tunisia"
+          },
+          {
+            "team": "SWE",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 6,
+            "points": 2,
+            "goal_difference": -3,
+            "team_name": "Sweden"
+          },
+          {
+            "team": "JPN",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -4,
+            "team_name": "Japan"
+          }
+        ],
+        "G": [
+          {
+            "team": "IRN",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 4,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Iran"
+          },
+          {
+            "team": "EGY",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": 2,
+            "team_name": "Egypt"
+          },
+          {
+            "team": "NZL",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "New Zealand"
+          },
+          {
+            "team": "BEL",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -4,
+            "team_name": "Belgium"
+          }
+        ],
+        "H": [
+          {
+            "team": "ESP",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 13,
+            "goals_against": 3,
+            "points": 7,
+            "goal_difference": 10,
+            "team_name": "Spain"
+          },
+          {
+            "team": "KSA",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 8,
+            "points": 6,
+            "goal_difference": -4,
+            "team_name": "Saudi Arabia"
+          },
+          {
+            "team": "URU",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Uruguay"
+          },
+          {
+            "team": "CPV",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 4,
+            "goals_against": 10,
+            "points": 0,
+            "goal_difference": -6,
+            "team_name": "Cape Verde"
+          }
+        ],
+        "I": [
+          {
+            "team": "FRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 14,
+            "goals_against": 5,
+            "points": 7,
+            "goal_difference": 9,
+            "team_name": "France"
+          },
+          {
+            "team": "NOR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 7,
+            "points": 6,
+            "goal_difference": 0,
+            "team_name": "Norway"
+          },
+          {
+            "team": "IRQ",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 8,
+            "points": 3,
+            "goal_difference": -6,
+            "team_name": "Iraq"
+          },
+          {
+            "team": "SEN",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -3,
+            "team_name": "Senegal"
+          }
+        ],
+        "J": [
+          {
+            "team": "ARG",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 3,
+            "team_name": "Argentina"
+          },
+          {
+            "team": "AUT",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 2,
+            "team_name": "Austria"
+          },
+          {
+            "team": "ALG",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 4,
+            "points": 3,
+            "goal_difference": -1,
+            "team_name": "Algeria"
+          },
+          {
+            "team": "JOR",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -4,
+            "team_name": "Jordan"
+          }
+        ],
+        "K": [
+          {
+            "team": "COD",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 5,
+            "goals_against": 2,
+            "points": 5,
+            "goal_difference": 3,
+            "team_name": "Congo DR"
+          },
+          {
+            "team": "POR",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 1,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Portugal"
+          },
+          {
+            "team": "COL",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 5,
+            "points": 2,
+            "goal_difference": -1,
+            "team_name": "Colombia"
+          },
+          {
+            "team": "UZB",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 6,
+            "points": 2,
+            "goal_difference": -3,
+            "team_name": "Uzbekistan"
+          }
+        ],
+        "L": [
+          {
+            "team": "ENG",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 7,
+            "goal_difference": 4,
+            "team_name": "England"
+          },
+          {
+            "team": "CRO",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 3,
+            "goals_against": 2,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "Croatia"
+          },
+          {
+            "team": "PAN",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 4,
+            "points": 2,
+            "goal_difference": -3,
+            "team_name": "Panama"
+          },
+          {
+            "team": "GHA",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 4,
+            "points": 1,
+            "goal_difference": -2,
+            "team_name": "Ghana"
+          }
+        ]
+      },
+      "cache_key": "runs=1200:seed=84066",
+      "cached": false,
+      "generated_at": "2026-06-11T13:21:07Z"
+    },
+    "runs=1200:seed=84067": {
+      "runs": 1200,
+      "seed": 84067,
+      "format": "demo_48_team_world_cup_top2_plus_8_thirds",
+      "note": "Demo bracket mapping. Replace with official fixture/bracket provider for production.",
+      "probabilities": [
+        {
+          "team": "Argentina",
+          "code": "ARG",
+          "round_of_32": 0.9767,
+          "round_of_16": 0.7908,
+          "quarterfinal": 0.5558,
+          "semifinal": 0.3767,
+          "final": 0.2517,
+          "champion": 0.1567
+        },
+        {
+          "team": "Spain",
+          "code": "ESP",
+          "round_of_32": 0.9558,
+          "round_of_16": 0.7583,
+          "quarterfinal": 0.555,
+          "semifinal": 0.3658,
+          "final": 0.24,
+          "champion": 0.1342
+        },
+        {
+          "team": "France",
+          "code": "FRA",
+          "round_of_32": 0.945,
+          "round_of_16": 0.7183,
+          "quarterfinal": 0.455,
+          "semifinal": 0.2908,
+          "final": 0.1858,
+          "champion": 0.1125
+        },
+        {
+          "team": "Brazil",
+          "code": "BRA",
+          "round_of_32": 0.945,
+          "round_of_16": 0.6433,
+          "quarterfinal": 0.4517,
+          "semifinal": 0.3,
+          "final": 0.1708,
+          "champion": 0.0925
+        },
+        {
+          "team": "England",
+          "code": "ENG",
+          "round_of_32": 0.9467,
+          "round_of_16": 0.6833,
+          "quarterfinal": 0.415,
+          "semifinal": 0.2317,
+          "final": 0.1375,
+          "champion": 0.08
+        },
+        {
+          "team": "Portugal",
+          "code": "POR",
+          "round_of_32": 0.9375,
+          "round_of_16": 0.625,
+          "quarterfinal": 0.38,
+          "semifinal": 0.2092,
+          "final": 0.12,
+          "champion": 0.0758
+        },
+        {
+          "team": "Netherlands",
+          "code": "NED",
+          "round_of_32": 0.8875,
+          "round_of_16": 0.6325,
+          "quarterfinal": 0.4208,
+          "semifinal": 0.2367,
+          "final": 0.1325,
+          "champion": 0.0675
+        },
+        {
+          "team": "Germany",
+          "code": "GER",
+          "round_of_32": 0.9125,
+          "round_of_16": 0.5933,
+          "quarterfinal": 0.3517,
+          "semifinal": 0.1742,
+          "final": 0.0958,
+          "champion": 0.045
+        },
+        {
+          "team": "Belgium",
+          "code": "BEL",
+          "round_of_32": 0.9125,
+          "round_of_16": 0.6067,
+          "quarterfinal": 0.3117,
+          "semifinal": 0.1675,
+          "final": 0.0917,
+          "champion": 0.0425
+        },
+        {
+          "team": "Uruguay",
+          "code": "URU",
+          "round_of_32": 0.8517,
+          "round_of_16": 0.575,
+          "quarterfinal": 0.3308,
+          "semifinal": 0.1758,
+          "final": 0.08,
+          "champion": 0.0325
+        },
+        {
+          "team": "Croatia",
+          "code": "CRO",
+          "round_of_32": 0.8392,
+          "round_of_16": 0.4933,
+          "quarterfinal": 0.2575,
+          "semifinal": 0.1325,
+          "final": 0.0533,
+          "champion": 0.0217
+        },
+        {
+          "team": "Morocco",
+          "code": "MAR",
+          "round_of_32": 0.8317,
+          "round_of_16": 0.4208,
+          "quarterfinal": 0.2167,
+          "semifinal": 0.1125,
+          "final": 0.0525,
+          "champion": 0.0167
+        },
+        {
+          "team": "Austria",
+          "code": "AUT",
+          "round_of_32": 0.7183,
+          "round_of_16": 0.3583,
+          "quarterfinal": 0.16,
+          "semifinal": 0.0692,
+          "final": 0.0208,
+          "champion": 0.0125
+        },
+        {
+          "team": "United States",
+          "code": "USA",
+          "round_of_32": 0.8083,
+          "round_of_16": 0.4092,
+          "quarterfinal": 0.1825,
+          "semifinal": 0.0942,
+          "final": 0.0417,
+          "champion": 0.0117
+        },
+        {
+          "team": "Senegal",
+          "code": "SEN",
+          "round_of_32": 0.6808,
+          "round_of_16": 0.345,
+          "quarterfinal": 0.1508,
+          "semifinal": 0.0617,
+          "final": 0.0233,
+          "champion": 0.0108
+        },
+        {
+          "team": "Mexico",
+          "code": "MEX",
+          "round_of_32": 0.8158,
+          "round_of_16": 0.3833,
+          "quarterfinal": 0.1933,
+          "semifinal": 0.0775,
+          "final": 0.0292,
+          "champion": 0.01
+        },
+        {
+          "team": "Japan",
+          "code": "JPN",
+          "round_of_32": 0.7392,
+          "round_of_16": 0.4192,
+          "quarterfinal": 0.1992,
+          "semifinal": 0.0792,
+          "final": 0.03,
+          "champion": 0.01
+        },
+        {
+          "team": "Colombia",
+          "code": "COL",
+          "round_of_32": 0.8342,
+          "round_of_16": 0.4433,
+          "quarterfinal": 0.2175,
+          "semifinal": 0.1075,
+          "final": 0.04,
+          "champion": 0.01
+        },
+        {
+          "team": "Switzerland",
+          "code": "SUI",
+          "round_of_32": 0.8117,
+          "round_of_16": 0.3858,
+          "quarterfinal": 0.1975,
+          "semifinal": 0.0858,
+          "final": 0.0292,
+          "champion": 0.0083
+        },
+        {
+          "team": "Czechia",
+          "code": "CZE",
+          "round_of_32": 0.6967,
+          "round_of_16": 0.275,
+          "quarterfinal": 0.1108,
+          "semifinal": 0.0417,
+          "final": 0.0142,
+          "champion": 0.0067
+        },
+        {
+          "team": "Canada",
+          "code": "CAN",
+          "round_of_32": 0.7175,
+          "round_of_16": 0.2725,
+          "quarterfinal": 0.125,
+          "semifinal": 0.0417,
+          "final": 0.015,
+          "champion": 0.0067
+        },
+        {
+          "team": "Ecuador",
+          "code": "ECU",
+          "round_of_32": 0.7567,
+          "round_of_16": 0.3525,
+          "quarterfinal": 0.155,
+          "semifinal": 0.0483,
+          "final": 0.02,
+          "champion": 0.0067
+        },
+        {
+          "team": "Norway",
+          "code": "NOR",
+          "round_of_32": 0.6383,
+          "round_of_16": 0.3125,
+          "quarterfinal": 0.1242,
+          "semifinal": 0.0567,
+          "final": 0.0208,
+          "champion": 0.0067
+        },
+        {
+          "team": "Korea Republic",
+          "code": "KOR",
+          "round_of_32": 0.7333,
+          "round_of_16": 0.3217,
+          "quarterfinal": 0.1425,
+          "semifinal": 0.05,
+          "final": 0.0158,
+          "champion": 0.0042
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "code": "BIH",
+          "round_of_32": 0.67,
+          "round_of_16": 0.2333,
+          "quarterfinal": 0.0808,
+          "semifinal": 0.0208,
+          "final": 0.0042,
+          "champion": 0.0025
+        },
+        {
+          "team": "Australia",
+          "code": "AUS",
+          "round_of_32": 0.655,
+          "round_of_16": 0.2708,
+          "quarterfinal": 0.1067,
+          "semifinal": 0.0408,
+          "final": 0.0067,
+          "champion": 0.0025
+        },
+        {
+          "team": "Sweden",
+          "code": "SWE",
+          "round_of_32": 0.5675,
+          "round_of_16": 0.255,
+          "quarterfinal": 0.1008,
+          "semifinal": 0.025,
+          "final": 0.0075,
+          "champion": 0.0025
+        },
+        {
+          "team": "Egypt",
+          "code": "EGY",
+          "round_of_32": 0.6417,
+          "round_of_16": 0.2433,
+          "quarterfinal": 0.0758,
+          "semifinal": 0.0258,
+          "final": 0.0067,
+          "champion": 0.0017
+        },
+        {
+          "team": "Scotland",
+          "code": "SCO",
+          "round_of_32": 0.6117,
+          "round_of_16": 0.2233,
+          "quarterfinal": 0.0858,
+          "semifinal": 0.0308,
+          "final": 0.0083,
+          "champion": 0.0008
+        },
+        {
+          "team": "Paraguay",
+          "code": "PAR",
+          "round_of_32": 0.605,
+          "round_of_16": 0.2133,
+          "quarterfinal": 0.0767,
+          "semifinal": 0.0242,
+          "final": 0.0067,
+          "champion": 0.0008
+        },
+        {
+          "team": "Türkiye",
+          "code": "TUR",
+          "round_of_32": 0.6642,
+          "round_of_16": 0.2775,
+          "quarterfinal": 0.0908,
+          "semifinal": 0.0342,
+          "final": 0.0042,
+          "champion": 0.0008
+        },
+        {
+          "team": "Curaçao",
+          "code": "CUR",
+          "round_of_32": 0.375,
+          "round_of_16": 0.0975,
+          "quarterfinal": 0.0167,
+          "semifinal": 0.0033,
+          "final": 0.0008,
+          "champion": 0.0008
+        },
+        {
+          "team": "Ivory Coast",
+          "code": "CIV",
+          "round_of_32": 0.66,
+          "round_of_16": 0.2825,
+          "quarterfinal": 0.1142,
+          "semifinal": 0.0367,
+          "final": 0.0058,
+          "champion": 0.0008
+        },
+        {
+          "team": "Tunisia",
+          "code": "TUN",
+          "round_of_32": 0.5125,
+          "round_of_16": 0.1958,
+          "quarterfinal": 0.0583,
+          "semifinal": 0.0175,
+          "final": 0.005,
+          "champion": 0.0008
+        },
+        {
+          "team": "Cape Verde",
+          "code": "CPV",
+          "round_of_32": 0.4175,
+          "round_of_16": 0.1425,
+          "quarterfinal": 0.045,
+          "semifinal": 0.0117,
+          "final": 0.0033,
+          "champion": 0.0008
+        },
+        {
+          "team": "Saudi Arabia",
+          "code": "KSA",
+          "round_of_32": 0.3975,
+          "round_of_16": 0.13,
+          "quarterfinal": 0.0408,
+          "semifinal": 0.0092,
+          "final": 0.0017,
+          "champion": 0.0008
+        },
+        {
+          "team": "Congo DR",
+          "code": "COD",
+          "round_of_32": 0.4792,
+          "round_of_16": 0.1542,
+          "quarterfinal": 0.0383,
+          "semifinal": 0.0108,
+          "final": 0.0017,
+          "champion": 0.0008
+        },
+        {
+          "team": "Ghana",
+          "code": "GHA",
+          "round_of_32": 0.4125,
+          "round_of_16": 0.1275,
+          "quarterfinal": 0.0267,
+          "semifinal": 0.0092,
+          "final": 0.0033,
+          "champion": 0.0008
+        },
+        {
+          "team": "Panama",
+          "code": "PAN",
+          "round_of_32": 0.4333,
+          "round_of_16": 0.1425,
+          "quarterfinal": 0.0408,
+          "semifinal": 0.0108,
+          "final": 0.0042,
+          "champion": 0.0008
+        },
+        {
+          "team": "South Africa",
+          "code": "RSA",
+          "round_of_32": 0.4542,
+          "round_of_16": 0.1317,
+          "quarterfinal": 0.0333,
+          "semifinal": 0.01,
+          "final": 0.0025,
+          "champion": 0.0
+        },
+        {
+          "team": "Qatar",
+          "code": "QAT",
+          "round_of_32": 0.515,
+          "round_of_16": 0.1358,
+          "quarterfinal": 0.0392,
+          "semifinal": 0.01,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Haiti",
+          "code": "HTI",
+          "round_of_32": 0.2733,
+          "round_of_16": 0.0525,
+          "quarterfinal": 0.01,
+          "semifinal": 0.0008,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Iran",
+          "code": "IRN",
+          "round_of_32": 0.6783,
+          "round_of_16": 0.2575,
+          "quarterfinal": 0.0983,
+          "semifinal": 0.0342,
+          "final": 0.0083,
+          "champion": 0.0
+        },
+        {
+          "team": "New Zealand",
+          "code": "NZL",
+          "round_of_32": 0.4075,
+          "round_of_16": 0.0933,
+          "quarterfinal": 0.0225,
+          "semifinal": 0.0025,
+          "final": 0.0,
+          "champion": 0.0
+        },
+        {
+          "team": "Iraq",
+          "code": "IRQ",
+          "round_of_32": 0.3742,
+          "round_of_16": 0.1167,
+          "quarterfinal": 0.03,
+          "semifinal": 0.01,
+          "final": 0.0008,
+          "champion": 0.0
+        },
+        {
+          "team": "Algeria",
+          "code": "ALG",
+          "round_of_32": 0.565,
+          "round_of_16": 0.2083,
+          "quarterfinal": 0.0617,
+          "semifinal": 0.0208,
+          "final": 0.0025,
+          "champion": 0.0
+        },
+        {
+          "team": "Jordan",
+          "code": "JOR",
+          "round_of_32": 0.3558,
+          "round_of_16": 0.0975,
+          "quarterfinal": 0.0242,
+          "semifinal": 0.0075,
+          "final": 0.0017,
+          "champion": 0.0
+        },
+        {
+          "team": "Uzbekistan",
+          "code": "UZB",
+          "round_of_32": 0.3817,
+          "round_of_16": 0.0983,
+          "quarterfinal": 0.0225,
+          "semifinal": 0.0067,
+          "final": 0.0017,
+          "champion": 0.0
+        }
+      ],
+      "sample_group_tables": {
+        "A": [
+          {
+            "team": "MEX",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 4,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 2,
+            "team_name": "Mexico"
+          },
+          {
+            "team": "KOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Korea Republic"
+          },
+          {
+            "team": "CZE",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 3,
+            "goal_difference": 0,
+            "team_name": "Czechia"
+          },
+          {
+            "team": "RSA",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 3,
+            "goal_difference": -2,
+            "team_name": "South Africa"
+          }
+        ],
+        "B": [
+          {
+            "team": "CAN",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 1,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "Canada"
+          },
+          {
+            "team": "BIH",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 4,
+            "points": 6,
+            "goal_difference": 1,
+            "team_name": "Bosnia and Herzegovina"
+          },
+          {
+            "team": "SUI",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": -2,
+            "team_name": "Switzerland"
+          },
+          {
+            "team": "QAT",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 6,
+            "points": 3,
+            "goal_difference": -3,
+            "team_name": "Qatar"
+          }
+        ],
+        "C": [
+          {
+            "team": "BRA",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 1,
+            "points": 6,
+            "goal_difference": 2,
+            "team_name": "Brazil"
+          },
+          {
+            "team": "HTI",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 5,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Haiti"
+          },
+          {
+            "team": "MAR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Morocco"
+          },
+          {
+            "team": "SCO",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 2,
+            "goal_difference": -2,
+            "team_name": "Scotland"
+          }
+        ],
+        "D": [
+          {
+            "team": "AUS",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 2,
+            "points": 9,
+            "goal_difference": 4,
+            "team_name": "Australia"
+          },
+          {
+            "team": "USA",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "United States"
+          },
+          {
+            "team": "PAR",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": -3,
+            "team_name": "Paraguay"
+          },
+          {
+            "team": "TUR",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 0,
+            "goals_against": 5,
+            "points": 0,
+            "goal_difference": -5,
+            "team_name": "Türkiye"
+          }
+        ],
+        "E": [
+          {
+            "team": "CUR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 3,
+            "points": 6,
+            "goal_difference": 2,
+            "team_name": "Curaçao"
+          },
+          {
+            "team": "CIV",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 9,
+            "points": 6,
+            "goal_difference": -2,
+            "team_name": "Ivory Coast"
+          },
+          {
+            "team": "GER",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 9,
+            "goals_against": 5,
+            "points": 3,
+            "goal_difference": 4,
+            "team_name": "Germany"
+          },
+          {
+            "team": "ECU",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 7,
+            "points": 3,
+            "goal_difference": -4,
+            "team_name": "Ecuador"
+          }
+        ],
+        "F": [
+          {
+            "team": "NED",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Netherlands"
+          },
+          {
+            "team": "SWE",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 5,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Sweden"
+          },
+          {
+            "team": "TUN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Tunisia"
+          },
+          {
+            "team": "JPN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Japan"
+          }
+        ],
+        "G": [
+          {
+            "team": "NZL",
+            "played": 3,
+            "wins": 1,
+            "draws": 2,
+            "losses": 0,
+            "goals_for": 6,
+            "goals_against": 5,
+            "points": 5,
+            "goal_difference": 1,
+            "team_name": "New Zealand"
+          },
+          {
+            "team": "IRN",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 5,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Iran"
+          },
+          {
+            "team": "EGY",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 6,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Egypt"
+          },
+          {
+            "team": "BEL",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 5,
+            "goals_against": 7,
+            "points": 3,
+            "goal_difference": -2,
+            "team_name": "Belgium"
+          }
+        ],
+        "H": [
+          {
+            "team": "ESP",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 3,
+            "points": 9,
+            "goal_difference": 4,
+            "team_name": "Spain"
+          },
+          {
+            "team": "URU",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 4,
+            "goals_against": 4,
+            "points": 6,
+            "goal_difference": 0,
+            "team_name": "Uruguay"
+          },
+          {
+            "team": "KSA",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 6,
+            "points": 1,
+            "goal_difference": -2,
+            "team_name": "Saudi Arabia"
+          },
+          {
+            "team": "CPV",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 5,
+            "points": 1,
+            "goal_difference": -2,
+            "team_name": "Cape Verde"
+          }
+        ],
+        "I": [
+          {
+            "team": "FRA",
+            "played": 3,
+            "wins": 3,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 1,
+            "points": 9,
+            "goal_difference": 6,
+            "team_name": "France"
+          },
+          {
+            "team": "NOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 5,
+            "goals_against": 6,
+            "points": 4,
+            "goal_difference": -1,
+            "team_name": "Norway"
+          },
+          {
+            "team": "SEN",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 3,
+            "goals_against": 3,
+            "points": 3,
+            "goal_difference": 0,
+            "team_name": "Senegal"
+          },
+          {
+            "team": "IRQ",
+            "played": 3,
+            "wins": 0,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 7,
+            "points": 1,
+            "goal_difference": -5,
+            "team_name": "Iraq"
+          }
+        ],
+        "J": [
+          {
+            "team": "ARG",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 7,
+            "goals_against": 5,
+            "points": 6,
+            "goal_difference": 2,
+            "team_name": "Argentina"
+          },
+          {
+            "team": "AUT",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 7,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Austria"
+          },
+          {
+            "team": "ALG",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 8,
+            "goals_against": 7,
+            "points": 4,
+            "goal_difference": 1,
+            "team_name": "Algeria"
+          },
+          {
+            "team": "JOR",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 4,
+            "goals_against": 8,
+            "points": 3,
+            "goal_difference": -4,
+            "team_name": "Jordan"
+          }
+        ],
+        "K": [
+          {
+            "team": "POR",
+            "played": 3,
+            "wins": 2,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 6,
+            "goals_against": 2,
+            "points": 6,
+            "goal_difference": 4,
+            "team_name": "Portugal"
+          },
+          {
+            "team": "COL",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 2,
+            "points": 4,
+            "goal_difference": 0,
+            "team_name": "Colombia"
+          },
+          {
+            "team": "COD",
+            "played": 3,
+            "wins": 1,
+            "draws": 1,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 4,
+            "points": 4,
+            "goal_difference": -2,
+            "team_name": "Congo DR"
+          },
+          {
+            "team": "UZB",
+            "played": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 3,
+            "points": 2,
+            "goal_difference": -2,
+            "team_name": "Uzbekistan"
+          }
+        ],
+        "L": [
+          {
+            "team": "CRO",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 8,
+            "goals_against": 2,
+            "points": 7,
+            "goal_difference": 6,
+            "team_name": "Croatia"
+          },
+          {
+            "team": "ENG",
+            "played": 3,
+            "wins": 2,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 7,
+            "goals_against": 4,
+            "points": 7,
+            "goal_difference": 3,
+            "team_name": "England"
+          },
+          {
+            "team": "PAN",
+            "played": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "points": 3,
+            "goal_difference": -4,
+            "team_name": "Panama"
+          },
+          {
+            "team": "GHA",
+            "played": 3,
+            "wins": 0,
+            "draws": 0,
+            "losses": 3,
+            "goals_for": 3,
+            "goals_against": 8,
+            "points": 0,
+            "goal_difference": -5,
+            "team_name": "Ghana"
+          }
+        ]
+      },
+      "cache_key": "runs=1200:seed=84067",
+      "cached": false,
+      "generated_at": "2026-06-11T13:21:08Z"
+    }
+  }
+}

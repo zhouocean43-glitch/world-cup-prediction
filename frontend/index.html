@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>世界杯预测时间轴</title>
+    <link rel="stylesheet" href="/frontend/styles.css?v=20260611d">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="masthead">
+        <div class="stadium"></div>
+        <div class="veil"></div>
+
+        <nav class="nav">
+          <div class="brand">
+            <span class="mark"></span>
+            <span>World Cup Signal Room</span>
+          </div>
+          <div class="live-chip">
+            <span></span>
+            每日赔率 / 新闻信号
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Live Forecast Timeline</p>
+            <h1>世界杯预测中控台</h1>
+            <p class="lead">按比赛时间自动更新赔率、新闻、天气与模型概率。首场、今日比赛和完整小组赛一屏扫清。</p>
+          </section>
+
+          <aside class="signal-card">
+            <div class="signal-top">
+              <span>盘口与模型</span>
+              <b>同步中</b>
+            </div>
+            <div class="signal-hero">
+              <div>
+                <span>公开盘口覆盖</span>
+                <strong id="updatedAt">--/--</strong>
+              </div>
+              <time id="updatedContext">等待刷新</time>
+            </div>
+            <div id="providerNote" class="signal-panel">
+              <p>正在连接预测后端。</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="focus-board">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Match Focus</p>
+            <h2>下一场重点比赛</h2>
+          </div>
+          <div class="legend">
+            <span><i class="home"></i>A 胜</span>
+            <span><i class="draw"></i>平</span>
+            <span><i class="away"></i>B 胜</span>
+          </div>
+        </div>
+        <div id="featuredMatch" class="featured-match"></div>
+      </section>
+
+      <section class="workspace">
+        <section class="timeline-wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Matches</p>
+              <h2>小组赛时间轴</h2>
+            </div>
+            <div class="filters" id="filters">
+              <button class="active" data-filter="all" type="button">全部</button>
+              <button data-filter="next" type="button">下一批</button>
+              <button data-filter="high" type="button">强强对话</button>
+            </div>
+          </div>
+          <div id="timeline" class="timeline"></div>
+        </section>
+
+        <aside class="rail">
+          <div class="rail-card">
+            <div class="rail-head">
+              <div>
+                <p class="eyebrow">Futures</p>
+                <h2>冠军榜</h2>
+              </div>
+              <button id="rerunTournament" class="icon-button" type="button" aria-label="重新读取冠军榜" title="重新读取固定冠军榜">↻</button>
+            </div>
+            <div id="championList" class="champion-list"></div>
+            <p id="championStatus" class="champion-status">等待模拟缓存</p>
+          </div>
+
+          <div class="rail-card compact-note">
+            <p class="eyebrow">Data Policy</p>
+            <h2>信号可信度</h2>
+            <p>优先显示博彩公司均值。没有公开报价的场次会标记为暂无市场盘口，比分用胜平负和大小球校准。</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="/frontend/app.js?v=20260611d" defer></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: world-cup-prediction
+    runtime: python
+    plan: free
+    buildCommand: python3 -m py_compile backend/*.py
+    startCommand: python3 -m backend.server --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ODDS_API_KEY
+        sync: false
+      - key: ODDS_API_BOOKMAKERS
+        value: draftkings,fanduel,betmgm,bet365,pinnacle,betfair
+      - key: ODDS_API_SPORT_KEYS
+        value: soccer_fifa_world_cup
+      - key: ODDS_API_OUTRIGHT_SPORT_KEY
+        value: soccer_fifa_world_cup_winner
