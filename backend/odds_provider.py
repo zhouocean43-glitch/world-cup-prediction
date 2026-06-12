@@ -4,18 +4,30 @@ import json
 import os
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 from math import exp, factorial
+from pathlib import Path
 from typing import Dict, Iterable, Optional
 
 from backend.data import TEAM_ALIASES, TEAM_PROFILES
 
 THE_ODDS_API_URL = "https://api.the-odds-api.com/v4/sports/{sport}/odds"
+API_FOOTBALL_URL = "https://v3.football.api-sports.io/{endpoint}"
 DEFAULT_SPORT_KEYS = [
     "soccer_fifa_world_cup",
 ]
 DEFAULT_OUTRIGHT_SPORT_KEY = "soccer_fifa_world_cup_winner"
+DEFAULT_API_FOOTBALL_LEAGUE = "1"
+DEFAULT_API_FOOTBALL_SEASON = "2026"
+DEFAULT_THE_ODDS_API_CACHE_SECONDS = 86400
+DEFAULT_API_FOOTBALL_CACHE_SECONDS = 1800
+DEFAULT_API_FOOTBALL_MAX_PAGES = 3
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT_DIR / "data"
+THE_ODDS_MARKET_CACHE_PATH = DATA_DIR / "the_odds_market_cache.json"
+API_FOOTBALL_MARKET_CACHE_PATH = DATA_DIR / "api_football_market_cache.json"
 DEFAULT_BOOKMAKERS = [
     "draftkings",
     "fanduel",
@@ -53,8 +65,20 @@ TEAM_NAME_ALIASES = {
     "türkiye": "turkey",
     "ivory coast": "cote d ivoire",
     "côte d'ivoire": "cote d ivoire",
+    "côte divoire": "cote d ivoire",
+    "cote divoire": "cote d ivoire",
     "congo dr": "dr congo",
+    "bosnia herzegovina": "bosnia and herzegovina",
     "bosnia and herzegovina": "bosnia",
+}
+
+_API_FOOTBALL_CACHE: dict = {
+    "expires_at": None,
+    "odds": {},
+}
+_THE_ODDS_API_CACHE: dict = {
+    "expires_at": None,
+    "odds": {},
 }
 
 
@@ -96,6 +120,14 @@ def odds_api_configured() -> bool:
     return bool(os.getenv("ODDS_API_KEY"))
 
 
+def api_football_configured() -> bool:
+    return bool(os.getenv("API_FOOTBALL_KEY") or os.getenv("APISPORTS_KEY"))
+
+
+def market_odds_configured() -> bool:
+    return odds_api_configured() or api_football_configured()
+
+
 def should_use_bookmaker(bookmaker: dict) -> bool:
     if os.getenv("ODDS_API_BOOKMAKERS"):
         return True
@@ -110,6 +142,20 @@ def should_use_bookmaker(bookmaker: dict) -> bool:
         for label in labels
         if label
     )
+
+
+def should_use_api_football_bookmaker(bookmaker_name: str) -> bool:
+    configured = os.getenv("API_FOOTBALL_BOOKMAKERS")
+    if configured:
+        allowed = {
+            normalize_bookmaker_name(name)
+            for name in configured.split(",")
+            if name.strip()
+        }
+        return normalize_bookmaker_name(bookmaker_name) in allowed
+
+    label = normalize_bookmaker_name(bookmaker_name)
+    return any(preferred in label or label in preferred for preferred in PREFERRED_BOOKMAKER_NAMES)
 
 
 def team_code_from_market_name(name: str) -> str | None:
@@ -280,29 +326,321 @@ def aggregate_goal_market(goal_markets: list[dict]) -> dict | None:
     }
 
 
-def fetch_the_odds_api_events(api_key: str, sport_key: str, markets: str = "h2h,totals") -> list[dict]:
-    params = {
-        "apiKey": api_key,
-        "markets": markets,
-        "oddsFormat": "decimal",
-        "dateFormat": "iso",
-    }
-    bookmakers = os.getenv("ODDS_API_BOOKMAKERS")
-    if bookmakers:
-        params["bookmakers"] = bookmakers
-    else:
-        params["regions"] = os.getenv("ODDS_API_REGIONS", "us,uk,eu")
+def api_football_key() -> str | None:
+    return os.getenv("API_FOOTBALL_KEY") or os.getenv("APISPORTS_KEY")
 
-    url = THE_ODDS_API_URL.format(sport=urllib.parse.quote(sport_key))
+
+def api_football_cache_seconds() -> int:
+    try:
+        return max(300, int(os.getenv("API_FOOTBALL_CACHE_SECONDS", DEFAULT_API_FOOTBALL_CACHE_SECONDS)))
+    except ValueError:
+        return DEFAULT_API_FOOTBALL_CACHE_SECONDS
+
+
+def the_odds_api_cache_seconds() -> int:
+    try:
+        return max(3600, int(os.getenv("THE_ODDS_API_CACHE_SECONDS", DEFAULT_THE_ODDS_API_CACHE_SECONDS)))
+    except ValueError:
+        return DEFAULT_THE_ODDS_API_CACHE_SECONDS
+
+
+def api_football_max_pages() -> int:
+    try:
+        return max(1, int(os.getenv("API_FOOTBALL_ODDS_MAX_PAGES", DEFAULT_API_FOOTBALL_MAX_PAGES)))
+    except ValueError:
+        return DEFAULT_API_FOOTBALL_MAX_PAGES
+
+
+def aggregate_to_dict(aggregate: OddsAggregate) -> dict:
+    return asdict(aggregate)
+
+
+def aggregate_from_dict(row: dict) -> OddsAggregate:
+    return OddsAggregate(
+        market_odds=row["market_odds"],
+        source=row["source"],
+        bookmaker_count=int(row.get("bookmaker_count", 0)),
+        bookmakers=list(row.get("bookmakers", [])),
+        updated_at=row.get("updated_at"),
+        bookmaker_prices=row.get("bookmaker_prices"),
+        goal_market=row.get("goal_market"),
+    )
+
+
+def parse_cache_time(value: str | None):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def load_market_cache(path: Path, memory_cache: dict, fixtures: list[dict]) -> dict[str, OddsAggregate] | None:
+    now = datetime.now(timezone.utc)
+    fixture_ids = tuple(fixture["id"] for fixture in fixtures)
+
+    expires_at = memory_cache.get("expires_at")
+    if expires_at and expires_at > now and tuple(memory_cache.get("fixture_ids", ())) == fixture_ids:
+        cached = memory_cache.get("odds", {})
+        return {fixture["id"]: cached[fixture["id"]] for fixture in fixtures if fixture["id"] in cached}
+
+    if not path.exists():
+        return None
+
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        disk_expires_at = parse_cache_time(payload.get("expires_at"))
+        if not disk_expires_at or disk_expires_at <= now:
+            return None
+        if tuple(payload.get("fixture_ids", ())) != fixture_ids:
+            return None
+        odds = {
+            fixture_id: aggregate_from_dict(row)
+            for fixture_id, row in (payload.get("odds") or {}).items()
+        }
+    except Exception:
+        return None
+
+    memory_cache.update({"expires_at": disk_expires_at, "fixture_ids": fixture_ids, "odds": odds})
+    return {fixture["id"]: odds[fixture["id"]] for fixture in fixtures if fixture["id"] in odds}
+
+
+def save_market_cache(
+    path: Path,
+    memory_cache: dict,
+    fixtures: list[dict],
+    odds: dict[str, OddsAggregate],
+    ttl_seconds: int,
+) -> None:
+    expires_at = datetime.now(timezone.utc) + timedelta(seconds=ttl_seconds)
+    fixture_ids = tuple(fixture["id"] for fixture in fixtures)
+    memory_cache.update({"expires_at": expires_at, "fixture_ids": fixture_ids, "odds": odds})
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(
+                {
+                    "expires_at": expires_at.isoformat().replace("+00:00", "Z"),
+                    "fixture_ids": list(fixture_ids),
+                    "odds": {fixture_id: aggregate_to_dict(aggregate) for fixture_id, aggregate in odds.items()},
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+    except Exception:
+        return
+
+
+def api_football_request(endpoint: str, params: dict) -> dict:
+    key = api_football_key()
+    if not key:
+        return {"response": []}
+
+    url = API_FOOTBALL_URL.format(endpoint=urllib.parse.quote(endpoint))
     url = f"{url}?{urllib.parse.urlencode(params)}"
-    with urllib.request.urlopen(url, timeout=20) as response:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "x-apisports-key": key,
+            "User-Agent": "world-cup-prediction/1.0",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=20) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
-def fetch_market_odds(fixtures: list[dict]) -> Dict[str, OddsAggregate]:
-    api_key = os.getenv("ODDS_API_KEY")
-    if not api_key:
+def fetch_api_football_fixtures() -> dict[int, dict]:
+    payload = api_football_request(
+        "fixtures",
+        {
+            "league": os.getenv("API_FOOTBALL_LEAGUE", DEFAULT_API_FOOTBALL_LEAGUE),
+            "season": os.getenv("API_FOOTBALL_SEASON", DEFAULT_API_FOOTBALL_SEASON),
+        },
+    )
+    fixtures = {}
+    for row in payload.get("response", []):
+        fixture_id = (row.get("fixture") or {}).get("id")
+        teams = row.get("teams") or {}
+        home_code = team_code_from_market_name(((teams.get("home") or {}).get("name")) or "")
+        away_code = team_code_from_market_name(((teams.get("away") or {}).get("name")) or "")
+        if fixture_id and home_code and away_code:
+            fixtures[int(fixture_id)] = {
+                "home": home_code,
+                "away": away_code,
+                "date": (row.get("fixture") or {}).get("date"),
+            }
+    return fixtures
+
+
+def fetch_api_football_odds_rows() -> list[dict]:
+    rows = []
+    max_pages = api_football_max_pages()
+    base_params = {
+        "league": os.getenv("API_FOOTBALL_LEAGUE", DEFAULT_API_FOOTBALL_LEAGUE),
+        "season": os.getenv("API_FOOTBALL_SEASON", DEFAULT_API_FOOTBALL_SEASON),
+    }
+
+    for page in range(1, max_pages + 1):
+        payload = api_football_request("odds", {**base_params, "page": page})
+        rows.extend(payload.get("response", []))
+        total_pages = int((payload.get("paging") or {}).get("total") or page)
+        if page >= total_pages:
+            break
+    return rows
+
+
+def api_football_fixture_matches(reference: dict, fixture: dict) -> bool:
+    return {reference.get("home"), reference.get("away")} == {fixture["team_a"], fixture["team_b"]}
+
+
+def api_football_price_map(values: list[dict], reference: dict, fixture: dict) -> dict:
+    prices: dict[str, float] = {}
+    for value in values:
+        label = normalize_name(str(value.get("value", "")))
+        odd = decimal_price(value.get("odd"))
+        if label in {"home", "1"}:
+            prices[reference["home"]] = odd
+        elif label in {"away", "2"}:
+            prices[reference["away"]] = odd
+        elif label in {"draw", "x"}:
+            prices["draw"] = odd
+        else:
+            code = team_code_from_market_name(label)
+            if code in {fixture["team_a"], fixture["team_b"]}:
+                prices[code] = odd
+    return prices
+
+
+def api_football_total_markets(values: list[dict], bookmaker_name: str, updated_at: str | None) -> list[dict]:
+    grouped: dict[float, dict[str, float]] = {}
+    for value in values:
+        label = normalize_name(str(value.get("value", "")))
+        parts = label.split()
+        if len(parts) < 2 or parts[0] not in {"over", "under"}:
+            continue
+        try:
+            point = float(parts[1])
+        except ValueError:
+            continue
+        grouped.setdefault(point, {})[parts[0]] = decimal_price(value.get("odd"))
+
+    markets = []
+    for point, prices in grouped.items():
+        if "over" not in prices or "under" not in prices:
+            continue
+        markets.append(
+            {
+                "bookmaker": bookmaker_name,
+                "updated_at": updated_at,
+                "line": point,
+                "over": prices["over"],
+                "under": prices["under"],
+                "total_goals": total_goals_mean_from_market(point, prices["over"], prices["under"]),
+            }
+        )
+    return markets
+
+
+def extract_api_football_aggregate(row: dict, fixture: dict, reference: dict) -> Optional[OddsAggregate]:
+    team_a_prices = []
+    draw_prices = []
+    team_b_prices = []
+    used_bookmakers = []
+    bookmaker_prices = []
+    goal_markets = []
+    updated_at = row.get("update")
+
+    for bookmaker in row.get("bookmakers", []):
+        bookmaker_name = bookmaker.get("name") or str(bookmaker.get("id") or "API-Football")
+        if not should_use_api_football_bookmaker(bookmaker_name):
+            continue
+
+        for bet in bookmaker.get("bets", []):
+            bet_name = normalize_name(bet.get("name", ""))
+            values = bet.get("values", [])
+            if bet_name in {"match winner", "fulltime result", "winner"}:
+                prices = api_football_price_map(values, reference, fixture)
+                if fixture["team_a"] in prices and fixture["team_b"] in prices and "draw" in prices:
+                    team_a_prices.append(prices[fixture["team_a"]])
+                    draw_prices.append(prices["draw"])
+                    team_b_prices.append(prices[fixture["team_b"]])
+                    used_bookmakers.append(bookmaker_name)
+                    bookmaker_prices.append(
+                        {
+                            "bookmaker": bookmaker_name,
+                            "updated_at": updated_at,
+                            "team_a": prices[fixture["team_a"]],
+                            "draw": prices["draw"],
+                            "team_b": prices[fixture["team_b"]],
+                        }
+                    )
+            elif bet_name in {"goals over under", "over under", "total goals"}:
+                goal_markets.extend(api_football_total_markets(values, bookmaker_name, updated_at))
+
+    team_a = average(team_a_prices)
+    draw = average(draw_prices)
+    team_b = average(team_b_prices)
+    if team_a is None or draw is None or team_b is None:
+        return None
+
+    return OddsAggregate(
+        market_odds={
+            "team_a": round(team_a, 2),
+            "draw": round(draw, 2),
+            "team_b": round(team_b, 2),
+        },
+        source="API-Football aggregate",
+        bookmaker_count=len(used_bookmakers),
+        bookmakers=used_bookmakers,
+        updated_at=updated_at,
+        bookmaker_prices=bookmaker_prices,
+        goal_market=aggregate_goal_market(goal_markets),
+    )
+
+
+def fetch_api_football_market_odds(fixtures: list[dict], refresh: bool = False) -> Dict[str, OddsAggregate]:
+    if not api_football_configured() or not fixtures:
         return {}
+
+    if not refresh:
+        cached = load_market_cache(API_FOOTBALL_MARKET_CACHE_PATH, _API_FOOTBALL_CACHE, fixtures)
+        if cached is not None:
+            return cached
+
+    try:
+        fixture_references = fetch_api_football_fixtures()
+        odds_rows = fetch_api_football_odds_rows()
+    except Exception:
+        return {}
+
+    aggregates: Dict[str, OddsAggregate] = {}
+    for fixture in fixtures:
+        for row in odds_rows:
+            fixture_id = ((row.get("fixture") or {}).get("id"))
+            reference = fixture_references.get(int(fixture_id)) if fixture_id else None
+            if not reference or not api_football_fixture_matches(reference, fixture):
+                continue
+            aggregate = extract_api_football_aggregate(row, fixture, reference)
+            if aggregate is not None:
+                aggregates[fixture["id"]] = aggregate
+                break
+
+    save_market_cache(API_FOOTBALL_MARKET_CACHE_PATH, _API_FOOTBALL_CACHE, fixtures, aggregates, api_football_cache_seconds())
+    return aggregates
+
+
+def fetch_the_odds_market_odds(fixtures: list[dict], refresh: bool = False) -> Dict[str, OddsAggregate]:
+    api_key = os.getenv("ODDS_API_KEY")
+    if not api_key or not fixtures:
+        return {}
+
+    if not refresh:
+        cached = load_market_cache(THE_ODDS_MARKET_CACHE_PATH, _THE_ODDS_API_CACHE, fixtures)
+        if cached is not None:
+            return cached
 
     sport_keys = [
         key.strip()
@@ -326,6 +664,46 @@ def fetch_market_odds(fixtures: list[dict]) -> Dict[str, OddsAggregate]:
                     if aggregate is not None:
                         aggregates[fixture["id"]] = aggregate
                         break
+
+    save_market_cache(THE_ODDS_MARKET_CACHE_PATH, _THE_ODDS_API_CACHE, fixtures, aggregates, the_odds_api_cache_seconds())
+    return aggregates
+
+
+def fetch_the_odds_api_events(api_key: str, sport_key: str, markets: str = "h2h,totals") -> list[dict]:
+    params = {
+        "apiKey": api_key,
+        "markets": markets,
+        "oddsFormat": "decimal",
+        "dateFormat": "iso",
+    }
+    bookmakers = os.getenv("ODDS_API_BOOKMAKERS")
+    if bookmakers:
+        params["bookmakers"] = bookmakers
+    else:
+        params["regions"] = os.getenv("ODDS_API_REGIONS", "us,uk,eu")
+
+    url = THE_ODDS_API_URL.format(sport=urllib.parse.quote(sport_key))
+    url = f"{url}?{urllib.parse.urlencode(params)}"
+    with urllib.request.urlopen(url, timeout=20) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_market_odds(
+    fixtures: list[dict],
+    refresh_the_odds: bool = False,
+    refresh_api_football: bool = False,
+) -> Dict[str, OddsAggregate]:
+    aggregates: Dict[str, OddsAggregate] = {}
+
+    # API-Football has a larger daily request budget here, so let it be the
+    # higher-frequency source. The Odds API fills gaps but is protected by a
+    # much longer cache because the monthly credits are already limited.
+    for fixture_id, aggregate in fetch_api_football_market_odds(fixtures, refresh=refresh_api_football).items():
+        aggregates[fixture_id] = aggregate
+
+    missing_fixtures = [fixture for fixture in fixtures if fixture["id"] not in aggregates]
+    for fixture_id, aggregate in fetch_the_odds_market_odds(missing_fixtures, refresh=refresh_the_odds).items():
+        aggregates.setdefault(fixture_id, aggregate)
 
     return aggregates
 

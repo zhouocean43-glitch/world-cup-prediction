@@ -30,13 +30,17 @@ http://127.0.0.1:8787/api
 
 1. 在 Render 创建 Web Service，连接这个 GitHub 仓库。
 2. Start Command 使用仓库里的配置：`python3 -m backend.server --host 0.0.0.0 --port $PORT`。
-3. 在 Render 环境变量里设置 `ODDS_API_KEY`，不要把真实 key 写进仓库。
+3. 在 Render 环境变量里设置 `ODDS_API_KEY` / `API_FOOTBALL_KEY`，不要把真实 key 写进仓库。
 4. 保留或按需修改：
 
 ```text
 ODDS_API_BOOKMAKERS=draftkings,fanduel,betmgm,bet365,pinnacle,betfair
 ODDS_API_SPORT_KEYS=soccer_fifa_world_cup
 ODDS_API_OUTRIGHT_SPORT_KEY=soccer_fifa_world_cup_winner
+THE_ODDS_API_CACHE_SECONDS=86400
+API_FOOTBALL_KEY=你的 API-Football key
+API_FOOTBALL_CACHE_SECONDS=1800
+API_FOOTBALL_ODDS_MAX_PAGES=3
 ```
 
 部署完成后，Render 会给一个公开访问地址。别人打开那个地址就能看同一个网站。
@@ -105,10 +109,11 @@ python3 scripts/update_daily_signals.py
 
 ### 接入主要博彩公司赔率
 
-后端已接入 The Odds API 聚合通道。网页请求 `/api/timeline` 时会优先拉实时博彩公司均值；每日脚本可作为落盘备份：
+后端已接入 API-Football + The Odds API 聚合通道。页面优先用 API-Football 高频备用赔率，The Odds API 作为更贵的缺口补充；每日脚本可作为落盘备份：
 
 ```bash
 export ODDS_API_KEY="你的 key"
+export API_FOOTBALL_KEY="你的 API-Football key"
 python3 scripts/update_daily_signals.py
 ```
 
@@ -116,6 +121,7 @@ python3 scripts/update_daily_signals.py
 
 ```text
 ODDS_API_KEY=你的 key
+API_FOOTBALL_KEY=你的 API-Football key
 ODDS_API_BOOKMAKERS=draftkings,fanduel,betmgm,bet365,pinnacle,betfair
 ```
 
@@ -133,12 +139,17 @@ export ODDS_API_REGIONS="us,uk,eu"
 export ODDS_API_BOOKMAKERS="draftkings,fanduel,betmgm,bet365,pinnacle,betfair"
 export ODDS_API_SPORT_KEYS="soccer_fifa_world_cup"
 export ODDS_API_OUTRIGHT_SPORT_KEY="soccer_fifa_world_cup_winner"
-export ODDS_CACHE_SECONDS="900"
-export CHAMPION_ODDS_CACHE_SECONDS="1800"
+export API_FOOTBALL_LEAGUE="1"
+export API_FOOTBALL_SEASON="2026"
+export API_FOOTBALL_CACHE_SECONDS="1800"
+export API_FOOTBALL_ODDS_MAX_PAGES="3"
+export THE_ODDS_API_CACHE_SECONDS="86400"
+export ODDS_CACHE_SECONDS="86400"
+export CHAMPION_ODDS_CACHE_SECONDS="86400"
 ```
 
-没有 `ODDS_API_KEY` 时，系统只显示首场 FOX Sports 快照和模型占位线，不再生成随机盘口波动。
-The Odds API 的免费 Starter 额度适合低频刷新；系统默认缓存比赛赔率 15 分钟、冠军赔率 30 分钟，避免每次打开网页都消耗 credits。`refresh_odds=1` 和 `refresh_market=1` 可手动强制刷新。
+没有 `ODDS_API_KEY` 和 `API_FOOTBALL_KEY` 时，系统只显示首场 FOX Sports 快照和模型占位线，不再生成随机盘口波动。
+当前 The Odds API 本月只剩两百多 credits，所以默认不走短周期自动刷新：The Odds API 缓存 24 小时，冠军赔率也缓存 24 小时；API-Football 默认 30 分钟缓存，最多抓 3 页赔率，适合承担更高频备用刷新。`refresh_odds=1` 默认只强制刷新 API-Football；只有设置 `ALLOW_THE_ODDS_FORCE_REFRESH=1` 时才允许强刷 The Odds API。
 
 ## 数据可信度
 

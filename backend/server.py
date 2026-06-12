@@ -15,7 +15,12 @@ load_local_env()
 
 from backend.data import DEFAULT_GROUPS, all_teams
 from backend.fixtures import GROUP_STAGE_FIXTURES
-from backend.odds_provider import fetch_champion_futures, fetch_market_odds, odds_api_configured
+from backend.odds_provider import (
+    fetch_champion_futures,
+    fetch_market_odds,
+    market_odds_configured,
+    odds_api_configured,
+)
 from backend.prediction import predict_match, prediction_context_from_payload
 from backend.score_provider import fetch_scoreboard_updates
 from backend.signals import get_fixture_signal, odds_movement
@@ -40,8 +45,8 @@ API_DOCS = {
 ROOT_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = ROOT_DIR / "frontend"
 ASSETS_DIR = ROOT_DIR / "assets"
-DEFAULT_MATCH_ODDS_CACHE_SECONDS = 900
-DEFAULT_CHAMPION_ODDS_CACHE_SECONDS = 1800
+DEFAULT_MATCH_ODDS_CACHE_SECONDS = 1800
+DEFAULT_CHAMPION_ODDS_CACHE_SECONDS = 86400
 
 _MATCH_ODDS_CACHE = {
     "expires_at": None,
@@ -221,7 +226,7 @@ def build_timeline_payload(refresh_odds: bool = False, refresh_scores: bool = Fa
     fixtures = []
     fixture_rows, score_status = build_fixture_rows(refresh_scores=refresh_scores)
     latest_signal_update = score_status.get("updated_at")
-    live_odds = fetch_live_match_odds(fixture_rows, refresh=refresh_odds) if (refresh_odds or odds_api_configured()) else {}
+    live_odds = fetch_live_match_odds(fixture_rows, refresh=refresh_odds) if market_odds_configured() else {}
 
     for fixture, fixture_row in zip(GROUP_STAGE_FIXTURES, fixture_rows):
         signal = get_fixture_signal(fixture.id, fixture.team_a, fixture.team_b)
@@ -297,7 +302,11 @@ def fetch_live_match_odds(fixture_rows: list[dict], refresh: bool = False) -> di
         return _MATCH_ODDS_CACHE["odds"]
 
     try:
-        odds = fetch_market_odds(fixture_rows)
+        odds = fetch_market_odds(
+            fixture_rows,
+            refresh_api_football=refresh,
+            refresh_the_odds=refresh and os.getenv("ALLOW_THE_ODDS_FORCE_REFRESH") == "1",
+        )
     except Exception:
         return {}
 
@@ -355,13 +364,24 @@ def build_market_status(market_futures: list[dict]) -> dict:
 def provider_note(live_odds: dict) -> str:
     if live_odds:
         bookmaker_counts = [aggregate.bookmaker_count for aggregate in live_odds.values()]
+        sources = provider_sources(live_odds)
         return (
-            f"已同步博彩公司均值：当前 {len(live_odds)} 场有公开报价，"
+            f"已同步赔率源（{sources}）：当前 {len(live_odds)} 场有公开报价，"
             f"单场最多 {max(bookmaker_counts)} 家报价；比分已用大小球盘口校准。"
         )
-    if odds_api_configured():
-        return "已配置数据源，但当前没有匹配到世界杯小组赛公开报价；页面不会用随机数冒充市场盘口。"
+    if market_odds_configured():
+        return "已配置赔率源，但当前没有匹配到世界杯小组赛公开报价；页面不会用随机数冒充市场盘口。"
     return "当前未接入实时报价：只显示已保存快照和模型占位线，不生成假盘口波动。"
+
+
+def provider_sources(live_odds: dict) -> str:
+    sources = sorted(
+        {
+            "API-Football" if "API-Football" in aggregate.source else "The Odds API"
+            for aggregate in live_odds.values()
+        }
+    )
+    return " / ".join(sources) if sources else "未接入"
 
 
 def provider_status(live_odds: dict, total_fixtures: int) -> dict:
@@ -374,10 +394,11 @@ def provider_status(live_odds: dict, total_fixtures: int) -> dict:
                 for bookmaker in getattr(aggregate, "bookmakers", [])
             }
         )
+        sources = provider_sources(live_odds)
         return {
             "configured": True,
             "connected": True,
-            "source": "The Odds API",
+            "source": sources,
             "matched": len(live_odds),
             "total_fixtures": total_fixtures,
             "max_bookmakers": max(bookmaker_counts) if bookmaker_counts else 0,
@@ -386,18 +407,18 @@ def provider_status(live_odds: dict, total_fixtures: int) -> dict:
             "calibration": "胜平负 + 大小球",
             "message": f"{len(live_odds)}/{total_fixtures} 场小组赛已有公开盘口。",
         }
-    if odds_api_configured():
+    if market_odds_configured():
         return {
             "configured": True,
             "connected": False,
-            "source": "The Odds API",
+            "source": "API-Football / The Odds API",
             "matched": 0,
             "total_fixtures": total_fixtures,
             "max_bookmakers": 0,
             "bookmakers": [],
             "bookmaker_label": "等待公开盘口",
             "calibration": "模型占位",
-            "message": "已配置数据源，但暂未匹配到小组赛公开报价。",
+            "message": "已配置赔率源，但暂未匹配到小组赛公开报价。",
         }
     return {
         "configured": False,
