@@ -3,7 +3,8 @@ from __future__ import annotations
 import argparse
 import json
 import mimetypes
-from datetime import datetime
+import os
+from datetime import datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
@@ -32,13 +33,25 @@ API_DOCS = {
         "GET /api/timeline": "List fixtures with live-style odds, news, and predictions.",
         "GET /api/predict?team_a=Argentina&team_b=Spain": "Single-match prediction.",
         "POST /api/predict": "Prediction with optional market_odds and news signals.",
-        "GET /api/tournament?runs=2000&seed=42": "Cached Monte Carlo champion futures. Add refresh=1 to rebuild.",
+        "GET /api/tournament?runs=2000&seed=42": "Cached Monte Carlo champion futures. Add refresh=1 to rebuild model simulation, refresh_market=1 to refresh market futures.",
     },
 }
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = ROOT_DIR / "frontend"
 ASSETS_DIR = ROOT_DIR / "assets"
+DEFAULT_MATCH_ODDS_CACHE_SECONDS = 900
+DEFAULT_CHAMPION_ODDS_CACHE_SECONDS = 1800
+
+_MATCH_ODDS_CACHE = {
+    "expires_at": None,
+    "fixture_ids": (),
+    "odds": {},
+}
+_CHAMPION_FUTURES_CACHE = {
+    "expires_at": None,
+    "futures": [],
+}
 
 
 class PredictionHandler(BaseHTTPRequestHandler):
@@ -134,8 +147,9 @@ class PredictionHandler(BaseHTTPRequestHandler):
                 runs = int(query.get("runs", ["2000"])[0])
                 seed = int(query.get("seed", ["42"])[0])
                 refresh = query.get("refresh", ["0"])[0].lower() in {"1", "true", "yes", "on"}
+                refresh_market = query.get("refresh_market", ["0"])[0].lower() in {"1", "true", "yes", "on"}
                 result = get_tournament_result(runs=runs, seed=seed, refresh=refresh)
-                result["market_futures"] = fetch_live_champion_futures()
+                result["market_futures"] = fetch_live_champion_futures(refresh=refresh_market)
                 result["market_status"] = build_market_status(result["market_futures"])
                 self._send_json(200, result)
             else:
@@ -207,7 +221,7 @@ def build_timeline_payload(refresh_odds: bool = False, refresh_scores: bool = Fa
     fixtures = []
     fixture_rows, score_status = build_fixture_rows(refresh_scores=refresh_scores)
     latest_signal_update = score_status.get("updated_at")
-    live_odds = fetch_live_match_odds(fixture_rows) if (refresh_odds or odds_api_configured()) else {}
+    live_odds = fetch_live_match_odds(fixture_rows, refresh=refresh_odds) if (refresh_odds or odds_api_configured()) else {}
 
     for fixture, fixture_row in zip(GROUP_STAGE_FIXTURES, fixture_rows):
         signal = get_fixture_signal(fixture.id, fixture.team_a, fixture.team_b)
@@ -260,22 +274,65 @@ def build_timeline_payload(refresh_odds: bool = False, refresh_scores: bool = Fa
     }
 
 
-def fetch_live_match_odds(fixture_rows: list[dict]) -> dict:
+def cache_ttl(env_name: str, default_seconds: int) -> int:
+    try:
+        return max(30, int(os.getenv(env_name, str(default_seconds))))
+    except ValueError:
+        return default_seconds
+
+
+def fetch_live_match_odds(fixture_rows: list[dict], refresh: bool = False) -> dict:
     if not odds_api_configured():
         return {}
+
+    now = datetime.now(timezone.utc)
+    fixture_ids = tuple(row["id"] for row in fixture_rows)
+    expires_at = _MATCH_ODDS_CACHE.get("expires_at")
+    if (
+        not refresh
+        and expires_at
+        and expires_at > now
+        and _MATCH_ODDS_CACHE.get("fixture_ids") == fixture_ids
+    ):
+        return _MATCH_ODDS_CACHE["odds"]
+
     try:
-        return fetch_market_odds(fixture_rows)
+        odds = fetch_market_odds(fixture_rows)
     except Exception:
         return {}
 
+    _MATCH_ODDS_CACHE.update(
+        {
+            "expires_at": now + timedelta(seconds=cache_ttl("ODDS_CACHE_SECONDS", DEFAULT_MATCH_ODDS_CACHE_SECONDS)),
+            "fixture_ids": fixture_ids,
+            "odds": odds,
+        }
+    )
+    return odds
 
-def fetch_live_champion_futures() -> list[dict]:
+
+def fetch_live_champion_futures(refresh: bool = False) -> list[dict]:
     if not odds_api_configured():
         return []
+
+    now = datetime.now(timezone.utc)
+    expires_at = _CHAMPION_FUTURES_CACHE.get("expires_at")
+    if not refresh and expires_at and expires_at > now:
+        return _CHAMPION_FUTURES_CACHE["futures"]
+
     try:
-        return fetch_champion_futures()
+        futures = fetch_champion_futures()
     except Exception:
         return []
+
+    _CHAMPION_FUTURES_CACHE.update(
+        {
+            "expires_at": now
+            + timedelta(seconds=cache_ttl("CHAMPION_ODDS_CACHE_SECONDS", DEFAULT_CHAMPION_ODDS_CACHE_SECONDS)),
+            "futures": futures,
+        }
+    )
+    return futures
 
 
 def build_market_status(market_futures: list[dict]) -> dict:

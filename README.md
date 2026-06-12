@@ -49,6 +49,7 @@ ODDS_API_OUTRIGHT_SPORT_KEY=soccer_fifa_world_cup_winner
 - `GET /api/fixtures`
 - `GET /api/timeline`
 - `GET /api/timeline?refresh_scores=1`
+- `GET /api/timeline?refresh_odds=1`
 - `GET /api/predict?team_a=Argentina&team_b=Spain`
 - `GET /api/tournament?runs=2000&seed=42`
 - `GET /api/tournament?runs=2000&seed=42&refresh=1`
@@ -132,9 +133,12 @@ export ODDS_API_REGIONS="us,uk,eu"
 export ODDS_API_BOOKMAKERS="draftkings,fanduel,betmgm,bet365,pinnacle,betfair"
 export ODDS_API_SPORT_KEYS="soccer_fifa_world_cup"
 export ODDS_API_OUTRIGHT_SPORT_KEY="soccer_fifa_world_cup_winner"
+export ODDS_CACHE_SECONDS="900"
+export CHAMPION_ODDS_CACHE_SECONDS="1800"
 ```
 
 没有 `ODDS_API_KEY` 时，系统只显示首场 FOX Sports 快照和模型占位线，不再生成随机盘口波动。
+The Odds API 的免费 Starter 额度适合低频刷新；系统默认缓存比赛赔率 15 分钟、冠军赔率 30 分钟，避免每次打开网页都消耗 credits。`refresh_odds=1` 和 `refresh_market=1` 可手动强制刷新。
 
 ## 数据可信度
 
