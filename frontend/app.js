@@ -265,16 +265,21 @@ function scorelinePicks(scorelines = [], limit = 3) {
 }
 
 function filteredFixtures() {
+  const upcoming = state.timeline.filter((item) => !hasFinalResult(item));
   if (state.filter === "high") {
-    return [...state.timeline]
+    return [...(upcoming.length ? upcoming : state.timeline)]
       .sort((a, b) => strongestFixtureScore(b) - strongestFixtureScore(a))
       .slice(0, 16)
       .sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff));
   }
   if (state.filter === "next") {
-    return state.timeline.slice(0, 16);
+    return upcoming.slice(0, 16);
   }
   return state.timeline;
+}
+
+function featuredFixture() {
+  return state.timeline.find((item) => !hasFinalResult(item)) || state.timeline[0];
 }
 
 function matchCard(item) {
@@ -472,7 +477,7 @@ function renderFeatured() {
     els.featuredMatch.innerHTML = '<div class="loading">等待赛程加载...</div>';
     return;
   }
-  els.featuredMatch.innerHTML = featuredCard(state.timeline[0]);
+  els.featuredMatch.innerHTML = featuredCard(featuredFixture());
 }
 
 async function loadTimeline() {
