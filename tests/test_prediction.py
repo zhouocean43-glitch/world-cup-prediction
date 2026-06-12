@@ -6,6 +6,7 @@ import backend.tournament_cache as tournament_cache
 from backend.fixtures import GROUP_STAGE_FIXTURES
 from backend.odds_provider import extract_h2h_aggregate
 from backend.prediction import MarketOdds, odds_to_probabilities, predict_match
+from backend.score_provider import build_scoreboard_updates
 from backend.simulation import simulate_tournament
 
 
@@ -28,6 +29,63 @@ class PredictionTests(unittest.TestCase):
         self.assertEqual(opening_match["result"]["status"], "final")
         self.assertEqual(opening_match["result"]["team_a_goals"], 2)
         self.assertEqual(opening_match["result"]["team_b_goals"], 0)
+
+    def test_scoreboard_updates_final_score_and_venue(self):
+        fixture = GROUP_STAGE_FIXTURES[1].to_dict()
+        event = {
+            "id": "760414",
+            "date": "2026-06-12T02:00Z",
+            "name": "Czechia at South Korea",
+            "competitions": [
+                {
+                    "venue": {
+                        "fullName": "Estadio Akron",
+                        "address": {"city": "Guadalajara", "country": "Mexico"},
+                    },
+                    "status": {"type": {"name": "STATUS_FULL_TIME", "completed": True, "detail": "FT"}},
+                    "competitors": [
+                        {"team": {"displayName": "South Korea", "abbreviation": "KOR"}, "score": "2"},
+                        {"team": {"displayName": "Czechia", "abbreviation": "CZE"}, "score": "1"},
+                    ],
+                }
+            ],
+        }
+
+        updates = build_scoreboard_updates([event], [fixture], "2026-06-12T05:00:00Z")
+
+        self.assertEqual(updates[fixture["id"]]["kickoff"], "2026-06-12T10:00:00+08:00")
+        self.assertEqual(updates[fixture["id"]]["stadium"], "Estadio Akron")
+        self.assertEqual(updates[fixture["id"]]["city"], "Guadalajara")
+        self.assertEqual(updates[fixture["id"]]["result"]["team_a_goals"], 2)
+        self.assertEqual(updates[fixture["id"]]["result"]["team_b_goals"], 1)
+        self.assertEqual(updates[fixture["id"]]["result"]["winner"], "team_a")
+
+    def test_scoreboard_matches_hyphenated_team_names(self):
+        fixture = GROUP_STAGE_FIXTURES[2].to_dict()
+        event = {
+            "id": "760416",
+            "date": "2026-06-12T19:00Z",
+            "name": "Bosnia-Herzegovina at Canada",
+            "competitions": [
+                {
+                    "venue": {
+                        "fullName": "BMO Field",
+                        "address": {"city": "Toronto", "country": "Canada"},
+                    },
+                    "status": {"type": {"name": "STATUS_SCHEDULED", "completed": False}},
+                    "competitors": [
+                        {"team": {"displayName": "Canada", "abbreviation": "CAN"}, "score": "0"},
+                        {"team": {"displayName": "Bosnia-Herzegovina", "abbreviation": "BIH"}, "score": "0"},
+                    ],
+                }
+            ],
+        }
+
+        updates = build_scoreboard_updates([event], [fixture], "2026-06-12T05:00:00Z")
+
+        self.assertEqual(updates[fixture["id"]]["kickoff"], "2026-06-13T03:00:00+08:00")
+        self.assertEqual(updates[fixture["id"]]["stadium"], "BMO Field")
+        self.assertNotIn("result", updates[fixture["id"]])
 
     def test_h2h_aggregate_averages_major_bookmakers(self):
         fixture = {

@@ -1,6 +1,6 @@
 # World Cup Prediction Website
 
-一个本地可打开的世界杯预测网站。当前版本无外部依赖，包含网页端、预测 API、赔率/新闻信号、比分模型和赛事模拟。
+一个本地可打开的世界杯预测网站。包含网页端、预测 API、赔率/新闻信号、比分模型、赛事模拟，以及自动赛果同步。
 
 ## 运行
 
@@ -48,6 +48,7 @@ ODDS_API_OUTRIGHT_SPORT_KEY=soccer_fifa_world_cup_winner
 - `GET /api/groups`
 - `GET /api/fixtures`
 - `GET /api/timeline`
+- `GET /api/timeline?refresh_scores=1`
 - `GET /api/predict?team_a=Argentina&team_b=Spain`
 - `GET /api/tournament?runs=2000&seed=42`
 - `GET /api/tournament?runs=2000&seed=42&refresh=1`
@@ -137,7 +138,8 @@ export ODDS_API_OUTRIGHT_SPORT_KEY="soccer_fifa_world_cup_winner"
 
 ## 数据可信度
 
-- 第一场：Mexico vs South Africa，已接入已知赛程、球场、天气快照、FOX Sports 赔率快照和 2-0 完赛比分。
+- 赛果与更准确的开球时间、球场信息会优先从 ESPN FIFA World Cup scoreboard 自动同步；`refresh_scores=1` 可强制刷新比分缓存。
+- 第一场：Mexico vs South Africa，已接入 ESPN/FOX Sports 完赛比分。
 - 其它场次：分组和对阵使用官方抽签种子；详细球场/天气等待官方赛程 provider 导入后逐场补齐。
 - 赔率：有 bookmaker snapshot 时用市场权重强融合；否则明确标记为 `model_placeholder`。
 - 冠军榜：有 outright 市场时显示博彩公司冠军均赔；否则显示固定缓存的模型冠军概率。

@@ -129,6 +129,17 @@ function bookmakerSummary(signal) {
   return signal.source;
 }
 
+function hasDisplayMarket(signal) {
+  return signal.market_type !== "model_placeholder";
+}
+
+function oddsContent(signal, item) {
+  if (!hasDisplayMarket(signal)) {
+    return '<span class="empty-market">暂无公开报价</span>';
+  }
+  return oddsLine(signal, item);
+}
+
 function goalMarketText(signal) {
   const goalMarket = signal.goal_market;
   if (!goalMarket || !goalMarket.total_goals) return "";
@@ -216,8 +227,9 @@ function signalRow(label, value) {
   `;
 }
 
-function renderProviderStatus(status = {}, fallbackNote = "", updatedAt = "") {
+function renderProviderStatus(status = {}, fallbackNote = "", updatedAt = "", scoreStatus = {}) {
   const connected = Boolean(status.connected);
+  const scoresConnected = Boolean(scoreStatus.connected);
   const matched = Number(status.matched || 0);
   const totalFixtures = Number(status.total_fixtures || state.timeline.length || matched || 0);
   const maxBookmakers = Number(status.max_bookmakers || 0);
@@ -225,11 +237,15 @@ function renderProviderStatus(status = {}, fallbackNote = "", updatedAt = "") {
   const bookmakerLabel = status.bookmaker_label
     ? status.bookmaker_label.replaceAll(" / ", " · ")
     : status.message || fallbackNote || "等待数据";
+  const scoreLine = scoresConnected
+    ? `${Number(scoreStatus.final_count || 0)} 场完赛自动同步`
+    : `${Number(scoreStatus.final_count || 0)} 场本地赛果`;
+  const sourceLine = [bookmakerLabel, scoreStatus.source].filter(Boolean).join(" · ");
   const coverageLabel = connected && totalFixtures ? `${matched}/${totalFixtures}` : "--/--";
   const coverageText = connected
     ? `已接入 ${matched} 场公开盘口，其余场次保留模型占位。`
     : status.message || fallbackNote || "等待公开盘口。";
-  const badge = connected ? "已同步" : status.configured ? "待盘口" : "本地模型";
+  const badge = connected || scoresConnected ? "已同步" : status.configured ? "待盘口" : "本地模型";
   const updated = formatUpdatedParts(updatedAt);
 
   document.querySelector(".signal-top b").textContent = badge;
@@ -239,10 +255,11 @@ function renderProviderStatus(status = {}, fallbackNote = "", updatedAt = "") {
     <p class="signal-summary">${escapeHtml(coverageText)}</p>
     <div class="signal-list">
       ${signalRow("盘口", connected ? `最多 ${maxBookmakers} 家均值` : "暂无公开报价")}
+      ${signalRow("赛果", scoreLine)}
       ${signalRow("比分", connected ? "胜平负 + 大小球校准" : calibration)}
       ${signalRow("新闻", "赛前 / 伤停入口可点")}
     </div>
-    <p class="signal-source">来源：${escapeHtml(bookmakerLabel)}</p>
+    <p class="signal-source">来源：${escapeHtml(sourceLine || "等待数据")}</p>
   `;
 }
 
@@ -338,7 +355,7 @@ function matchCard(item) {
         }
         <div>
           <span>${isFinal ? "赛前胜平负" : "胜平负"} · ${label}</span>
-          <strong>${oddsLine(item.signal, item)}</strong>
+          <strong>${oddsContent(item.signal, item)}</strong>
         </div>
         <div>
           <span>${isFinal ? "赛前热门比分" : "热门比分"}${goalMarketText(item.signal)}</span>
@@ -434,7 +451,7 @@ function featuredCard(item) {
               ? `<div class="metric result-panel"><span>赛果</span><strong>${finalScoreline(item)}</strong></div>`
               : ""
           }
-          <div class="metric"><span>${isFinal ? "赛前胜平负" : "胜平负"} · ${label}</span><strong>${oddsLine(item.signal, item)}</strong></div>
+          <div class="metric"><span>${isFinal ? "赛前胜平负" : "胜平负"} · ${label}</span><strong>${oddsContent(item.signal, item)}</strong></div>
           <div class="metric"><span>${isFinal ? "赛前热门比分 Top 3" : "热门比分 Top 3"}${goalMarketText(item.signal)}</span><strong>${scorelinePicks(item.prediction.top_scorelines)}</strong></div>
           <div class="metric"><span>报价来源</span><strong>${bookmakerSummary(item.signal)}</strong></div>
           <div class="metric">
@@ -483,7 +500,7 @@ function renderFeatured() {
 async function loadTimeline() {
   const data = await fetchJson("/api/timeline");
   state.timeline = data.fixtures;
-  renderProviderStatus(data.provider_status, data.provider_note, data.updated_at);
+  renderProviderStatus(data.provider_status, data.provider_note, data.updated_at, data.score_status);
   renderFeatured();
   renderTimeline();
 }

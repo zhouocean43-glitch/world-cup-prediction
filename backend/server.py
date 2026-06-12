@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import mimetypes
+from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
@@ -15,6 +16,7 @@ from backend.data import DEFAULT_GROUPS, all_teams
 from backend.fixtures import GROUP_STAGE_FIXTURES
 from backend.odds_provider import fetch_champion_futures, fetch_market_odds, odds_api_configured
 from backend.prediction import predict_match, prediction_context_from_payload
+from backend.score_provider import fetch_scoreboard_updates
 from backend.signals import get_fixture_signal, odds_movement
 from backend.tournament_cache import get_tournament_result
 
@@ -118,10 +120,12 @@ class PredictionHandler(BaseHTTPRequestHandler):
             elif parsed.path == "/api/groups":
                 self._send_json(200, DEFAULT_GROUPS)
             elif parsed.path == "/api/fixtures":
-                self._send_json(200, [fixture.to_dict() for fixture in GROUP_STAGE_FIXTURES])
+                fixture_rows, _score_status = build_fixture_rows()
+                self._send_json(200, fixture_rows)
             elif parsed.path == "/api/timeline":
                 refresh_odds = query.get("refresh_odds", ["0"])[0].lower() in {"1", "true", "yes", "on"}
-                self._send_json(200, build_timeline_payload(refresh_odds=refresh_odds))
+                refresh_scores = query.get("refresh_scores", ["0"])[0].lower() in {"1", "true", "yes", "on"}
+                self._send_json(200, build_timeline_payload(refresh_odds=refresh_odds, refresh_scores=refresh_scores))
             elif parsed.path == "/api/predict":
                 team_a = query.get("team_a", ["Argentina"])[0]
                 team_b = query.get("team_b", ["Spain"])[0]
@@ -166,10 +170,43 @@ class PredictionHandler(BaseHTTPRequestHandler):
         return
 
 
-def build_timeline_payload(refresh_odds: bool = False) -> dict:
-    fixtures = []
-    latest_signal_update = None
+def build_fixture_rows(refresh_scores: bool = False) -> tuple[list[dict], dict]:
     fixture_rows = [fixture.to_dict() for fixture in GROUP_STAGE_FIXTURES]
+    scoreboard_updates, score_status = fetch_scoreboard_updates(fixture_rows, refresh=refresh_scores)
+
+    for fixture_row in fixture_rows:
+        update = scoreboard_updates.get(fixture_row["id"])
+        if update:
+            fixture_row.update(update)
+
+    score_status = {
+        **score_status,
+        "final_count": sum(1 for row in fixture_rows if (row.get("result") or {}).get("status") == "final"),
+    }
+    return fixture_rows, score_status
+
+
+def parse_iso(value: str | None):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def latest_iso(*values: str | None) -> str | None:
+    parsed = [parse_iso(value) for value in values if value]
+    parsed = [value for value in parsed if value is not None]
+    if not parsed:
+        return None
+    return max(parsed).isoformat().replace("+00:00", "Z")
+
+
+def build_timeline_payload(refresh_odds: bool = False, refresh_scores: bool = False) -> dict:
+    fixtures = []
+    fixture_rows, score_status = build_fixture_rows(refresh_scores=refresh_scores)
+    latest_signal_update = score_status.get("updated_at")
     live_odds = fetch_live_match_odds(fixture_rows) if (refresh_odds or odds_api_configured()) else {}
 
     for fixture, fixture_row in zip(GROUP_STAGE_FIXTURES, fixture_rows):
@@ -192,7 +229,7 @@ def build_timeline_payload(refresh_odds: bool = False) -> dict:
                 "goal_market": aggregate.goal_market,
                 "last_bookmaker_update": aggregate.updated_at,
             }
-        latest_signal_update = signal.get("updated_at") or latest_signal_update
+        latest_signal_update = latest_iso(latest_signal_update, signal.get("updated_at"))
         prediction = predict_match(
             fixture.team_a,
             fixture.team_b,
@@ -218,6 +255,7 @@ def build_timeline_payload(refresh_odds: bool = False) -> dict:
         "timezone": "Asia/Shanghai",
         "provider_note": provider_note(live_odds),
         "provider_status": provider_status(live_odds, len(fixture_rows)),
+        "score_status": score_status,
         "fixtures": fixtures,
     }
 

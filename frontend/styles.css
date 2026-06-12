@@ -498,13 +498,16 @@ h2 {
   grid-template-columns: minmax(0, 1fr) 46px minmax(0, 1fr);
   gap: 14px;
   align-items: center;
-  font-size: clamp(26px, 4vw, 54px);
+  font-size: clamp(25px, 3.4vw, 46px);
   font-weight: 950;
+  line-height: 1.05;
 }
 
 .featured-names span {
   min-width: 0;
+  line-height: 1.05;
   overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .featured-names i {
@@ -697,6 +700,18 @@ h2 {
 
 .odds-part.down small {
   color: var(--home);
+}
+
+.empty-market {
+  min-height: 58px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 9px 10px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 18px;
+  font-weight: 950;
 }
 
 .score-picks {
@@ -1218,6 +1233,10 @@ h2 {
   .value-row,
   .teams {
     grid-template-columns: 1fr;
+  }
+
+  .featured-names {
+    font-size: clamp(24px, 7vw, 30px);
   }
 
   .featured-names span:last-child,
