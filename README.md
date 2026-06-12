@@ -85,9 +85,10 @@ ODDS_API_OUTRIGHT_SPORT_KEY=soccer_fifa_world_cup_winner
 - 48 队世界杯 Monte Carlo 模拟
 - 冠军概率后端持久缓存，页面刷新不会抖动
 - 小组赛时间轴自动预测
+- 已完赛比赛会显示真实比分，并保留赛前赔率与热门比分作对照
 - 官方 A-L 分组种子
 - 国旗、球场、地点、天气字段
-- 第一场 Mexico vs South Africa 接入博彩公司赔率快照
+- 第一场 Mexico vs South Africa 已更新完赛比分：Mexico 2-0 South Africa，并保留博彩公司赔率快照
 - 球队总身价估算
 
 ## 每日信号更新
@@ -136,7 +137,7 @@ export ODDS_API_OUTRIGHT_SPORT_KEY="soccer_fifa_world_cup_winner"
 
 ## 数据可信度
 
-- 第一场：Mexico vs South Africa，已接入已知赛程、球场、天气快照和 FOX Sports 赔率快照。
+- 第一场：Mexico vs South Africa，已接入已知赛程、球场、天气快照、FOX Sports 赔率快照和 2-0 完赛比分。
 - 其它场次：分组和对阵使用官方抽签种子；详细球场/天气等待官方赛程 provider 导入后逐场补齐。
 - 赔率：有 bookmaker snapshot 时用市场权重强融合；否则明确标记为 `model_placeholder`。
 - 冠军榜：有 outright 市场时显示博彩公司冠军均赔；否则显示固定缓存的模型冠军概率。

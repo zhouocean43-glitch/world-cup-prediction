@@ -23,6 +23,7 @@ class Fixture:
     country: str
     weather: dict
     data_quality: str
+    result: dict | None = None
 
     def to_dict(self) -> dict:
         row = asdict(self)
@@ -59,6 +60,19 @@ KNOWN_FIXTURE_META = {
             "source": "weather snapshot",
         },
         "data_quality": "official_fixture_live_weather",
+    },
+}
+
+
+KNOWN_RESULTS = {
+    1: {
+        "status": "final",
+        "team_a_goals": 2,
+        "team_b_goals": 0,
+        "winner": "team_a",
+        "source": "ESPN / FOX Sports final score",
+        "updated_at": "2026-06-12T05:30:00+08:00",
+        "summary": "Mexico beat South Africa 2-0 in the 2026 World Cup opener.",
     },
 }
 
@@ -154,6 +168,7 @@ def build_group_stage_fixtures(groups: Dict[str, List[str]] | None = None) -> Li
                 country=meta["country"],
                 weather=meta["weather"],
                 data_quality=meta["data_quality"],
+                result=KNOWN_RESULTS.get(idx),
             )
         )
 

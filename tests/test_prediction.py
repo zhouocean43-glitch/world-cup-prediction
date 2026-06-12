@@ -1,9 +1,12 @@
+from pathlib import Path
+import tempfile
 import unittest
 
+import backend.tournament_cache as tournament_cache
+from backend.fixtures import GROUP_STAGE_FIXTURES
 from backend.odds_provider import extract_h2h_aggregate
 from backend.prediction import MarketOdds, odds_to_probabilities, predict_match
 from backend.simulation import simulate_tournament
-from backend.tournament_cache import get_tournament_result
 
 
 class PredictionTests(unittest.TestCase):
@@ -16,6 +19,15 @@ class PredictionTests(unittest.TestCase):
         probs = odds_to_probabilities(MarketOdds(team_a=2.1, draw=3.2, team_b=3.8))
         self.assertAlmostEqual(sum(probs.values()), 1.0, places=8)
         self.assertGreater(probs["team_a_win"], probs["team_b_win"])
+
+    def test_opening_match_has_final_score(self):
+        opening_match = GROUP_STAGE_FIXTURES[0].to_dict()
+
+        self.assertEqual(opening_match["team_a"], "MEX")
+        self.assertEqual(opening_match["team_b"], "RSA")
+        self.assertEqual(opening_match["result"]["status"], "final")
+        self.assertEqual(opening_match["result"]["team_a_goals"], 2)
+        self.assertEqual(opening_match["result"]["team_b_goals"], 0)
 
     def test_h2h_aggregate_averages_major_bookmakers(self):
         fixture = {
@@ -90,8 +102,14 @@ class PredictionTests(unittest.TestCase):
         self.assertAlmostEqual(champion_total, 1.0, places=3)
 
     def test_tournament_cache_keeps_refresh_stable(self):
-        first = get_tournament_result(runs=12, seed=123, refresh=True)
-        second = get_tournament_result(runs=12, seed=123)
+        original_cache_path = tournament_cache.CACHE_PATH
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tournament_cache.CACHE_PATH = Path(tmpdir) / "tournament_cache.json"
+            try:
+                first = tournament_cache.get_tournament_result(runs=12, seed=123, refresh=True)
+                second = tournament_cache.get_tournament_result(runs=12, seed=123)
+            finally:
+                tournament_cache.CACHE_PATH = original_cache_path
 
         self.assertFalse(first["cached"])
         self.assertTrue(second["cached"])

@@ -160,6 +160,53 @@ function newsActions(item) {
   `;
 }
 
+function hasFinalResult(item) {
+  return item.result && item.result.status === "final";
+}
+
+function resultScoreText(item) {
+  if (!hasFinalResult(item)) return "";
+  return `${item.result.team_a_goals}-${item.result.team_b_goals}`;
+}
+
+function outcomeKeyFromGoals(result) {
+  if (result.team_a_goals > result.team_b_goals) return "team_a_win";
+  if (result.team_a_goals < result.team_b_goals) return "team_b_win";
+  return "draw";
+}
+
+function outcomeLabel(item, key) {
+  if (key === "team_a_win") return `${item.team_a_name} 胜`;
+  if (key === "team_b_win") return `${item.team_b_name} 胜`;
+  return "平局";
+}
+
+function predictedOutcome(item) {
+  const probs = item.prediction.probabilities;
+  return Object.entries(probs).sort((left, right) => right[1] - left[1])[0][0];
+}
+
+function resultVerdict(item) {
+  if (!hasFinalResult(item)) return "";
+  const actual = outcomeKeyFromGoals(item.result);
+  const predicted = predictedOutcome(item);
+  const topScore = item.prediction.top_scorelines?.[0];
+  const topText = topScore ? `模型首选 ${topScore.team_a_goals}-${topScore.team_b_goals}` : "模型首选待生成";
+  return `${actual === predicted ? "方向命中" : "方向偏离"} · ${topText}`;
+}
+
+function finalScoreline(item) {
+  if (!hasFinalResult(item)) return "";
+  return `
+    <span class="final-scoreline">
+      <b>${item.team_a_flag} ${item.result.team_a_goals}</b>
+      <i>FT</i>
+      <b>${item.result.team_b_goals} ${item.team_b_flag}</b>
+    </span>
+    <small>${escapeHtml(resultVerdict(item))}</small>
+  `;
+}
+
 function signalRow(label, value) {
   return `
     <div class="signal-row">
@@ -237,18 +284,20 @@ function matchCard(item) {
   const isBalanced = lean === "balanced";
   const weather = item.weather || {};
   const label = marketLabel(item.signal);
+  const isFinal = hasFinalResult(item);
+  const actualOutcome = isFinal ? outcomeLabel(item, outcomeKeyFromGoals(item.result)) : "";
 
   return `
-    <article class="match-card">
+    <article class="match-card ${isFinal ? "is-final" : ""}">
       <div class="match-time">
         <strong>${formatTime(item.kickoff)}</strong>
         <span>G${item.group} · 第 ${item.matchday} 轮</span>
       </div>
 
       <div class="match-main">
-        <div class="teams">
+        <div class="teams ${isFinal ? "finished" : ""}">
           <span>${item.team_a_flag} ${item.team_a_name}</span>
-          <i>vs</i>
+          <i>${isFinal ? resultScoreText(item) : "vs"}</i>
           <span>${item.team_b_flag} ${item.team_b_name}</span>
         </div>
         <div class="value-row">
@@ -256,8 +305,8 @@ function matchCard(item) {
           <b>球队总身价</b>
           <span>${item.prediction.team_b.squad_value_label}</span>
         </div>
-        <div class="lean ${isBalanced ? "balanced" : ""}">
-          ${isBalanced ? "均势" : `倾向 ${lean}`}
+        <div class="lean ${isFinal ? "result" : isBalanced ? "balanced" : ""}">
+          ${isFinal ? `已完赛 · ${actualOutcome}` : isBalanced ? "均势" : `倾向 ${lean}`}
         </div>
       </div>
 
@@ -274,12 +323,20 @@ function matchCard(item) {
       </div>
 
       <div class="meta-grid">
+        ${
+          isFinal
+            ? `<div class="result-panel">
+                <span>赛果</span>
+                <strong>${finalScoreline(item)}</strong>
+              </div>`
+            : ""
+        }
         <div>
-          <span>胜平负 · ${label}</span>
+          <span>${isFinal ? "赛前胜平负" : "胜平负"} · ${label}</span>
           <strong>${oddsLine(item.signal, item)}</strong>
         </div>
         <div>
-          <span>热门比分${goalMarketText(item.signal)}</span>
+          <span>${isFinal ? "赛前热门比分" : "热门比分"}${goalMarketText(item.signal)}</span>
           <strong>${scorelinePicks(item.prediction.top_scorelines)}</strong>
         </div>
         <div>
@@ -317,9 +374,10 @@ function featuredCard(item) {
   const weather = item.weather || {};
   const news = item.signal.news || {};
   const label = marketLabel(item.signal);
+  const isFinal = hasFinalResult(item);
 
   return `
-    <article class="featured-card">
+    <article class="featured-card ${isFinal ? "is-final" : ""}">
       <div class="fixture-block">
         <div class="fixture-time">
           <strong>${formatTime(item.kickoff)}</strong>
@@ -333,9 +391,9 @@ function featuredCard(item) {
       </div>
 
       <div class="featured-teams">
-        <div class="featured-names">
+        <div class="featured-names ${isFinal ? "finished" : ""}">
           <span>${item.team_a_flag} ${item.team_a_name}</span>
-          <i>vs</i>
+          <i>${isFinal ? resultScoreText(item) : "vs"}</i>
           <span>${item.team_b_flag} ${item.team_b_name}</span>
         </div>
         <div class="featured-values">
@@ -343,6 +401,15 @@ function featuredCard(item) {
           <b>球队总身价</b>
           <span>${item.prediction.team_b.squad_value_label}</span>
         </div>
+        ${
+          isFinal
+            ? `<div class="result-badge">
+                <span>已完赛</span>
+                <strong>${escapeHtml(outcomeLabel(item, outcomeKeyFromGoals(item.result)))}</strong>
+                <small>${escapeHtml(resultVerdict(item))}</small>
+              </div>`
+            : ""
+        }
         <div class="prob-strip" style="--a:${probs.team_a_win * 100}%; --d:${probs.draw * 100}%; --b:${probs.team_b_win * 100}%">
           <span class="home"></span>
           <span class="draw"></span>
@@ -357,8 +424,13 @@ function featuredCard(item) {
 
       <div class="featured-side">
         <div class="metric-grid">
-          <div class="metric"><span>胜平负 · ${label}</span><strong>${oddsLine(item.signal, item)}</strong></div>
-          <div class="metric"><span>热门比分 Top 3${goalMarketText(item.signal)}</span><strong>${scorelinePicks(item.prediction.top_scorelines)}</strong></div>
+          ${
+            isFinal
+              ? `<div class="metric result-panel"><span>赛果</span><strong>${finalScoreline(item)}</strong></div>`
+              : ""
+          }
+          <div class="metric"><span>${isFinal ? "赛前胜平负" : "胜平负"} · ${label}</span><strong>${oddsLine(item.signal, item)}</strong></div>
+          <div class="metric"><span>${isFinal ? "赛前热门比分 Top 3" : "热门比分 Top 3"}${goalMarketText(item.signal)}</span><strong>${scorelinePicks(item.prediction.top_scorelines)}</strong></div>
           <div class="metric"><span>报价来源</span><strong>${bookmakerSummary(item.signal)}</strong></div>
           <div class="metric">
             <span>新闻</span>
