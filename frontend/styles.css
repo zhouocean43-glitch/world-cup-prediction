@@ -84,26 +84,61 @@ button {
 .live-chip {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-height: 40px;
+  gap: 11px;
+  min-height: 44px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 8px 14px;
+  padding: 7px 15px 7px 8px;
   background: rgba(8, 18, 30, 0.68);
   backdrop-filter: blur(18px);
   font-weight: 850;
 }
 
-.mark,
 .live-chip span {
   border-radius: 999px;
 }
 
-.mark {
-  width: 18px;
-  height: 18px;
-  background: conic-gradient(from 180deg, var(--home), var(--draw), var(--away), var(--home));
-  box-shadow: 0 0 24px rgba(40, 217, 147, 0.42);
+.cup-mark {
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 30% 22%, rgba(255, 255, 255, 0.72), transparent 22%),
+    conic-gradient(from 180deg, var(--home), var(--draw), var(--away), var(--home));
+  box-shadow:
+    0 0 26px rgba(40, 217, 147, 0.36),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.34);
+}
+
+.cup-mark svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.cup-mark circle {
+  fill: rgba(4, 16, 27, 0.62);
+  stroke: rgba(255, 255, 255, 0.38);
+  stroke-width: 1;
+}
+
+.cup-mark path {
+  fill: none;
+  stroke: #f8fdff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.cup-mark text {
+  fill: var(--draw);
+  font-size: 7px;
+  font-weight: 950;
+  text-anchor: middle;
+  dominant-baseline: middle;
 }
 
 .live-chip {
